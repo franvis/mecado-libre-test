@@ -1,2 +1,2 @@
-include ':presentation'
+include ':presentation', ':data', ':domain'
 rootProject.name='MercadoLibre Test'

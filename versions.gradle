@@ -1,0 +1,133 @@
+ext.deps = [:]
+def deps = [:]
+def versions = [:]
+versions.kotlin = '1.3.61'
+versions.jacoco = '0.8.2'
+versions.gradle = '3.5.0'
+versions.googleServices = '4.3.3'
+versions.timber = '4.7.1'
+versions.moshi = '1.9.2'
+versions.retrofit2 = "2.7.1"
+versions.ktLint = '0.23.1'
+versions.androidXCoreKtx = '1.2.0'
+versions.androidXCoreTesting = '2.1.0'
+versions.androidXAppCompat = '1.1.0'
+versions.androidXGradlePlugin = '2.2.0-alpha02'
+versions.androidXTestRules = '1.1.1'
+versions.androidXEspresso = '3.1.1'
+versions.androidXLifecycle = '2.2.0'
+versions.androidXJUnit = '1.1.0'
+versions.androidXNavigation = '2.3.0-alpha03'
+versions.androidXLegacySupportV4 = '1.0.0'
+versions.androidXConstraintLayout = '1.1.3'
+versions.androidXFragment = '1.2.2'
+versions.glide = '4.11.0'
+versions.groupie = '2.7.2'
+versions.rxJava = '2.2.6'
+versions.rxKotlin = '2.4.0'
+versions.rxAndroid = '2.1.1'
+versions.rxBinding = '2.1.1'
+versions.junit = '4.12'
+versions.mockk = '1.9.2'
+versions.androidSupportTest = '1.0.2'
+versions.espressoSupport = '0.2.1'
+versions.espressoCore = '3.0.2'
+versions.coroutines = '1.3.4'
+versions.dagger = '2.26'
+versions.daggerAndroid = '2.26'
+versions.hyperion = '0.9.27'
+versions.hyperionSimpleItem = '0.4.0'
+versions.facebookShimmer = '0.5.0'
+
+def build_versions = [:]
+build_versions.min_sdk = 21
+build_versions.target_sdk = 29
+build_versions.build_tools = "29.0.2"
+ext.build_versions = build_versions
+
+deps.kotlin_stdlib = "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$versions.kotlin"
+deps.glide = "com.github.bumptech.glide:glide:$versions.glide"
+deps.facebook_shimmer = "com.facebook.shimmer:shimmer:$versions.facebookShimmer"
+
+def androidx = [:]
+androidx.constraint_layout = "androidx.constraintlayout:constraintlayout:$versions.androidXConstraintLayout"
+androidx.core_ktx = "androidx.core:core-ktx:$versions.androidXCoreKtx"
+androidx.app_compat = "androidx.appcompat:appcompat:$versions.androidXAppCompat"
+androidx.fragment_ktx = "androidx.fragment:fragment-ktx:$versions.androidXFragment"
+deps.androidx = androidx
+
+def kotlinx = [:]
+kotlinx.coroutines_core = "org.jetbrains.kotlinx:kotlinx-coroutines-core:$versions.coroutines"
+deps.kotlinx = kotlinx
+
+deps.retrofit2 = [
+        retrofit       : "com.squareup.retrofit2:retrofit:$versions.retrofit2",
+        converter_moshi: "com.squareup.retrofit2:converter-moshi:$versions.retrofit2"
+]
+
+deps.moshi = [
+        moshi_kotlin        : "com.squareup.moshi:moshi-kotlin:$versions.moshi",
+        moshi_kotlin_codegen: "com.squareup.moshi:moshi-kotlin-codegen:$versions.moshi"
+]
+
+def navigation = [:]
+navigation.fragment_ktx = "androidx.navigation:navigation-fragment-ktx:$versions.androidXNavigation"
+navigation.ui_ktx = "androidx.navigation:navigation-ui-ktx:$versions.androidXNavigation"
+deps.navigation = navigation
+
+def lifecycle = [:]
+lifecycle.viewmodel_ktx = "androidx.lifecycle:lifecycle-viewmodel-ktx:$versions.androidXLifecycle"
+lifecycle.viewmodel_savedstate = "androidx.lifecycle:lifecycle-viewmodel-savedstate:$versions.androidXLifecycle"
+deps.lifecycle = lifecycle
+
+deps.rxJava = [
+        rxJava   : "io.reactivex.rxjava2:rxjava:$versions.rxJava",
+        rxKotlin : "io.reactivex.rxjava2:rxkotlin:$versions.rxKotlin",
+        rxAndroid: "io.reactivex.rxjava2:rxandroid:$versions.rxAndroid"
+]
+
+deps.rxBinding = [
+        rxBindingKotlin            : "com.jakewharton.rxbinding2:rxbinding-kotlin:$versions.rxBinding",
+        rxBindingDesignKotlin      : "com.jakewharton.rxbinding2:rxbinding-design-kotlin:$versions.rxBinding",
+        rxBindingAppCompatKotlin   : "com.jakewharton.rxbinding2:rxbinding-appcompat-v7-kotlin:$versions.rxBinding",
+        rxBindingSupportKotlin     : "com.jakewharton.rxbinding2:rxbinding-support-v4-kotlin:$versions.rxBinding",
+        rxBindingRecyclerView      : "com.jakewharton.rxbinding2:rxbinding-recyclerview-v7:$versions.rxBinding",
+        rxBindingRecyclerViewKotlin: "com.jakewharton.rxbinding2:rxbinding-recyclerview-v7-kotlin:$versions.rxBinding"
+]
+
+deps.classpath = [
+        jacoco            : "org.jacoco:org.jacoco.core:$versions.jacoco",
+        gradle            : "com.android.tools.build:gradle:$versions.gradle",
+        kotlinGradlePlugin: "org.jetbrains.kotlin:kotlin-gradle-plugin:$versions.kotlin",
+        googleServices    : "com.google.gms:google-services:$versions.googleServices",
+        androidXNavigation: "androidx.navigation:navigation-safe-args-gradle-plugin:$versions.androidXGradlePlugin",
+]
+deps.dagger = [
+        dagger              : "com.google.dagger:dagger:$versions.dagger",
+        daggerAndroidSupport: "com.google.dagger:dagger-android-support:$versions.daggerAndroid"
+
+]
+deps.daggerKapt = [
+        daggerCompiler        : "com.google.dagger:dagger-compiler:$versions.dagger",
+        daggerAndroidProcessor: "com.google.dagger:dagger-android-processor:$versions.dagger"
+]
+deps.hyperion = [
+        hyperionCore             : "com.willowtreeapps.hyperion:hyperion-core:$versions.hyperion",
+        hyperionAttr             : "com.willowtreeapps.hyperion:hyperion-attr:$versions.hyperion",
+        hyperionDisk             : "com.willowtreeapps.hyperion:hyperion-disk:$versions.hyperion",
+        hyperionCrash            : "com.willowtreeapps.hyperion:hyperion-crash:$versions.hyperion",
+        hyperionSharedPreferences: "com.willowtreeapps.hyperion:hyperion-shared-preferences:$versions.hyperion",
+        hyperionGeigerCounter    : "com.willowtreeapps.hyperion:hyperion-geiger-counter:$versions.hyperion",
+        hyperionTimber           : "com.willowtreeapps.hyperion:hyperion-timber:$versions.hyperion",
+        hyperionMeasurement      : "com.willowtreeapps.hyperion:hyperion-measurement:$versions.hyperion",
+        hyperionPhoenix          : "com.willowtreeapps.hyperion:hyperion-phoenix:$versions.hyperion",
+        hyperionBuildConfig      : "com.willowtreeapps.hyperion:hyperion-build-config:$versions.hyperion",
+        hyperionSimpleItem       : "com.github.takahirom:Hyperion-Simple-Item:$versions.hyperionSimpleItem"
+]
+deps.groupie = [
+        groupie          : "com.xwray:groupie:$versions.groupie",
+        groupieExtensions: "com.xwray:groupie-kotlin-android-extensions:$versions.groupie"
+]
+
+ext.deps = deps
+ext.versions = versions

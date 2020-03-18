@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    // Mercado Libre gaps
+    <dimen name="gap_1">4dp</dimen>
+    <dimen name="gap_2">8dp</dimen>
+    <dimen name="gap_3">12dp</dimen>
+    <dimen name="gap_4">16dp</dimen>
+    <dimen name="gap_5">20dp</dimen>
+
+    // Other dimens
+    <dimen name="item_decoration_divider_height">1dp</dimen>
+</resources>

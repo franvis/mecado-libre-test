@@ -1,34 +1,69 @@
 apply plugin: 'com.android.application'
-
 apply plugin: 'kotlin-android'
-
 apply plugin: 'kotlin-android-extensions'
+apply plugin: 'kotlin-kapt'
 
 android {
-    compileSdkVersion 29
-    buildToolsVersion "29.0.3"
+    compileSdkVersion build_versions.target_sdk
+    buildToolsVersion build_versions.build_tools
     defaultConfig {
         applicationId "francisco.visintini.mercadolibre.test"
-        minSdkVersion 21
-        targetSdkVersion 29
+        minSdkVersion build_versions.min_sdk
+        targetSdkVersion build_versions.target_sdk
         versionCode 1
         versionName "1.0"
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
+    compileOptions {
+        sourceCompatibility 1.8
+        targetCompatibility 1.8
+    }
     buildTypes {
         release {
-            minifyEnabled false
+            minifyEnabled true
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
+    }
+    kotlinOptions {
+        jvmTarget = "1.8"
     }
 }
 
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
-    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$versions.kotlin"
-    implementation 'androidx.appcompat:appcompat:1.0.2'
-    implementation 'androidx.core:core-ktx:1.0.2'
-    testImplementation 'junit:junit:4.12'
+    implementation deps.kotlin_stdlib
+    // Coroutines
+    implementation deps.kotlinx.coroutines_core
+    // Glide
+    implementation deps.glide
+    // AndroidX
+    implementation deps.androidx.constraint_layout
+    implementation deps.androidx.core_ktx
+    implementation deps.androidx.app_compat
+    implementation deps.androidx.fragment_ktx
+    // RxJava
+    implementation deps.rxJava.values()
+    implementation deps.rxBinding.values()
+    // Navigation
+    implementation deps.navigation.fragment_ktx
+    implementation deps.navigation.ui_ktx
+    // Lifecycle - ViewModel
+    implementation deps.lifecycle.viewmodel_ktx
+    implementation deps.lifecycle.viewmodel_savedstate
+    // Modules
+    implementation project(':data')
+    implementation project(':domain')
+    // Groupie
+    implementation deps.groupie.values()
+    // Dagger
+    implementation deps.dagger.values()
+    kapt deps.daggerKapt.values()
+    // Shimmer
+    implementation deps.facebook_shimmer
+    // Hyperion
+    debugImplementation deps.hyperion.values()
+
+    testImplementation 'junit:junit:4.13'
     androidTestImplementation 'androidx.test.ext:junit:1.1.1'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
 }

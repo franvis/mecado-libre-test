@@ -8,7 +8,7 @@ import francisco.visintini.mercadolibre.domain.entity.ProductAttribute
 internal data class AttributeDto(
     val id: String,
     val name: String,
-    @Json(name = "value_name") val valueName: String
+    @Json(name = "value_name") val valueName: String?
 ) {
     fun mapToDomain() = ProductAttribute(id = id, name = name, valueName = valueName)
 }

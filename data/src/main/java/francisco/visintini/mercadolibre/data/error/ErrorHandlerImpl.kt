@@ -3,16 +3,16 @@ package francisco.visintini.mercadolibre.data.error
 import com.squareup.moshi.JsonDataException
 import francisco.visintini.mercadolibre.domain.entity.ErrorEntity
 import francisco.visintini.mercadolibre.domain.repository.ErrorHandler
-import retrofit2.HttpException
 import java.io.IOException
 import java.net.HttpURLConnection
+import retrofit2.HttpException
 
 class ErrorHandlerImpl : ErrorHandler {
     override fun mapError(throwable: Throwable): ErrorEntity {
-        return when(throwable){
+        return when (throwable) {
             is IOException -> ErrorEntity.NetworkError
             is HttpException -> {
-                when(throwable.code()) {
+                when (throwable.code()) {
                     HttpURLConnection.HTTP_NOT_FOUND -> ErrorEntity.NotFound
 
                     HttpURLConnection.HTTP_FORBIDDEN -> ErrorEntity.AccessDenied

@@ -9,10 +9,10 @@ sealed class ErrorEntity {
     //
     // class UnknownError(override val throwable: Throwable): ErrorEntity()
 
-    object NetworkError: ErrorEntity()
-    object ParsingError: ErrorEntity()
-    object NotFound: ErrorEntity()
-    object AccessDenied: ErrorEntity()
-    object ServiceUnavailable: ErrorEntity()
-    object UnknownError: ErrorEntity()
+    object NetworkError : ErrorEntity()
+    object ParsingError : ErrorEntity()
+    object NotFound : ErrorEntity()
+    object AccessDenied : ErrorEntity()
+    object ServiceUnavailable : ErrorEntity()
+    object UnknownError : ErrorEntity()
 }

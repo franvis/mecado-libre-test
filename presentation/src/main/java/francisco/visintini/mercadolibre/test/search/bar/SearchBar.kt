@@ -55,7 +55,7 @@ class SearchBar @JvmOverloads constructor(
             view_search_bar_edit_text.clearText()
         }
 
-        if(view_search_bar_edit_text.text.toString() != viewState.query) {
+        if (view_search_bar_edit_text.text.toString() != viewState.query) {
             view_search_bar_edit_text.setText(viewState.query)
         }
 
@@ -71,7 +71,10 @@ class SearchBar @JvmOverloads constructor(
 
         val editorActionIntents = view_search_bar_edit_text
             .editorActionEvents()
-            .filter { it.actionId() == EditorInfo.IME_ACTION_SEARCH && view_search_bar_edit_text.text.toString().isNotEmpty() }
+            .filter {
+                it.actionId() == EditorInfo.IME_ACTION_SEARCH &&
+                    view_search_bar_edit_text.text.toString().isNotEmpty()
+            }
             .map { Search(view_search_bar_edit_text.text.toString()) }
 
         val searchIntents = Observable.merge(keyEnterIntents, editorActionIntents)

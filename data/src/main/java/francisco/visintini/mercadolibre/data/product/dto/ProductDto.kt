@@ -3,7 +3,6 @@ package francisco.visintini.mercadolibre.data.product.dto
 import com.squareup.moshi.Json
 import com.squareup.moshi.JsonClass
 import francisco.visintini.mercadolibre.domain.entity.Product
-import francisco.visintini.mercadolibre.domain.entity.SummarizedProduct
 
 @JsonClass(generateAdapter = true)
 internal data class ProductDto(

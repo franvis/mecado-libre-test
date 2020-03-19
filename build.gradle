@@ -1,13 +1,56 @@
 // Top-level build file where you can add configuration options common to all sub-projects/modules.
 
 buildscript {
-    apply from:'versions.gradle'
+    apply from: 'versions.gradle'
     repositories {
         google()
+        maven { url "https://plugins.gradle.org/m2/" }
         jcenter()
     }
     dependencies {
         classpath deps.classpath.values()
+    }
+}
+
+plugins {
+    id("io.gitlab.arturbosch.detekt").version("1.6.0")
+    id("com.diffplug.gradle.spotless").version("3.25.0")
+}
+
+apply plugin: 'io.gitlab.arturbosch.detekt'
+
+ext.projectAndroid = {
+    lintOptions {
+        checkAllWarnings true
+        warningsAsErrors true
+        abortOnError true
+        lintConfig file("$rootDir/lint.xml")
+    }
+}
+
+subprojects { it ->
+    apply plugin: 'com.diffplug.gradle.spotless'
+    spotless {
+        kotlin {
+            target "**/*.kt"
+            ktlint("0.36.0")
+        }
+        format 'misc', {
+            target '**/*.gradle', '**/*.md', '**/.gitignore'
+
+            trimTrailingWhitespace()
+            indentWithSpaces()
+            endWithNewline()
+        }
+    }
+    afterEvaluate {
+        pluginManager.withPlugin('kotlin-kapt') {
+            // We enabled Gradle cache and this should prevent false cache hits
+            // https://kotlinlang.org/docs/reference/kapt.html#gradle-build-cache-support-since-1220
+            kapt {
+                useBuildCache = false
+            }
+        }
     }
 }
 
@@ -19,6 +62,14 @@ allprojects {
     }
 }
 
-task clean(type: Delete) {
-    delete rootProject.buildDir
+apply from: "$rootDir/buildSrc/jacoco.gradle"
+
+task detektMeli(type: io.gitlab.arturbosch.detekt.Detekt) {
+    description = "Runs a failfast detekt build."
+    source = files("$projectDir/")
+    debug = true
+    exclude '**/*JsonAdapter.kt', '**/*test.*', '**/*/resources/.*', '**/*/tmp/.*', '**/*/navigation-args/.*,'
+    exclude 'build/'
 }
+
+tasks.detekt.jvmTarget = "1.8"

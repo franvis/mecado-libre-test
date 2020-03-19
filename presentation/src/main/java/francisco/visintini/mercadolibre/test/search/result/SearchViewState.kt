@@ -9,9 +9,9 @@ data class SearchViewState(
 )
 
 sealed class SearchContentViewState {
-    data class Initial(val searchHistory: List<String>): SearchContentViewState()
-    data class Content(val searchResults: List<ViewState>): SearchContentViewState()
-    object Loading: SearchContentViewState()
-    object Empty: SearchContentViewState()
-    object Error: SearchContentViewState() // TODO Add inside different type of errors to show
+    data class Initial(val searchHistory: List<String>) : SearchContentViewState()
+    data class Content(val searchResults: List<ViewState>) : SearchContentViewState()
+    object Loading : SearchContentViewState()
+    object Empty : SearchContentViewState()
+    object Error : SearchContentViewState() // TODO Add inside different type of errors to show
 }

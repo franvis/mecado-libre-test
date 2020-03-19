@@ -1,7 +1,6 @@
 package francisco.visintini.mercadolibre.test.extensions
 
 import android.content.Context
-import androidx.annotation.DimenRes
 import kotlin.math.roundToInt
 
 fun Context.convertDpToPixels(dp: Int): Int {

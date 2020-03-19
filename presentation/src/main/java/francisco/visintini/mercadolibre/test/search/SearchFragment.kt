@@ -25,8 +25,8 @@ import francisco.visintini.mercadolibre.test.search.result.SearchViewState
 import francisco.visintini.mercadolibre.test.utils.ViewModelFactory
 import io.reactivex.disposables.CompositeDisposable
 import io.reactivex.rxkotlin.addTo
-import kotlinx.android.synthetic.main.fragment_search.*
 import javax.inject.Inject
+import kotlinx.android.synthetic.main.fragment_search.*
 
 class SearchFragment : Fragment(R.layout.fragment_search) {
     @Inject

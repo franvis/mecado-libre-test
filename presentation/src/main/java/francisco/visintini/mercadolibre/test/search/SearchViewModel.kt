@@ -17,8 +17,8 @@ import francisco.visintini.mercadolibre.test.search.result.SearchContentViewStat
 import francisco.visintini.mercadolibre.test.search.result.SearchResultItemVSMapper
 import francisco.visintini.mercadolibre.test.search.result.SearchViewState
 import francisco.visintini.mercadolibre.test.utils.BaseViewModel
-import kotlinx.coroutines.launch
 import javax.inject.Inject
+import kotlinx.coroutines.launch
 
 class SearchViewModel @Inject constructor(
     private val getSearchResult: GetSearchResult,

@@ -12,6 +12,7 @@ import kotlinx.coroutines.withContext
  * @param errorHandler error handler instance to ensure errors are correctly handled
  * @param successCall service call that also is mapped to <T>
  */
+@Suppress("TooGenericExceptionCaught")
 internal suspend fun <T> wrapDataCall(
     errorHandler: ErrorHandler,
     successCall: suspend () -> T

@@ -6,7 +6,6 @@ import francisco.visintini.mercadolibre.domain.entity.Product
 import francisco.visintini.mercadolibre.domain.entity.Result
 import francisco.visintini.mercadolibre.domain.repository.ErrorHandler
 import francisco.visintini.mercadolibre.domain.repository.ProductRepository
-import kotlinx.coroutines.flow.flow
 import javax.inject.Inject
 
 internal data class ProductRepositoryImpl @Inject constructor(

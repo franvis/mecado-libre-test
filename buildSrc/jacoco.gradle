@@ -1,0 +1,147 @@
+subprojects { it ->
+    apply plugin: 'jacoco'
+
+    jacoco {
+        toolVersion = "0.8.2"
+        reportsDir = file("$buildDir/reports")
+    }
+
+    tasks.withType(Test) {
+        jacoco.includeNoLocationClasses = true
+    }
+
+    project.afterEvaluate {
+
+        if (it.hasProperty('android') && it['android'].hasProperty('applicationVariants')) {
+            android.applicationVariants.all { variant ->
+                def variantName = variant.name
+                def testTaskName = "test${variantName.capitalize()}UnitTest"
+
+                tasks.create(name: "${testTaskName}Coverage", type: JacocoReport, dependsOn: "$testTaskName") {
+                    group = "Reporting"
+                    description = "Generate Jacoco coverage reports for the ${variantName.capitalize()} build."
+
+                    reports {
+                        html.enabled = true
+                        xml.enabled = true
+                    }
+
+                    def excludes = [
+                            '**/*_MembersInjector.class',
+                            '**/Dagger*Component*.class',
+                            '**/Dagger*Subcomponent*.class',
+                            '**/*Subcomponent$Builder.class',
+                            '**/*Module_*Factory.class',
+                            '**/*_Factory.class',
+                            '**/*Factory.class',
+                            '**/*Module.class',
+                            '**/*Fragment.*',
+                            '**/*Fragment$*.*',
+                            '**/*View$*.*',
+                            '**/*View.*',
+                            '**/*Item*.*',
+                            '**/*Item.*',
+                            '**/di/**',
+                            '**/*WebViewClient$*.*',
+                            '**/*WebViewClient.*',
+                            '**/*WebView$*.*',
+                            '**/*WebView.*',
+                            '**/*Organism$*.*',
+                            '**/*Organism.*',
+                            '**/*Fragment.*',
+                            '**/*Fragment$*.*',
+                            '**/*Listener.*',
+                            '**/*Listener$*.*',
+                            '**/*Component.*',
+                            '**/*Component$*.*',
+                            '**/R.class',
+                            '**/*$Creator.class',
+                            '**/R$*.class',
+                            '**/BuildConfig.*',
+                            '**/Manifest*.*',
+                            '**/*Test*.*',
+                            'android/**/*.*'
+                    ]
+                    def javaClasses = fileTree(dir: variant.javaCompileProvider.get().destinationDir, excludes: excludes)
+                    def kotlinClasses = fileTree(dir: "${buildDir}/tmp/kotlin-classes/${variantName}", excludes: excludes)
+                    classDirectories.from = files([javaClasses, kotlinClasses])
+
+                    sourceDirectories.from = files([
+                            "$project.projectDir/src/main/java",
+                            "$project.projectDir/src/${variantName}/java",
+                            "$project.projectDir/src/main/kotlin",
+                            "$project.projectDir/src/${variantName}/kotlin"
+                    ])
+
+                    executionData.from = files("${project.buildDir}/jacoco/${testTaskName}.exec")
+                }
+            }
+        }
+
+        if (it.hasProperty('android') && it['android'].hasProperty('libraryVariants')) {
+            android.libraryVariants.all { variant ->
+                def variantName = variant.name
+                def testTaskName = "test${variantName.capitalize()}UnitTest"
+
+                tasks.create(name: "${testTaskName}Coverage", type: JacocoReport, dependsOn: "$testTaskName") {
+                    group = "Reporting"
+                    description = "Generate Jacoco coverage reports for the ${variantName.capitalize()} build."
+
+                    reports {
+                        html.enabled = true
+                        xml.enabled = true
+                    }
+
+                    def excludes = [
+                            '**/*_MembersInjector.class',
+                            '**/Dagger*Component*.class',
+                            '**/Dagger*Subcomponent*.class',
+                            '**/*Subcomponent$Builder.class',
+                            '**/*Module_*Factory.class',
+                            '**/*_Factory.class',
+                            '**/*Factory.class',
+                            '**/*Module.class',
+                            '**/*Controller.*',
+                            '**/*Controller$*.*',
+                            '**/*View$*.*',
+                            '**/*View.*',
+                            '**/*Item*.*',
+                            '**/*Item.*',
+                            '**/*di.*',
+                            '**/*WebViewClient$*.*',
+                            '**/*WebViewClient.*',
+                            '**/*WebView$*.*',
+                            '**/*WebView.*',
+                            '**/*Organism$*.*',
+                            '**/*Organism.*',
+                            '**/*Fragment.*',
+                            '**/*Fragment$*.*',
+                            '**/*Listener.*',
+                            '**/*Listener$*.*',
+                            '**/*Component.*',
+                            '**/*Component$*.*',
+                            '**/R.class',
+                            '**/*$Creator.class',
+                            '**/R$*.class',
+                            '**/BuildConfig.*',
+                            '**/Manifest*.*',
+                            '**/*Test*.*',
+                            'android/**/*.*'
+                    ]
+                    def javaClasses = fileTree(dir: variant.javaCompileProvider.get().destinationDir, excludes: excludes)
+                    def kotlinClasses = fileTree(dir: "${buildDir}/tmp/kotlin-classes/${variantName}", excludes: excludes)
+                    classDirectories.from = files([javaClasses, kotlinClasses])
+
+                    sourceDirectories.from = files([
+                            "$project.projectDir/src/main/java",
+                            "$project.projectDir/src/${variantName}/java",
+                            "$project.projectDir/src/main/kotlin",
+                            "$project.projectDir/src/${variantName}/kotlin"
+                    ])
+
+                    executionData.from = files("${project.buildDir}/jacoco/${testTaskName}.exec")
+                }
+            }
+        }
+    }
+}

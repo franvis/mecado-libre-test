@@ -1,10 +1,9 @@
 package francisco.visintini.mercadolibre.test
 
 import android.graphics.Color
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.appcompat.app.AppCompatActivity
 import dagger.android.AndroidInjection
-import dagger.android.AndroidInjector
 import dagger.android.DispatchingAndroidInjector
 import dagger.android.HasAndroidInjector
 import francisco.visintini.mercadolibre.test.search.SearchViewModel

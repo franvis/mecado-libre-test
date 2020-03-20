@@ -8,7 +8,7 @@
     android:layout_marginBottom="@dimen/gap_2"
     android:orientation="vertical">
 
-    <ImageView
+    <androidx.appcompat.widget.AppCompatImageView
         android:id="@+id/view_search_result_image"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
@@ -23,7 +23,7 @@
         app:layout_constraintVertical_chainStyle="packed"
         tools:src="@tools:sample/avatars" />
 
-    <TextView
+    <androidx.appcompat.widget.AppCompatTextView
         android:id="@+id/view_search_result_title"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
@@ -46,7 +46,7 @@
         tools:itemCount="3"
         tools:listitem="@layout/item_search_result_attribute" />
 
-    <TextView
+    <androidx.appcompat.widget.AppCompatTextView
         android:id="@+id/view_search_result_price"
         android:layout_width="0dp"
         android:layout_height="wrap_content"

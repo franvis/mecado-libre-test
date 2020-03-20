@@ -7,7 +7,7 @@
     tools:background="@color/strongYellow"
     tools:parentTag="androidx.constraintlayout.widget.ConstraintLayout">
 
-    <ImageView
+    <androidx.appcompat.widget.AppCompatImageView
         android:id="@+id/view_search_bar_back"
         android:layout_width="48dp"
         android:layout_height="48dp"
@@ -41,7 +41,7 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_goneMarginStart="@dimen/gap_3">
 
-        <EditText
+        <androidx.appcompat.widget.AppCompatEditText
             android:id="@+id/view_search_bar_edit_text"
             style="@style/MLEditText"
             android:layout_width="0dp"
@@ -60,7 +60,7 @@
             app:layout_constraintTop_toTopOf="parent"
             tools:ignore="LabelFor,Autofill" />
 
-        <ImageView
+        <androidx.appcompat.widget.AppCompatImageView
             android:id="@+id/view_search_bar_image_search"
             android:layout_width="48dp"
             android:layout_height="48dp"
@@ -73,7 +73,7 @@
             app:layout_constraintTop_toTopOf="parent"
             app:srcCompat="@drawable/ic_search" />
 
-        <ImageView
+        <androidx.appcompat.widget.AppCompatImageView
             android:id="@+id/view_search_bar_image_clear"
             android:layout_width="48dp"
             android:layout_height="48dp"

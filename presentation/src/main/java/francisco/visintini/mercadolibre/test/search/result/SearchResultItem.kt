@@ -4,11 +4,11 @@ import com.xwray.groupie.kotlinandroidextensions.GroupieViewHolder
 import com.xwray.groupie.kotlinandroidextensions.Item
 import francisco.visintini.mercadolibre.test.R
 import francisco.visintini.mercadolibre.test.extensions.load
-import kotlinx.android.synthetic.main.item_search_result.view.*
+import kotlinx.android.synthetic.main.item_search_result.*
 
 data class SearchResultItem(val viewState: ViewState) : Item() {
     override fun bind(viewHolder: GroupieViewHolder, position: Int) {
-        with(viewHolder.itemView) {
+        with(viewHolder) {
             view_search_result_image.load(viewState.imageUrl)
             view_search_result_title.text = viewState.title
             view_search_result_attributes.render(viewState.searchResultAttributesViewState)

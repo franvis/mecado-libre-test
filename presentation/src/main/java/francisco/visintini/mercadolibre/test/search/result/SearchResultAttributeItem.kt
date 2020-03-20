@@ -13,7 +13,7 @@ import com.xwray.groupie.kotlinandroidextensions.Item
 import francisco.visintini.mercadolibre.test.R
 import francisco.visintini.mercadolibre.test.extensions.convertDpToPixels
 import kotlinx.android.parcel.Parcelize
-import kotlinx.android.synthetic.main.item_search_result_attribute.view.*
+import kotlinx.android.synthetic.main.item_search_result_attribute.*
 
 data class SearchResultAttributeItem(val viewState: ViewState) : Item() {
     override fun getLayout(): Int = R.layout.item_search_result_attribute
@@ -26,7 +26,7 @@ data class SearchResultAttributeItem(val viewState: ViewState) : Item() {
             viewState.description
         )
 
-        viewHolder.itemView.view_attribute_description.text =
+        viewHolder.view_attribute_description.text =
             getDescriptionWithBullet(description, context)
     }
 

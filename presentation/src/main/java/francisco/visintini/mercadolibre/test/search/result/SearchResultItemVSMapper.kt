@@ -1,10 +1,11 @@
 package francisco.visintini.mercadolibre.test.search.result
 
-import android.content.Context
 import francisco.visintini.mercadolibre.domain.entity.SummarizedProduct
+import francisco.visintini.mercadolibre.test.R
+import francisco.visintini.mercadolibre.test.utils.ResourceProvider
 import javax.inject.Inject
 
-class SearchResultItemVSMapper @Inject constructor(context: Context) {
+class SearchResultItemVSMapper @Inject constructor(private val resourceProvider: ResourceProvider) {
     fun mapToViewState(summarizedProduct: SummarizedProduct) =
         SearchResultItem.ViewState(
             summarizedProduct.thumbnailUrl,
@@ -18,6 +19,9 @@ class SearchResultItemVSMapper @Inject constructor(context: Context) {
                     )
                 }
             ),
-            "$${summarizedProduct.price}"
+            resourceProvider.getString(
+                R.string.search_result_item_formatted_price,
+                summarizedProduct.price
+            )
         )
 }

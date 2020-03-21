@@ -1,5 +1,6 @@
 package francisco.visintini.mercadolibre.data.error
 
+import android.util.Log
 import com.squareup.moshi.JsonDataException
 import francisco.visintini.mercadolibre.domain.entity.ErrorEntity
 import francisco.visintini.mercadolibre.domain.repository.ErrorHandler
@@ -42,7 +43,7 @@ class ErrorHandlerImpl : ErrorHandler {
      * Tracks error to the different tracking systems.
      */
     override fun logError(throwable: Throwable) {
-        // NO OP.
+        Log.e("Data layer error", throwable.localizedMessage?.toString()?.let { it } ?: "No localized message")
 
         // TODO Write logging logic for different kinds of throwable here of what and when you want to log.
         //  If more than one logging system is needed (Splunk, LogDNA, etc...), depending on the business,

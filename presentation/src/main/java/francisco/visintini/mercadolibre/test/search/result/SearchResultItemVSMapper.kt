@@ -4,24 +4,23 @@ import francisco.visintini.mercadolibre.domain.entity.SummarizedProduct
 import francisco.visintini.mercadolibre.test.R
 import francisco.visintini.mercadolibre.test.utils.ResourceProvider
 import javax.inject.Inject
+import javax.inject.Singleton
+import kotlin.math.roundToInt
 
-class SearchResultItemVSMapper @Inject constructor(private val resourceProvider: ResourceProvider) {
+@Singleton
+class SearchResultItemVSMapper @Inject constructor(
+    private val resourceProvider: ResourceProvider,
+    private val searchResultAttributesVSMapper: SearchResultAttributesVSMapper
+) {
     fun mapToViewState(summarizedProduct: SummarizedProduct) =
         SearchResultItem.ViewState(
             summarizedProduct.thumbnailUrl,
             summarizedProduct.title,
             summarizedProduct.id,
-            SearchResultAttributes.ViewState(
-                summarizedProduct.attributes.filter { it.valueName != null }.map { prodAttribute ->
-                    SearchResultAttributeItem.ViewState(
-                        name = prodAttribute.name,
-                        description = prodAttribute.valueName!!
-                    )
-                }
-            ),
+            searchResultAttributesVSMapper.transform(summarizedProduct.attributes),
             resourceProvider.getString(
-                R.string.search_result_item_formatted_price,
-                summarizedProduct.price
+                R.string.product_formatted_price,
+                summarizedProduct.price.roundToInt()
             )
         )
 }

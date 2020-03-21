@@ -13,3 +13,7 @@ fun View.showKeyboard() {
     (context.getSystemService(Context.INPUT_METHOD_SERVICE) as InputMethodManager)
         .showSoftInput(this, InputMethodManager.SHOW_IMPLICIT)
 }
+
+fun View.setVisible(visible: Boolean) {
+    this.visibility = if (visible) View.VISIBLE else View.GONE
+}

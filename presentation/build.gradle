@@ -2,6 +2,7 @@ apply plugin: 'com.android.application'
 apply plugin: 'kotlin-android'
 apply plugin: 'kotlin-android-extensions'
 apply plugin: 'kotlin-kapt'
+apply plugin: 'androidx.navigation.safeargs.kotlin'
 
 android projectAndroid
 android {
@@ -45,6 +46,7 @@ dependencies {
     implementation deps.androidx.core_ktx
     implementation deps.androidx.app_compat
     implementation deps.androidx.fragment_ktx
+    implementation deps.androidx.view_pager_2
     // RxJava
     implementation deps.rxJava.values()
     implementation deps.rxBinding.values()

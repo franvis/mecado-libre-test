@@ -4,9 +4,14 @@ data class Product(
     val id: String,
     val title: String,
     val price: Double,
-    val currencyId: String,
     val initialQuantity: Int,
     val availableQuantity: Int,
     val soldQuantity: Int,
+    val warrantyText: String?,
+    val condition: Condition,
     val pictures: List<ProductPicture>
 )
+
+enum class Condition {
+    NEW, USED, UNDEFINED
+}

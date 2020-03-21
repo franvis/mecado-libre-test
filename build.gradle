@@ -43,15 +43,6 @@ subprojects { it ->
             endWithNewline()
         }
     }
-    afterEvaluate {
-        pluginManager.withPlugin('kotlin-kapt') {
-            // We enabled Gradle cache and this should prevent false cache hits
-            // https://kotlinlang.org/docs/reference/kapt.html#gradle-build-cache-support-since-1220
-            kapt {
-                useBuildCache = false
-            }
-        }
-    }
 }
 
 allprojects {
@@ -68,8 +59,7 @@ task detektMeli(type: io.gitlab.arturbosch.detekt.Detekt) {
     description = "Runs a failfast detekt build."
     source = files("$projectDir/")
     debug = true
-    exclude '**/*JsonAdapter.kt', '**/*test.*', '**/*/resources/.*', '**/*/tmp/.*', '**/*/navigation-args/.*,'
-    exclude 'build/'
+    exclude '**/*JsonAdapter.kt', '**/*test.*', '**/*/resources/.*', '**/*/tmp/.*', '**/navigation-args/**/*.kt', 'build/'
 }
 
 tasks.detekt.jvmTarget = "1.8"

@@ -6,6 +6,7 @@ import dagger.Module
 import dagger.Provides
 import dagger.android.ContributesAndroidInjector
 import francisco.visintini.mercadolibre.test.MainActivity
+import javax.inject.Singleton
 
 @Module
 abstract class AppModule {
@@ -15,6 +16,7 @@ abstract class AppModule {
     abstract fun contributeMainActivityInjector(): MainActivity
 
     companion object {
+        @Singleton
         @Provides
         fun provideContext(application: Application): Context = application
     }

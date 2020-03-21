@@ -2,5 +2,8 @@
     <string name="mercado_libre_test_app_name">Mercado Libre</string>
     <string name="search_result_attribute_description">%s: %s</string>
     <string name="search_bar_edit_text_hint">Hola, que estas buscando?</string>
-    <string name="search_result_item_formatted_price">$%d</string>
+    <string name="product_formatted_price">$%d</string>
+    <string name="product_availability">Disponible: %d, Vendido: %d</string>
+    <string name="product_condition_used">Condición: Usado</string>
+    <string name="product_condition_new">Condición: Nuevo</string>
 </resources>

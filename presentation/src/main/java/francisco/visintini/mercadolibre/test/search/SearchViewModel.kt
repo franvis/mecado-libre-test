@@ -1,6 +1,7 @@
 package francisco.visintini.mercadolibre.test.search
 
 import android.util.Log
+import androidx.lifecycle.LiveData
 import androidx.lifecycle.viewModelScope
 import francisco.visintini.mercadolibre.domain.entity.ErrorEntity
 import francisco.visintini.mercadolibre.domain.entity.Result.Error
@@ -10,25 +11,30 @@ import francisco.visintini.mercadolibre.test.search.SearchIntent.BackPressed
 import francisco.visintini.mercadolibre.test.search.SearchIntent.ClearSearch
 import francisco.visintini.mercadolibre.test.search.SearchIntent.Search
 import francisco.visintini.mercadolibre.test.search.SearchIntent.SearchFocus
+import francisco.visintini.mercadolibre.test.search.SearchIntent.SearchResultTapped
 import francisco.visintini.mercadolibre.test.search.SearchIntent.TextChanged
+import francisco.visintini.mercadolibre.test.search.SearchNavigation.ToProduct
 import francisco.visintini.mercadolibre.test.search.result.SearchContentViewState.Content
 import francisco.visintini.mercadolibre.test.search.result.SearchContentViewState.Initial
 import francisco.visintini.mercadolibre.test.search.result.SearchContentViewState.Loading
 import francisco.visintini.mercadolibre.test.search.result.SearchResultItemVSMapper
 import francisco.visintini.mercadolibre.test.search.result.SearchViewState
 import francisco.visintini.mercadolibre.test.utils.BaseViewModel
+import francisco.visintini.mercadolibre.test.utils.SingleLiveEvent
 import javax.inject.Inject
 import kotlinx.coroutines.launch
 
 class SearchViewModel @Inject constructor(
     private val getSearchResult: GetSearchResult,
     private val searchResultItemVSMapper: SearchResultItemVSMapper
-) :
-    BaseViewModel<SearchViewState>() {
+) : BaseViewModel<SearchViewState>() {
+
+    private val _navigator = SingleLiveEvent<SearchNavigation>()
+    val navigator: LiveData<SearchNavigation>
+        get() = _navigator
 
     init {
-        _viewState.value =
-            SearchViewState(searchContentViewState = Initial(emptyList()))
+        _viewState.value = SearchViewState(searchContentViewState = Initial(emptyList()))
     }
 
     fun handleIntent(intent: SearchIntent) {
@@ -38,7 +44,12 @@ class SearchViewModel @Inject constructor(
             is SearchFocus -> handleSearchFocus(intent)
             is ClearSearch -> handleClearSearch()
             is BackPressed -> handleBackPressed()
+            is SearchResultTapped -> handleSearchResultTapped(intent)
         }
+    }
+
+    private fun handleSearchResultTapped(intent: SearchResultTapped) {
+        _navigator.value = ToProduct(intent.productId)
     }
 
     private fun handleSearchTextChanged(intent: TextChanged) {
@@ -102,7 +113,7 @@ class SearchViewModel @Inject constructor(
                         updateViewState { oldState ->
                             oldState.copy(
                                 searchContentViewState = Content(
-                                    result.t.results.map { prod ->
+                                    result.result.results.map { prod ->
                                         searchResultItemVSMapper.mapToViewState(prod)
                                     }
                                 )
@@ -124,9 +135,5 @@ class SearchViewModel @Inject constructor(
                 Log.e("Fran", "Fran")
             }
         }
-    }
-
-    private fun updateViewState(reducer: (SearchViewState) -> SearchViewState) {
-        _viewState.value?.run { _viewState.value = reducer(this) }
     }
 }

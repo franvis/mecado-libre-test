@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:background="@color/white">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <include
+            android:id="@+id/view_product_toolbar"
+            layout="@layout/view_mercado_libre_logo_toolbar"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/view_product_title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/gap_4"
+            android:layout_marginTop="@dimen/gap_4"
+            android:layout_marginEnd="@dimen/gap_4"
+            android:textAppearance="@style/H2"
+            app:layout_constraintBottom_toTopOf="@id/view_product_view_pager"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/view_product_toolbar"
+            app:layout_constraintVertical_bias="0"
+            app:layout_constraintVertical_chainStyle="packed"
+            tools:text="@sample/search_result.json/product_name" />
+
+        <androidx.viewpager2.widget.ViewPager2
+            android:id="@+id/view_product_view_pager"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginStart="@dimen/gap_4"
+            android:layout_marginTop="@dimen/gap_4"
+            android:layout_marginEnd="@dimen/gap_4"
+            app:layout_constraintBottom_toTopOf="@id/view_product_price"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/view_product_title" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/view_product_price"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/gap_4"
+            android:layout_marginTop="@dimen/gap_4"
+            android:layout_marginEnd="@dimen/gap_4"
+            android:textAppearance="@style/H1.Emphasis"
+            app:layout_constraintBottom_toTopOf="@id/view_product_availability"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/view_product_view_pager"
+            tools:text="@sample/search_result.json/product_price" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/view_product_availability"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/gap_4"
+            android:layout_marginTop="@dimen/gap_4"
+            android:layout_marginEnd="@dimen/gap_4"
+            android:textAppearance="@style/Body"
+            app:layout_constraintBottom_toTopOf="@id/view_product_warranty"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/view_product_price"
+            tools:text="@sample/search_result.json/product_availability" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/view_product_warranty"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/gap_4"
+            android:layout_marginTop="@dimen/gap_4"
+            android:layout_marginEnd="@dimen/gap_4"
+            android:textAppearance="@style/Body"
+            app:layout_constraintBottom_toTopOf="@id/view_product_condition"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/view_product_availability"
+            tools:text="@sample/search_result.json/product_warranty" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/view_product_condition"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/gap_4"
+            android:textAppearance="@style/Body"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/view_product_warranty"
+            tools:text="@sample/search_result.json/product_condition" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>

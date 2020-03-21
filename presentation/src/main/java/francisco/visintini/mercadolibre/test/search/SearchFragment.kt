@@ -5,6 +5,7 @@ import android.view.View
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
 import androidx.lifecycle.Observer
+import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.DividerItemDecoration
 import androidx.recyclerview.widget.DividerItemDecoration.VERTICAL
 import androidx.recyclerview.widget.LinearLayoutManager
@@ -51,23 +52,9 @@ class SearchFragment : Fragment(R.layout.fragment_search) {
     override fun onStart() {
         super.onStart()
         searchViewModel.viewState.observe(this, Observer { this.render(it) })
+        searchViewModel.navigator.observe(this, Observer { this.navigate(it) })
         subscribeToSearchBarIntents()
-    }
-
-    private fun subscribeToSearchBarIntents() {
-        view_search_bar.getIntents()
-            .subscribe {
-                searchViewModel.handleIntent(
-                    when (it) {
-                        is SearchBarIntent.Search -> Search(it.query)
-                        is SearchBarIntent.TextChanged -> TextChanged(it.currentQuery)
-                        is SearchBarIntent.SearchFocus -> SearchFocus(it.focused)
-                        is SearchBarIntent.ClearSearch -> ClearSearch
-                        is SearchBarIntent.BackPressed -> BackPressed
-                    }
-                )
-            }
-            .addTo(disposable)
+        subscribeToSearchResultItemIntents()
     }
 
     private fun render(viewState: SearchViewState) {
@@ -85,8 +72,47 @@ class SearchFragment : Fragment(R.layout.fragment_search) {
         }
     }
 
-    override fun onDetach() {
+    private fun navigate(navigation: SearchNavigation) {
+        with(findNavController()) {
+            when (navigation) {
+                is SearchNavigation.ToProduct -> navigate(
+                    SearchFragmentDirections.actionSearchFragmentToProductFragment(
+                        navigation.productId
+                    )
+                )
+            }
+        }
+    }
+
+    override fun onDestroyView() {
+        view_search_list.adapter = null
         disposable.clear()
-        super.onDetach()
+        super.onDestroyView()
+    }
+
+    private fun subscribeToSearchResultItemIntents() {
+        adapter.setOnItemClickListener { item, _ ->
+            when (item) {
+                is SearchResultItem -> searchViewModel.handleIntent(
+                    SearchIntent.SearchResultTapped(item.viewState.productId)
+                )
+            }
+        }
+    }
+
+    private fun subscribeToSearchBarIntents() {
+        view_search_bar.getIntents()
+            .subscribe {
+                searchViewModel.handleIntent(
+                    when (it) {
+                        is SearchBarIntent.Search -> Search(it.query)
+                        is SearchBarIntent.TextChanged -> TextChanged(it.currentQuery)
+                        is SearchBarIntent.SearchFocus -> SearchFocus(it.focused)
+                        is SearchBarIntent.ClearSearch -> ClearSearch
+                        is SearchBarIntent.BackPressed -> BackPressed
+                    }
+                )
+            }
+            .addTo(disposable)
     }
 }

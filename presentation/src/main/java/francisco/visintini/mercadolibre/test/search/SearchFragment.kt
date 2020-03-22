@@ -17,20 +17,21 @@ import francisco.visintini.mercadolibre.test.di.withFactory
 import francisco.visintini.mercadolibre.test.extensions.setVisible
 import francisco.visintini.mercadolibre.test.messages.ErrorMessage
 import francisco.visintini.mercadolibre.test.messages.MessageManager
+import francisco.visintini.mercadolibre.test.search.ContentState.Content
+import francisco.visintini.mercadolibre.test.search.ContentState.Empty
+import francisco.visintini.mercadolibre.test.search.ContentState.Error
+import francisco.visintini.mercadolibre.test.search.ContentState.Initial
+import francisco.visintini.mercadolibre.test.search.ContentState.Loading
 import francisco.visintini.mercadolibre.test.search.SearchIntent.ClearSearch
 import francisco.visintini.mercadolibre.test.search.SearchIntent.Search
 import francisco.visintini.mercadolibre.test.search.SearchIntent.SearchBarBackPressed
 import francisco.visintini.mercadolibre.test.search.SearchIntent.SearchFocus
 import francisco.visintini.mercadolibre.test.search.SearchIntent.TextChanged
+import francisco.visintini.mercadolibre.test.search.SearchNavigation.ToError
+import francisco.visintini.mercadolibre.test.search.SearchNavigation.ToProduct
 import francisco.visintini.mercadolibre.test.search.bar.SearchBar.SearchBarIntent
-import francisco.visintini.mercadolibre.test.search.result.ContentState.Content
-import francisco.visintini.mercadolibre.test.search.result.ContentState.Empty
-import francisco.visintini.mercadolibre.test.search.result.ContentState.Error
-import francisco.visintini.mercadolibre.test.search.result.ContentState.Initial
-import francisco.visintini.mercadolibre.test.search.result.ContentState.Loading
 import francisco.visintini.mercadolibre.test.search.result.SearchResultItem
 import francisco.visintini.mercadolibre.test.search.result.SearchResultItemPlaceholder
-import francisco.visintini.mercadolibre.test.search.result.SearchViewState
 import io.reactivex.disposables.CompositeDisposable
 import io.reactivex.rxkotlin.addTo
 import javax.inject.Inject
@@ -71,10 +72,10 @@ class SearchFragment : Fragment(R.layout.fragment_search) {
 
     private fun render(viewState: SearchViewState) {
         view_search_bar.render(viewState.searchBarViewState)
-        val content = viewState.contentContentState
+        val content = viewState.contentState
         view_search_empty_result.setVisible(content is Empty)
         view_search_list.setVisible(content is Content || content is Loading)
-        if (currentViewState?.contentContentState != content) { // Avoid unnecessary re-rendering
+        if (currentViewState?.contentState != content) { // Avoid unnecessary re-rendering
             when (content) {
                 is Initial -> adapter.clear() // TODO Add recently searched here
                 is Loading -> adapter.update((1..4).map { SearchResultItemPlaceholder })
@@ -91,8 +92,8 @@ class SearchFragment : Fragment(R.layout.fragment_search) {
                     showError(content)
                 }
             }
+            currentViewState = viewState
         }
-        currentViewState = viewState
     }
 
     private fun showError(error: Error) {
@@ -105,17 +106,28 @@ class SearchFragment : Fragment(R.layout.fragment_search) {
                     }
                 )
             }
+            is Error.UnknownError -> navigate(
+                ToError(getString(R.string.error_dialog_generic_message))
+            )
         }
     }
 
     private fun navigate(navigation: SearchNavigation) {
         with(findNavController()) {
-            when (navigation) {
-                is SearchNavigation.ToProduct -> navigate(
-                    SearchFragmentDirections.actionSearchFragmentToProductFragment(
-                        navigation.productId
+            // TODO Fast workaround to prevent current navigation destination is unknown exception.
+            if (this.currentBackStackEntry?.destination?.id == R.id.search_fragment) {
+                when (navigation) {
+                    is ToProduct -> navigate(
+                        SearchFragmentDirections.actionSearchFragmentToProductFragment(
+                            navigation.productId
+                        )
                     )
-                )
+                    is ToError -> navigate(
+                        SearchFragmentDirections.actionSearchFragmentToErrorDialogFragment(
+                            navigation.message
+                        )
+                    )
+                }
             }
         }
     }

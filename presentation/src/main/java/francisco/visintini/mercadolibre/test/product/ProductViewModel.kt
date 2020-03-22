@@ -1,6 +1,5 @@
 package francisco.visintini.mercadolibre.test.product
 
-import android.util.Log
 import androidx.lifecycle.SavedStateHandle
 import androidx.lifecycle.viewModelScope
 import francisco.visintini.mercadolibre.domain.entity.ErrorEntity
@@ -9,6 +8,8 @@ import francisco.visintini.mercadolibre.domain.entity.Result.Success
 import francisco.visintini.mercadolibre.domain.interactor.GetProduct
 import francisco.visintini.mercadolibre.test.di.ViewModelFactory
 import francisco.visintini.mercadolibre.test.product.ProductIntent.ImageGalleryPositionChanged
+import francisco.visintini.mercadolibre.test.product.ProductViewState.ContentState.Error.NetworkErrorRetry
+import francisco.visintini.mercadolibre.test.product.ProductViewState.ContentState.Error.UnknownError
 import francisco.visintini.mercadolibre.test.product.ProductViewState.ContentState.Initial
 import francisco.visintini.mercadolibre.test.product.ProductViewState.ContentState.Loading
 import francisco.visintini.mercadolibre.test.utils.BaseSavedStateViewModel
@@ -35,6 +36,9 @@ class ProductViewModel(
     fun handleIntent(intent: ProductIntent) {
         when (intent) {
             is ImageGalleryPositionChanged -> handleGalleryPositionChanged(intent)
+            is ProductIntent.NetworkErrorRetryTapped -> _viewState.value?.productId?.let {
+                handleLoadProduct(it)
+            }
         }
     }
 
@@ -70,19 +74,30 @@ class ProductViewModel(
                             )
                         }
                     }
-
                     is Error -> {
-                        // TODO Update UI with error depending on the type
-                        when (result.error) {
-                            is ErrorEntity.UnknownError -> {
-                                Log.e("SHOW ERROR HERE", "SHOW ERROR HERE")
-                            }
-                        }
+                        updateViewStateForError(result.error)
                     }
                 }
             } catch (exception: Exception) {
-                // TODO Track presentation exception here and show unexpected error message to user
-                Log.e("Fran", "Fran")
+                updateViewStateForError()
+                // TODO Log or track presentation exception here
+            }
+        }
+    }
+
+    private fun updateViewStateForError(error: ErrorEntity = ErrorEntity.UnknownError) {
+        updateViewState { oldState ->
+            when (error) {
+                is ErrorEntity.NetworkError, ErrorEntity.ServiceUnavailable -> {
+                    oldState.copy(
+                        productContentState = NetworkErrorRetry
+                    )
+                }
+                else -> {
+                    oldState.copy(
+                        productContentState = UnknownError
+                    )
+                }
             }
         }
     }

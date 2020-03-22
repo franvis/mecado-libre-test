@@ -15,6 +15,6 @@ abstract class ActivityModule {
     abstract fun contributeSearchFragment(): SearchFragment
 
     @PerFragment
-    @ContributesAndroidInjector
+    @ContributesAndroidInjector(modules = [MessagesModule::class])
     abstract fun contributeProductFragment(): ProductFragment
 }

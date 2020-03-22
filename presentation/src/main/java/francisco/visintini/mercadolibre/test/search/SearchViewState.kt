@@ -1,4 +1,4 @@
-package francisco.visintini.mercadolibre.test.search.result
+package francisco.visintini.mercadolibre.test.search
 
 import android.os.Parcelable
 import francisco.visintini.mercadolibre.test.search.bar.SearchBar.ViewState as SearchBarViewState
@@ -8,7 +8,7 @@ import kotlinx.android.parcel.Parcelize
 @Parcelize
 data class SearchViewState(
     val searchBarViewState: SearchBarViewState = SearchBarViewState(),
-    val contentContentState: ContentState
+    val contentState: ContentState
 ) : Parcelable
 
 sealed class ContentState : Parcelable {

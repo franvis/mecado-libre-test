@@ -5,6 +5,7 @@ import android.view.View
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
 import androidx.lifecycle.Observer
+import androidx.navigation.fragment.findNavController
 import androidx.navigation.fragment.navArgs
 import androidx.viewpager2.widget.ViewPager2
 import com.xwray.groupie.GroupAdapter
@@ -13,8 +14,12 @@ import dagger.android.support.AndroidSupportInjection
 import francisco.visintini.mercadolibre.test.R
 import francisco.visintini.mercadolibre.test.di.withFactory
 import francisco.visintini.mercadolibre.test.extensions.setVisible
+import francisco.visintini.mercadolibre.test.messages.ErrorMessage
+import francisco.visintini.mercadolibre.test.messages.MessageManager
 import francisco.visintini.mercadolibre.test.product.ProductIntent.ImageGalleryPositionChanged
+import francisco.visintini.mercadolibre.test.product.ProductNavigation.ToError
 import francisco.visintini.mercadolibre.test.product.ProductViewState.ContentState.Content
+import francisco.visintini.mercadolibre.test.product.ProductViewState.ContentState.Error
 import francisco.visintini.mercadolibre.test.product.ProductViewState.ContentState.Loading
 import francisco.visintini.mercadolibre.test.product.imagegallery.ProductImageGalleryItem
 import io.reactivex.disposables.CompositeDisposable
@@ -26,13 +31,13 @@ import kotlinx.android.synthetic.main.fragment_product.*
 class ProductFragment : Fragment(R.layout.fragment_product) {
     @Inject
     lateinit var productViewModelFactory: ProductViewModel.Factory
+    @Inject
+    lateinit var messageManager: MessageManager
 
     private val disposable = CompositeDisposable()
     private val adapter = GroupAdapter<GroupieViewHolder>()
     private val productViewModel: ProductViewModel by viewModels {
-        withFactory(
-            productViewModelFactory
-        )
+        withFactory(productViewModelFactory)
     }
     private val args: ProductFragmentArgs by navArgs()
     private var currentViewState: ProductViewState? = null
@@ -83,15 +88,41 @@ class ProductFragment : Fragment(R.layout.fragment_product) {
                             ?: view_product_condition.setVisible(false)
                     }
                 }
+                is Error -> showError(viewState.productContentState)
             }
             currentViewState = viewState
         }
     }
 
-    override fun onDestroyView() {
-        disposable.clear()
-        view_product_view_pager.unregisterOnPageChangeCallback(viewPagerCallback)
-        super.onDestroyView()
+    private fun showError(error: Error) {
+        when (error) {
+            is Error.NetworkErrorRetry -> view?.let {
+                messageManager.showError(
+                    it,
+                    ErrorMessage.NetworkErrorRetry {
+                        productViewModel.handleIntent(ProductIntent.NetworkErrorRetryTapped)
+                    }
+                )
+            }
+            is Error.UnknownError -> navigate(
+                ToError(getString(R.string.error_dialog_generic_message))
+            )
+        }
+    }
+
+    private fun navigate(navigation: ProductNavigation) {
+        with(findNavController()) {
+            // TODO Fast workaround to prevent current navigation destination is unknown exception.
+            if (this.currentBackStackEntry?.destination?.id == R.id.product_fragment) {
+                when (navigation) {
+                    is ToError -> navigate(
+                        ProductFragmentDirections.actionSearchFragmentToErrorDialogFragment(
+                            navigation.message
+                        )
+                    )
+                }
+            }
+        }
     }
 
     private fun subscribeToImageGalleryIntents() {
@@ -101,5 +132,11 @@ class ProductFragment : Fragment(R.layout.fragment_product) {
             }
         }
         view_product_view_pager.registerOnPageChangeCallback(viewPagerCallback)
+    }
+
+    override fun onDestroyView() {
+        disposable.clear()
+        view_product_view_pager.unregisterOnPageChangeCallback(viewPagerCallback)
+        super.onDestroyView()
     }
 }

@@ -18,6 +18,9 @@
             app:exitAnim="@anim/slide_out_left"
             app:popEnterAnim="@anim/slide_in_left"
             app:popExitAnim="@anim/slide_out_right" />
+        <action
+            android:id="@+id/action_searchFragment_to_errorDialogFragment"
+            app:destination="@id/error_dialog_fragment" />
     </fragment>
 
     <fragment
@@ -28,5 +31,17 @@
         <argument
             android:name="productId"
             app:argType="string" />
+        <action
+            android:id="@+id/action_searchFragment_to_errorDialogFragment"
+            app:destination="@id/error_dialog_fragment" />
     </fragment>
+
+    <dialog
+        android:id="@+id/error_dialog_fragment"
+        android:name="francisco.visintini.mercadolibre.test.messages.ErrorDialogFragment"
+        android:label="ErrorDialogFragment">
+        <argument
+            android:name="errorMessage"
+            app:argType="string" />
+    </dialog>
 </navigation>

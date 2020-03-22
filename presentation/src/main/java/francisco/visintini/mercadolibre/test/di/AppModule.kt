@@ -7,10 +7,12 @@ import dagger.Provides
 import dagger.android.ContributesAndroidInjector
 import francisco.visintini.mercadolibre.test.MainActivity
 import javax.inject.Singleton
+import kotlin.contracts.ExperimentalContracts
 
 @Module
 abstract class AppModule {
 
+    @ExperimentalContracts
     @PerActivity
     @ContributesAndroidInjector(modules = [ActivityModule::class])
     abstract fun contributeMainActivityInjector(): MainActivity

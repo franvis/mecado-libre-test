@@ -9,4 +9,7 @@
     <string name="error_message_network">Hay un problema con la conexion a Internet</string>
     <string name="error_message_network_retry">Reintentar</string>
     <string name="search_empty_results_text">No encontramos resultados para: \'%s\'. Por favor prueba con otro termino</string>
+    <string name="error_dialog_title">Oops, algo salio mal</string>
+    <string name="error_dialog_ok">Aceptar</string>
+    <string name="error_dialog_generic_message">Desafortunadamente ocurrio un error inesperado</string>
 </resources>

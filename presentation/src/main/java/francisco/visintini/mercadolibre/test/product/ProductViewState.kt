@@ -16,8 +16,12 @@ data class ProductViewState(
         @Parcelize
         object Initial : ContentState()
 
-        @Parcelize
-        object Error : ContentState()
+        sealed class Error : ContentState() {
+            @Parcelize
+            object NetworkErrorRetry : Error()
+            @Parcelize
+            object UnknownError : Error()
+        }
 
         @Parcelize
         object Loading : ContentState()

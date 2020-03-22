@@ -1,6 +1,5 @@
 package francisco.visintini.mercadolibre.test.search
 
-import android.util.Log
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.SavedStateHandle
 import androidx.lifecycle.viewModelScope
@@ -9,6 +8,12 @@ import francisco.visintini.mercadolibre.domain.entity.Result.Error
 import francisco.visintini.mercadolibre.domain.entity.Result.Success
 import francisco.visintini.mercadolibre.domain.interactor.GetSearchResult
 import francisco.visintini.mercadolibre.test.di.ViewModelFactory
+import francisco.visintini.mercadolibre.test.search.ContentState.Content
+import francisco.visintini.mercadolibre.test.search.ContentState.Empty
+import francisco.visintini.mercadolibre.test.search.ContentState.Error.NetworkErrorRetry
+import francisco.visintini.mercadolibre.test.search.ContentState.Error.UnknownError
+import francisco.visintini.mercadolibre.test.search.ContentState.Initial
+import francisco.visintini.mercadolibre.test.search.ContentState.Loading
 import francisco.visintini.mercadolibre.test.search.SearchIntent.ClearSearch
 import francisco.visintini.mercadolibre.test.search.SearchIntent.NetworkErrorRetryTapped
 import francisco.visintini.mercadolibre.test.search.SearchIntent.Search
@@ -17,13 +22,7 @@ import francisco.visintini.mercadolibre.test.search.SearchIntent.SearchFocus
 import francisco.visintini.mercadolibre.test.search.SearchIntent.SearchResultTapped
 import francisco.visintini.mercadolibre.test.search.SearchIntent.TextChanged
 import francisco.visintini.mercadolibre.test.search.SearchNavigation.ToProduct
-import francisco.visintini.mercadolibre.test.search.result.ContentState
-import francisco.visintini.mercadolibre.test.search.result.ContentState.Content
-import francisco.visintini.mercadolibre.test.search.result.ContentState.Empty
-import francisco.visintini.mercadolibre.test.search.result.ContentState.Initial
-import francisco.visintini.mercadolibre.test.search.result.ContentState.Loading
 import francisco.visintini.mercadolibre.test.search.result.SearchResultItemVSMapper
-import francisco.visintini.mercadolibre.test.search.result.SearchViewState
 import francisco.visintini.mercadolibre.test.utils.BaseSavedStateViewModel
 import francisco.visintini.mercadolibre.test.utils.SingleLiveEvent
 import javax.inject.Inject
@@ -43,7 +42,7 @@ class SearchViewModel(
 
     fun start() {
         _viewState.value = getSavedState().value?.let { it } ?: SearchViewState(
-            contentContentState = Initial(emptyList())
+            contentState = Initial(emptyList())
         )
         lastIntent?.let { handleIntent(it) }
     }
@@ -95,7 +94,7 @@ class SearchViewModel(
                     allowInput = true,
                     query = ""
                 ),
-                contentContentState = Initial(emptyList()) // Add History
+                contentState = Initial(emptyList()) // Add History
             )
         }
     }
@@ -118,7 +117,7 @@ class SearchViewModel(
                     isCancelable = true,
                     allowInput = true,
                     query = intent.query
-                ), contentContentState = Loading
+                ), contentState = Loading
             )
         }
         viewModelScope.launch {
@@ -128,7 +127,7 @@ class SearchViewModel(
                         updateViewState { oldState ->
                             val searchResults = result.result.results
                             oldState.copy(
-                                contentContentState = if (searchResults.isEmpty()) {
+                                contentState = if (searchResults.isEmpty()) {
                                     Empty
                                 } else {
                                     Content(
@@ -149,8 +148,7 @@ class SearchViewModel(
                 }
             } catch (exception: Exception) {
                 updateViewStateForError()
-                // TODO Track here presentation layer exceptions and log them
-                Log.e("Fran", "Fran")
+                // TODO Log or track presentation exception here
             }
         }
     }
@@ -160,15 +158,15 @@ class SearchViewModel(
             when (error) {
                 is ErrorEntity.NetworkError, ErrorEntity.ServiceUnavailable -> {
                     oldState.copy(
-                        contentContentState = ContentState.Error.NetworkErrorRetry
+                        contentState = NetworkErrorRetry
                     )
                 }
                 is ErrorEntity.NotFound -> oldState.copy(
-                    contentContentState = Empty
+                    contentState = Empty
                 )
                 else -> {
                     oldState.copy(
-                        contentContentState = ContentState.Error.UnknownError
+                        contentState = UnknownError
                     )
                 }
             }

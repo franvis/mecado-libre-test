@@ -1,31 +1,62 @@
 package francisco.visintini.mercadolibre.test.product
 
 import android.util.Log
+import androidx.lifecycle.SavedStateHandle
 import androidx.lifecycle.viewModelScope
 import francisco.visintini.mercadolibre.domain.entity.ErrorEntity
 import francisco.visintini.mercadolibre.domain.entity.Result.Error
 import francisco.visintini.mercadolibre.domain.entity.Result.Success
 import francisco.visintini.mercadolibre.domain.interactor.GetProduct
-import francisco.visintini.mercadolibre.test.product.ProductViewState.ContentViewState.Initial
-import francisco.visintini.mercadolibre.test.product.ProductViewState.ContentViewState.Loading
-import francisco.visintini.mercadolibre.test.utils.BaseViewModel
+import francisco.visintini.mercadolibre.test.di.ViewModelFactory
+import francisco.visintini.mercadolibre.test.product.ProductIntent.ImageGalleryPositionChanged
+import francisco.visintini.mercadolibre.test.product.ProductViewState.State.Initial
+import francisco.visintini.mercadolibre.test.product.ProductViewState.State.Loading
+import francisco.visintini.mercadolibre.test.utils.BaseSavedStateViewModel
 import javax.inject.Inject
+import kotlin.contracts.ExperimentalContracts
 import kotlinx.coroutines.launch
 
-class ProductViewModel @Inject constructor(
+@ExperimentalContracts
+class ProductViewModel(
+    override val handle: SavedStateHandle,
     private val getProduct: GetProduct,
     private val productContentViewStateMapper: ProductContentViewStateMapper
-) :
-    BaseViewModel<ProductViewState>() {
+) : BaseSavedStateViewModel<ProductViewState>(handle) {
 
     fun start(productId: String) {
-        _viewState.value = ProductViewState(productId, Initial)
-        handleLoadProduct(productId)
+        if (getSavedState().value != null) {
+            _viewState.value = getSavedState().value
+        } else {
+            _viewState.value = ProductViewState(productId, Initial)
+            handleLoadProduct(productId)
+        }
+    }
+
+    fun handleIntent(intent: ProductIntent) {
+        when (intent) {
+            is ImageGalleryPositionChanged -> handleGalleryPositionChanged(intent)
+        }
+    }
+
+    private fun handleGalleryPositionChanged(intent: ImageGalleryPositionChanged) {
+        updateViewState { oldState ->
+            oldState.copy(
+                productState = if (oldState.productState.isContent() &&
+                    oldState.productState.imageGalleryViewState.imagePosition != intent.newPosition
+                ) {
+                    oldState.productState.copy(
+                        imageGalleryViewState = oldState.productState.imageGalleryViewState.copy(
+                            imagePosition = intent.newPosition
+                        )
+                    )
+                } else oldState.productState
+            )
+        }
     }
 
     private fun handleLoadProduct(productId: String) {
         updateViewState { oldState ->
-            oldState.copy(productContentViewState = Loading)
+            oldState.copy(productState = Loading)
         }
         viewModelScope.launch {
             try {
@@ -33,7 +64,7 @@ class ProductViewModel @Inject constructor(
                     is Success -> {
                         updateViewState { oldState ->
                             oldState.copy(
-                                productContentViewState = productContentViewStateMapper.transform(
+                                productState = productContentViewStateMapper.transform(
                                     result.result
                                 )
                             )
@@ -53,6 +84,15 @@ class ProductViewModel @Inject constructor(
                 // TODO Track presentation exception here and show unexpected error message to user
                 Log.e("Fran", "Fran")
             }
+        }
+    }
+
+    class Factory @Inject constructor(
+        private val getProduct: GetProduct,
+        private val productContentViewStateMapper: ProductContentViewStateMapper
+    ) : ViewModelFactory<ProductViewModel> {
+        override fun create(handle: SavedStateHandle): ProductViewModel {
+            return ProductViewModel(handle, getProduct, productContentViewStateMapper)
         }
     }
 }

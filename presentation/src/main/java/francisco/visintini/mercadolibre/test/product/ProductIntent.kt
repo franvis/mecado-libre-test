@@ -1,5 +1,5 @@
 package francisco.visintini.mercadolibre.test.product
 
 sealed class ProductIntent {
-    data class LoadProduct(val productId: String) : ProductIntent()
+    data class ImageGalleryPositionChanged(val newPosition: Int) : ProductIntent()
 }

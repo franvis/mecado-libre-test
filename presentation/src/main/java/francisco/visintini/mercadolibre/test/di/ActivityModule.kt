@@ -4,7 +4,9 @@ import dagger.Module
 import dagger.android.ContributesAndroidInjector
 import francisco.visintini.mercadolibre.test.product.ProductFragment
 import francisco.visintini.mercadolibre.test.search.SearchFragment
+import kotlin.contracts.ExperimentalContracts
 
+@ExperimentalContracts
 @Module
 abstract class ActivityModule {
     @PerFragment

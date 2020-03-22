@@ -15,6 +15,10 @@ data class ProductImageGalleryItem(val viewState: ViewState) : Item() {
         viewHolder.view_product_gallery_image.load(viewState.imageUrl)
     }
 
+    override fun isSameAs(other: com.xwray.groupie.Item<*>): Boolean {
+        return other is ProductImageGalleryItem && other.viewState == this.viewState
+    }
+
     @Parcelize
     data class ViewState(val imageUrl: String) : Parcelable
 }

@@ -19,12 +19,12 @@ import androidx.savedstate.SavedStateRegistryOwner
  *
  * @see withFactory
  */
-interface ViewModelFactory<out V : ViewModel> {
-    fun create(handle: SavedStateHandle): V
+interface ViewModelFactory<out VM : ViewModel> {
+    fun create(handle: SavedStateHandle): VM
 }
 
-class GenericSavedStateViewModelFactory<out V : ViewModel>(
-    private val viewModelFactory: ViewModelFactory<V>,
+class GenericSavedStateViewModelFactory<out VM : ViewModel>(
+    private val viewModelFactory: ViewModelFactory<VM>,
     owner: SavedStateRegistryOwner,
     defaultArgs: Bundle? = null
 ) : AbstractSavedStateViewModelFactory(owner, defaultArgs) {

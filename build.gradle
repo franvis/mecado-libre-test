@@ -43,6 +43,15 @@ subprojects { it ->
             endWithNewline()
         }
     }
+    afterEvaluate {
+        pluginManager.withPlugin('kotlin-kapt') {
+            // This should prevent false cache hits
+            // https://kotlinlang.org/docs/reference/kapt.html#gradle-build-cache-support-since-1220
+            kapt {
+                useBuildCache = false
+            }
+        }
+    }
 }
 
 allprojects {

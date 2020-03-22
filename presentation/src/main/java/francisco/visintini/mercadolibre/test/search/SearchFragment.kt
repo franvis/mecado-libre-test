@@ -13,6 +13,7 @@ import com.xwray.groupie.GroupAdapter
 import com.xwray.groupie.kotlinandroidextensions.GroupieViewHolder
 import dagger.android.support.AndroidSupportInjection
 import francisco.visintini.mercadolibre.test.R
+import francisco.visintini.mercadolibre.test.di.withFactory
 import francisco.visintini.mercadolibre.test.search.SearchIntent.BackPressed
 import francisco.visintini.mercadolibre.test.search.SearchIntent.ClearSearch
 import francisco.visintini.mercadolibre.test.search.SearchIntent.Search
@@ -23,19 +24,19 @@ import francisco.visintini.mercadolibre.test.search.result.SearchContentViewStat
 import francisco.visintini.mercadolibre.test.search.result.SearchResultItem
 import francisco.visintini.mercadolibre.test.search.result.SearchResultItemPlaceholder
 import francisco.visintini.mercadolibre.test.search.result.SearchViewState
-import francisco.visintini.mercadolibre.test.utils.ViewModelFactory
 import io.reactivex.disposables.CompositeDisposable
 import io.reactivex.rxkotlin.addTo
 import javax.inject.Inject
 import kotlinx.android.synthetic.main.fragment_search.*
 
 class SearchFragment : Fragment(R.layout.fragment_search) {
+
     @Inject
-    lateinit var viewModelFactory: ViewModelFactory<SearchViewModel>
+    lateinit var searchViewModelFactory: SearchViewModel.Factory
 
     private val disposable = CompositeDisposable()
     private val adapter = GroupAdapter<GroupieViewHolder>()
-    private val searchViewModel by viewModels<SearchViewModel> { viewModelFactory }
+    private val searchViewModel: SearchViewModel by viewModels { withFactory(searchViewModelFactory) }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         AndroidSupportInjection.inject(this)
@@ -55,6 +56,7 @@ class SearchFragment : Fragment(R.layout.fragment_search) {
         searchViewModel.navigator.observe(this, Observer { this.navigate(it) })
         subscribeToSearchBarIntents()
         subscribeToSearchResultItemIntents()
+        searchViewModel.start()
     }
 
     private fun render(viewState: SearchViewState) {

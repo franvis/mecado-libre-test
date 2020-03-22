@@ -3,8 +3,9 @@ package francisco.visintini.mercadolibre.test.product
 import francisco.visintini.mercadolibre.domain.entity.Condition
 import francisco.visintini.mercadolibre.domain.entity.Product
 import francisco.visintini.mercadolibre.test.R
-import francisco.visintini.mercadolibre.test.product.ProductViewState.ContentViewState.Content
+import francisco.visintini.mercadolibre.test.product.ProductViewState.State.Content
 import francisco.visintini.mercadolibre.test.product.imagegallery.ProductImageGalleryItemVSMapper
+import francisco.visintini.mercadolibre.test.product.imagegallery.ProductImageGalleryViewState
 import francisco.visintini.mercadolibre.test.utils.ResourceProvider
 import javax.inject.Inject
 import javax.inject.Singleton
@@ -19,9 +20,10 @@ class ProductContentViewStateMapper @Inject constructor(
         with(product) {
             Content(
                 title,
-                imageGalleryViewState = pictures.map { productPic ->
-                    productImageGalleryItemVSMapper.transform(productPic)
-                },
+                imageGalleryViewState = ProductImageGalleryViewState(
+                    productImageGalleryItemViewStates = pictures.map { productPic ->
+                        productImageGalleryItemVSMapper.transform(productPic)
+                    }),
                 price = resourceProvider.getString(
                     R.string.product_formatted_price,
                     price.roundToInt()

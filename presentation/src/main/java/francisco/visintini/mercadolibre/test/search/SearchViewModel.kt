@@ -2,11 +2,13 @@ package francisco.visintini.mercadolibre.test.search
 
 import android.util.Log
 import androidx.lifecycle.LiveData
+import androidx.lifecycle.SavedStateHandle
 import androidx.lifecycle.viewModelScope
 import francisco.visintini.mercadolibre.domain.entity.ErrorEntity
 import francisco.visintini.mercadolibre.domain.entity.Result.Error
 import francisco.visintini.mercadolibre.domain.entity.Result.Success
 import francisco.visintini.mercadolibre.domain.interactor.GetSearchResult
+import francisco.visintini.mercadolibre.test.di.ViewModelFactory
 import francisco.visintini.mercadolibre.test.search.SearchIntent.BackPressed
 import francisco.visintini.mercadolibre.test.search.SearchIntent.ClearSearch
 import francisco.visintini.mercadolibre.test.search.SearchIntent.Search
@@ -19,22 +21,25 @@ import francisco.visintini.mercadolibre.test.search.result.SearchContentViewStat
 import francisco.visintini.mercadolibre.test.search.result.SearchContentViewState.Loading
 import francisco.visintini.mercadolibre.test.search.result.SearchResultItemVSMapper
 import francisco.visintini.mercadolibre.test.search.result.SearchViewState
-import francisco.visintini.mercadolibre.test.utils.BaseViewModel
+import francisco.visintini.mercadolibre.test.utils.BaseSavedStateViewModel
 import francisco.visintini.mercadolibre.test.utils.SingleLiveEvent
 import javax.inject.Inject
 import kotlinx.coroutines.launch
 
-class SearchViewModel @Inject constructor(
+class SearchViewModel(
+    override val handle: SavedStateHandle,
     private val getSearchResult: GetSearchResult,
     private val searchResultItemVSMapper: SearchResultItemVSMapper
-) : BaseViewModel<SearchViewState>() {
+) : BaseSavedStateViewModel<SearchViewState>(handle) {
 
     private val _navigator = SingleLiveEvent<SearchNavigation>()
     val navigator: LiveData<SearchNavigation>
         get() = _navigator
 
-    init {
-        _viewState.value = SearchViewState(searchContentViewState = Initial(emptyList()))
+    fun start() {
+        _viewState.value = getSavedState().value?.let { it } ?: SearchViewState(
+            searchContentViewState = Initial(emptyList())
+        )
     }
 
     fun handleIntent(intent: SearchIntent) {
@@ -134,6 +139,15 @@ class SearchViewModel @Inject constructor(
                 // TODO Track presentation exception here and show unexpected error message to user
                 Log.e("Fran", "Fran")
             }
+        }
+    }
+
+    class Factory @Inject constructor(
+        private val getSearchResult: GetSearchResult,
+        private val searchResultItemVSMapper: SearchResultItemVSMapper
+    ) : ViewModelFactory<SearchViewModel> {
+        override fun create(handle: SavedStateHandle): SearchViewModel {
+            return SearchViewModel(handle, getSearchResult, searchResultItemVSMapper)
         }
     }
 }

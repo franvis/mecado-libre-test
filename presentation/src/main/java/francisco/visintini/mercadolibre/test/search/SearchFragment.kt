@@ -14,9 +14,9 @@ import com.xwray.groupie.kotlinandroidextensions.GroupieViewHolder
 import dagger.android.support.AndroidSupportInjection
 import francisco.visintini.mercadolibre.test.R
 import francisco.visintini.mercadolibre.test.di.withFactory
-import francisco.visintini.mercadolibre.test.search.SearchIntent.BackPressed
 import francisco.visintini.mercadolibre.test.search.SearchIntent.ClearSearch
 import francisco.visintini.mercadolibre.test.search.SearchIntent.Search
+import francisco.visintini.mercadolibre.test.search.SearchIntent.SearchBarBackPressed
 import francisco.visintini.mercadolibre.test.search.SearchIntent.SearchFocus
 import francisco.visintini.mercadolibre.test.search.SearchIntent.TextChanged
 import francisco.visintini.mercadolibre.test.search.bar.SearchBar.SearchBarIntent
@@ -111,7 +111,7 @@ class SearchFragment : Fragment(R.layout.fragment_search) {
                         is SearchBarIntent.TextChanged -> TextChanged(it.currentQuery)
                         is SearchBarIntent.SearchFocus -> SearchFocus(it.focused)
                         is SearchBarIntent.ClearSearch -> ClearSearch
-                        is SearchBarIntent.BackPressed -> BackPressed
+                        is SearchBarIntent.BackPressed -> SearchBarBackPressed
                     }
                 )
             }

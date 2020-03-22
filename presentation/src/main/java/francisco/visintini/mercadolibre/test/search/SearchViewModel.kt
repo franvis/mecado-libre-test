@@ -9,9 +9,9 @@ import francisco.visintini.mercadolibre.domain.entity.Result.Error
 import francisco.visintini.mercadolibre.domain.entity.Result.Success
 import francisco.visintini.mercadolibre.domain.interactor.GetSearchResult
 import francisco.visintini.mercadolibre.test.di.ViewModelFactory
-import francisco.visintini.mercadolibre.test.search.SearchIntent.BackPressed
 import francisco.visintini.mercadolibre.test.search.SearchIntent.ClearSearch
 import francisco.visintini.mercadolibre.test.search.SearchIntent.Search
+import francisco.visintini.mercadolibre.test.search.SearchIntent.SearchBarBackPressed
 import francisco.visintini.mercadolibre.test.search.SearchIntent.SearchFocus
 import francisco.visintini.mercadolibre.test.search.SearchIntent.SearchResultTapped
 import francisco.visintini.mercadolibre.test.search.SearchIntent.TextChanged
@@ -48,7 +48,7 @@ class SearchViewModel(
             is TextChanged -> handleSearchTextChanged(intent)
             is SearchFocus -> handleSearchFocus(intent)
             is ClearSearch -> handleClearSearch()
-            is BackPressed -> handleBackPressed()
+            is SearchBarBackPressed -> handleSearchBarBackPressed()
             is SearchResultTapped -> handleSearchResultTapped(intent)
         }
     }
@@ -68,7 +68,7 @@ class SearchViewModel(
         }
     }
 
-    private fun handleBackPressed() {
+    private fun handleSearchBarBackPressed() {
         return updateViewState { oldState ->
             oldState.copy(
                 searchBarViewState = oldState.searchBarViewState.copy(isFocused = false)

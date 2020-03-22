@@ -43,7 +43,10 @@ class ErrorHandlerImpl : ErrorHandler {
      * Tracks error to the different tracking systems.
      */
     override fun logError(throwable: Throwable) {
-        Log.e("Data layer error", throwable.localizedMessage?.toString()?.let { it } ?: "No localized message")
+        Log.e(
+            "Data layer error",
+            throwable.localizedMessage?.toString()?.let { it } ?: "No localized message"
+        )
 
         // TODO Write logging logic for different kinds of throwable here of what and when you want to log.
         //  If more than one logging system is needed (Splunk, LogDNA, etc...), depending on the business,

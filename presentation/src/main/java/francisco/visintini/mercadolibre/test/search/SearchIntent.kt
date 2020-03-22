@@ -6,5 +6,5 @@ sealed class SearchIntent {
     data class TextChanged(val currentQuery: String) : SearchIntent()
     data class SearchFocus(val focused: Boolean) : SearchIntent()
     object ClearSearch : SearchIntent()
-    object BackPressed : SearchIntent()
+    object SearchBarBackPressed : SearchIntent()
 }

@@ -14,13 +14,20 @@ import com.xwray.groupie.kotlinandroidextensions.GroupieViewHolder
 import dagger.android.support.AndroidSupportInjection
 import francisco.visintini.mercadolibre.test.R
 import francisco.visintini.mercadolibre.test.di.withFactory
+import francisco.visintini.mercadolibre.test.extensions.setVisible
+import francisco.visintini.mercadolibre.test.messages.ErrorMessage
+import francisco.visintini.mercadolibre.test.messages.MessageManager
 import francisco.visintini.mercadolibre.test.search.SearchIntent.ClearSearch
 import francisco.visintini.mercadolibre.test.search.SearchIntent.Search
 import francisco.visintini.mercadolibre.test.search.SearchIntent.SearchBarBackPressed
 import francisco.visintini.mercadolibre.test.search.SearchIntent.SearchFocus
 import francisco.visintini.mercadolibre.test.search.SearchIntent.TextChanged
 import francisco.visintini.mercadolibre.test.search.bar.SearchBar.SearchBarIntent
-import francisco.visintini.mercadolibre.test.search.result.SearchContentViewState
+import francisco.visintini.mercadolibre.test.search.result.ContentState.Content
+import francisco.visintini.mercadolibre.test.search.result.ContentState.Empty
+import francisco.visintini.mercadolibre.test.search.result.ContentState.Error
+import francisco.visintini.mercadolibre.test.search.result.ContentState.Initial
+import francisco.visintini.mercadolibre.test.search.result.ContentState.Loading
 import francisco.visintini.mercadolibre.test.search.result.SearchResultItem
 import francisco.visintini.mercadolibre.test.search.result.SearchResultItemPlaceholder
 import francisco.visintini.mercadolibre.test.search.result.SearchViewState
@@ -33,10 +40,13 @@ class SearchFragment : Fragment(R.layout.fragment_search) {
 
     @Inject
     lateinit var searchViewModelFactory: SearchViewModel.Factory
+    @Inject
+    lateinit var messageManager: MessageManager
 
     private val disposable = CompositeDisposable()
     private val adapter = GroupAdapter<GroupieViewHolder>()
     private val searchViewModel: SearchViewModel by viewModels { withFactory(searchViewModelFactory) }
+    private var currentViewState: SearchViewState? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         AndroidSupportInjection.inject(this)
@@ -61,16 +71,40 @@ class SearchFragment : Fragment(R.layout.fragment_search) {
 
     private fun render(viewState: SearchViewState) {
         view_search_bar.render(viewState.searchBarViewState)
-        when (viewState.searchContentViewState) {
-            is SearchContentViewState.Initial -> adapter.clear()
-            is SearchContentViewState.Loading -> {
-                adapter.update((1..4).map { SearchResultItemPlaceholder })
-            }
-            is SearchContentViewState.Content -> adapter.update(
-                viewState.searchContentViewState.searchResults.map {
-                    SearchResultItem(it)
+        val content = viewState.contentContentState
+        view_search_empty_result.setVisible(content is Empty)
+        view_search_list.setVisible(content is Content || content is Loading)
+        if (currentViewState?.contentContentState != content) { // Avoid unnecessary re-rendering
+            when (content) {
+                is Initial -> adapter.clear() // TODO Add recently searched here
+                is Loading -> adapter.update((1..4).map { SearchResultItemPlaceholder })
+                is Content -> adapter.update(content.searchResults.map { SearchResultItem(it) })
+                is Empty -> {
+                    adapter.clear()
+                    view_search_empty_result.text = getString(
+                        R.string.search_empty_results_text,
+                        viewState.searchBarViewState.query
+                    )
                 }
-            )
+                is Error -> {
+                    adapter.clear()
+                    showError(content)
+                }
+            }
+        }
+        currentViewState = viewState
+    }
+
+    private fun showError(error: Error) {
+        when (error) {
+            is Error.NetworkErrorRetry -> view?.let {
+                messageManager.showError(
+                    it,
+                    ErrorMessage.NetworkErrorRetry {
+                        searchViewModel.handleIntent(SearchIntent.NetworkErrorRetryTapped)
+                    }
+                )
+            }
         }
     }
 

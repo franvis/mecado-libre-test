@@ -3,7 +3,7 @@ package francisco.visintini.mercadolibre.test.product
 import francisco.visintini.mercadolibre.domain.entity.Condition
 import francisco.visintini.mercadolibre.domain.entity.Product
 import francisco.visintini.mercadolibre.test.R
-import francisco.visintini.mercadolibre.test.product.ProductViewState.State.Content
+import francisco.visintini.mercadolibre.test.product.ProductViewState.ContentState.Content
 import francisco.visintini.mercadolibre.test.product.imagegallery.ProductImageGalleryItemVSMapper
 import francisco.visintini.mercadolibre.test.product.imagegallery.ProductImageGalleryViewState
 import francisco.visintini.mercadolibre.test.utils.ResourceProvider

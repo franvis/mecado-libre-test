@@ -9,18 +9,18 @@ import kotlinx.android.parcel.Parcelize
 @Parcelize
 data class ProductViewState(
     val productId: String,
-    val productState: State
+    val productContentState: ContentState
 ) : Parcelable {
 
-    sealed class State : Parcelable {
+    sealed class ContentState : Parcelable {
         @Parcelize
-        object Initial : State()
+        object Initial : ContentState()
 
         @Parcelize
-        object Error : State()
+        object Error : ContentState()
 
         @Parcelize
-        object Loading : State()
+        object Loading : ContentState()
 
         @Parcelize
         data class Content(
@@ -30,14 +30,14 @@ data class ProductViewState(
             val availability: String,
             val warranty: String?,
             val condition: String?
-        ) : State()
+        ) : ContentState()
     }
 }
 
 @ExperimentalContracts
-fun ProductViewState.State.isContent(): Boolean {
+fun ProductViewState.ContentState.isContent(): Boolean {
     contract {
-        returns(true) implies (this@isContent is ProductViewState.State.Content)
+        returns(true) implies (this@isContent is ProductViewState.ContentState.Content)
     }
-    return this is ProductViewState.State.Content
+    return this is ProductViewState.ContentState.Content
 }

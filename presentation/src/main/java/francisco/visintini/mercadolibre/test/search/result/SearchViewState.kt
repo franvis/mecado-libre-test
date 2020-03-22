@@ -8,18 +8,23 @@ import kotlinx.android.parcel.Parcelize
 @Parcelize
 data class SearchViewState(
     val searchBarViewState: SearchBarViewState = SearchBarViewState(),
-    val searchContentViewState: SearchContentViewState
+    val contentContentState: ContentState
 ) : Parcelable
 
-sealed class SearchContentViewState : Parcelable {
+sealed class ContentState : Parcelable {
     @Parcelize
-    data class Initial(val searchHistory: List<String>) : SearchContentViewState()
+    data class Initial(val searchHistory: List<String>) : ContentState()
     @Parcelize
-    data class Content(val searchResults: List<ViewState>) : SearchContentViewState()
+    data class Content(val searchResults: List<ViewState>) : ContentState()
     @Parcelize
-    object Loading : SearchContentViewState()
+    object Loading : ContentState()
     @Parcelize
-    object Empty : SearchContentViewState()
-    @Parcelize
-    object Error : SearchContentViewState() // TODO Add inside different type of errors to show
+    object Empty : ContentState()
+
+    sealed class Error : ContentState() {
+        @Parcelize
+        object NetworkErrorRetry : Error()
+        @Parcelize
+        object UnknownError : Error()
+    }
 }

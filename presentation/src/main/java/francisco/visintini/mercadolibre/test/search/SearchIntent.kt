@@ -7,4 +7,5 @@ sealed class SearchIntent {
     data class SearchFocus(val focused: Boolean) : SearchIntent()
     object ClearSearch : SearchIntent()
     object SearchBarBackPressed : SearchIntent()
+    object NetworkErrorRetryTapped : SearchIntent()
 }

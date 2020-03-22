@@ -19,6 +19,16 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
+        <include
+            android:id="@+id/view_product_content_placeholder"
+            layout="@layout/view_product_content_placeholder"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/view_product_toolbar" />
+
         <androidx.appcompat.widget.AppCompatTextView
             android:id="@+id/view_product_title"
             android:layout_width="0dp"
@@ -100,6 +110,12 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/view_product_warranty"
             tools:text="@sample/search_result.json/product_condition" />
+
+        <androidx.constraintlayout.widget.Group
+            android:id="@+id/view_product_content_group"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:constraint_referenced_ids="view_product_title,view_product_view_pager,view_product_price,view_product_availability,view_product_warranty,view_product_condition" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.core.widget.NestedScrollView>

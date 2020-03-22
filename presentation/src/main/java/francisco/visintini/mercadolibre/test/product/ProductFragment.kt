@@ -14,8 +14,8 @@ import francisco.visintini.mercadolibre.test.R
 import francisco.visintini.mercadolibre.test.di.withFactory
 import francisco.visintini.mercadolibre.test.extensions.setVisible
 import francisco.visintini.mercadolibre.test.product.ProductIntent.ImageGalleryPositionChanged
-import francisco.visintini.mercadolibre.test.product.ProductViewState.State.Content
-import francisco.visintini.mercadolibre.test.product.ProductViewState.State.Loading
+import francisco.visintini.mercadolibre.test.product.ProductViewState.ContentState.Content
+import francisco.visintini.mercadolibre.test.product.ProductViewState.ContentState.Loading
 import francisco.visintini.mercadolibre.test.product.imagegallery.ProductImageGalleryItem
 import io.reactivex.disposables.CompositeDisposable
 import javax.inject.Inject
@@ -35,6 +35,7 @@ class ProductFragment : Fragment(R.layout.fragment_product) {
         )
     }
     private val args: ProductFragmentArgs by navArgs()
+    private var currentViewState: ProductViewState? = null
     lateinit var viewPagerCallback: ViewPager2.OnPageChangeCallback
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -54,32 +55,36 @@ class ProductFragment : Fragment(R.layout.fragment_product) {
         productViewModel.start(args.productId)
     }
 
+    @Suppress("NestedBlockDepth")
     private fun render(viewState: ProductViewState) {
-        when (viewState.productState) {
-            is Loading -> { // TODO put placeholders
-            }
-            is Content -> {
-                with(viewState.productState) {
-                    view_product_title.text = title
-                    adapter.update(imageGalleryViewState.productImageGalleryItemViewStates.map {
-                        ProductImageGalleryItem(it)
-                    })
-                    if (view_product_view_pager.currentItem != // Prevents scrolling when configuration changes occur
-                        imageGalleryViewState.imagePosition
-                    ) {
-                        view_product_view_pager.setCurrentItem(
-                            imageGalleryViewState.imagePosition,
-                            false
-                        )
+        view_product_content_placeholder.setVisible(viewState.productContentState is Loading)
+        view_product_content_group.setVisible(viewState.productContentState.isContent())
+        if (currentViewState != viewState) {
+            when (viewState.productContentState) {
+                is Content -> {
+                    with(viewState.productContentState) {
+                        view_product_title.text = title
+                        adapter.update(imageGalleryViewState.productImageGalleryItemViewStates.map {
+                            ProductImageGalleryItem(it)
+                        })
+                        if (view_product_view_pager.currentItem !=
+                            imageGalleryViewState.imagePosition
+                        ) { // Prevents scrolling when fragment is recreated
+                            view_product_view_pager.setCurrentItem(
+                                imageGalleryViewState.imagePosition,
+                                false
+                            )
+                        }
+                        view_product_price.text = price
+                        view_product_availability.text = availability
+                        warranty?.let { view_product_warranty.text = it }
+                            ?: view_product_warranty.setVisible(false)
+                        condition?.let { view_product_condition.text = it }
+                            ?: view_product_condition.setVisible(false)
                     }
-                    view_product_price.text = price
-                    view_product_availability.text = availability
-                    warranty?.let { view_product_warranty.text = it }
-                        ?: view_product_warranty.setVisible(false)
-                    condition?.let { view_product_condition.text = it }
-                        ?: view_product_condition.setVisible(false)
                 }
             }
+            currentViewState = viewState
         }
     }
 

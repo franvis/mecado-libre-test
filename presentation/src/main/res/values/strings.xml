@@ -6,4 +6,7 @@
     <string name="product_availability">Disponible: %d, Vendido: %d</string>
     <string name="product_condition_used">Condición: Usado</string>
     <string name="product_condition_new">Condición: Nuevo</string>
+    <string name="error_message_network">Hay un problema con la conexion a Internet</string>
+    <string name="error_message_network_retry">Reintentar</string>
+    <string name="search_empty_results_text">No encontramos resultados para: \'%s\'. Por favor prueba con otro termino</string>
 </resources>

@@ -2,6 +2,7 @@ package francisco.visintini.mercadolibre.test.di
 
 import dagger.Module
 import dagger.android.ContributesAndroidInjector
+import francisco.visintini.mercadolibre.test.messages.MessagesModule
 import francisco.visintini.mercadolibre.test.product.ProductFragment
 import francisco.visintini.mercadolibre.test.search.SearchFragment
 import kotlin.contracts.ExperimentalContracts
@@ -10,7 +11,7 @@ import kotlin.contracts.ExperimentalContracts
 @Module
 abstract class ActivityModule {
     @PerFragment
-    @ContributesAndroidInjector
+    @ContributesAndroidInjector(modules = [MessagesModule::class])
     abstract fun contributeSearchFragment(): SearchFragment
 
     @PerFragment

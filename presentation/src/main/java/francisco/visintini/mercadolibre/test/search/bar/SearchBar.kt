@@ -35,32 +35,38 @@ class SearchBar @JvmOverloads constructor(
     defStyleAttr: Int = 0
 ) : ConstraintLayout(context, attrs, defStyleAttr) {
 
+    private var currentViewState: ViewState? = null
+
     init {
         View.inflate(context, R.layout.merge_search_bar, this)
     }
 
     fun render(viewState: ViewState) {
-        view_search_bar_image_clear.isVisible = viewState.isCancelable
-        view_search_bar_image_search.isVisible = !viewState.isCancelable
-        view_search_bar_back.isVisible = viewState.isFocused
-        if (!viewState.isFocused) {
-            view_search_bar_edit_text.clearFocus()
-            view_search_bar_edit_text.hideKeyboard()
-        } else {
-            view_search_bar_edit_text.requestFocus()
-            view_search_bar_edit_text.showKeyboard()
-        }
+        if (viewState != currentViewState) { // Avoid unnecessary re-rendering
+            view_search_bar_image_clear.isVisible = viewState.isCancelable
+            view_search_bar_image_search.isVisible = !viewState.isCancelable
+            view_search_bar_back.isVisible = viewState.isFocused
+            if (!viewState.isFocused) {
+                view_search_bar_edit_text.clearFocus()
+                view_search_bar_edit_text.hideKeyboard()
+            } else {
+                view_search_bar_edit_text.requestFocus()
+                view_search_bar_edit_text.showKeyboard()
+            }
 
-        if (!viewState.isCancelable) {
-            view_search_bar_edit_text.clearText()
-        }
+            if (!viewState.isCancelable) {
+                view_search_bar_edit_text.clearText()
+            }
 
-        if (view_search_bar_edit_text.text.toString() != viewState.query) {
-            view_search_bar_edit_text.setText(viewState.query)
-        }
+            if (view_search_bar_edit_text.text.toString() != viewState.query) {
+                view_search_bar_edit_text.setText(viewState.query)
+            }
 
-        val inputType = if (viewState.allowInput) InputType.TYPE_CLASS_TEXT else InputType.TYPE_NULL
-        view_search_bar_edit_text.inputType = inputType
+            val inputType =
+                if (viewState.allowInput) InputType.TYPE_CLASS_TEXT else InputType.TYPE_NULL
+            view_search_bar_edit_text.inputType = inputType
+            currentViewState = viewState
+        }
     }
 
     fun getIntents(): Observable<SearchBarIntent> {

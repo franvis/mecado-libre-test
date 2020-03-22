@@ -9,8 +9,8 @@ import francisco.visintini.mercadolibre.domain.entity.Result.Success
 import francisco.visintini.mercadolibre.domain.interactor.GetProduct
 import francisco.visintini.mercadolibre.test.di.ViewModelFactory
 import francisco.visintini.mercadolibre.test.product.ProductIntent.ImageGalleryPositionChanged
-import francisco.visintini.mercadolibre.test.product.ProductViewState.State.Initial
-import francisco.visintini.mercadolibre.test.product.ProductViewState.State.Loading
+import francisco.visintini.mercadolibre.test.product.ProductViewState.ContentState.Initial
+import francisco.visintini.mercadolibre.test.product.ProductViewState.ContentState.Loading
 import francisco.visintini.mercadolibre.test.utils.BaseSavedStateViewModel
 import javax.inject.Inject
 import kotlin.contracts.ExperimentalContracts
@@ -41,22 +41,22 @@ class ProductViewModel(
     private fun handleGalleryPositionChanged(intent: ImageGalleryPositionChanged) {
         updateViewState { oldState ->
             oldState.copy(
-                productState = if (oldState.productState.isContent() &&
-                    oldState.productState.imageGalleryViewState.imagePosition != intent.newPosition
+                productContentState = if (oldState.productContentState.isContent() &&
+                    oldState.productContentState.imageGalleryViewState.imagePosition != intent.newPosition
                 ) {
-                    oldState.productState.copy(
-                        imageGalleryViewState = oldState.productState.imageGalleryViewState.copy(
+                    oldState.productContentState.copy(
+                        imageGalleryViewState = oldState.productContentState.imageGalleryViewState.copy(
                             imagePosition = intent.newPosition
                         )
                     )
-                } else oldState.productState
+                } else oldState.productContentState
             )
         }
     }
 
     private fun handleLoadProduct(productId: String) {
         updateViewState { oldState ->
-            oldState.copy(productState = Loading)
+            oldState.copy(productContentState = Loading)
         }
         viewModelScope.launch {
             try {
@@ -64,7 +64,7 @@ class ProductViewModel(
                     is Success -> {
                         updateViewState { oldState ->
                             oldState.copy(
-                                productState = productContentViewStateMapper.transform(
+                                productContentState = productContentViewStateMapper.transform(
                                     result.result
                                 )
                             )

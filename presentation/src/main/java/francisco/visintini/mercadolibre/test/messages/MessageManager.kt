@@ -1,6 +1,7 @@
 package francisco.visintini.mercadolibre.test.messages
 
+import android.view.View
+
 interface MessageManager {
-    fun showInformation()
-    fun showError()
+    fun showError(view: View, errorMessage: ErrorMessage)
 }

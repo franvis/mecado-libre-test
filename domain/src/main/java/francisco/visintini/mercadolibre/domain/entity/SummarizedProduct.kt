@@ -5,7 +5,6 @@ data class SummarizedProduct(
     val siteId: String,
     val title: String,
     val price: Double,
-    val currencyId: String,
     val availableQuantity: Int,
     val soldQuantity: Int,
     val thumbnailUrl: String,

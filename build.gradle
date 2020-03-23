@@ -1,7 +1,7 @@
 // Top-level build file where you can add configuration options common to all sub-projects/modules.
 
 buildscript {
-    apply from: "$rootDir/buildSrc/versions.gradle"
+    apply from: "$projectDir/versions.gradle"
     repositories {
         google()
         maven { url "https://plugins.gradle.org/m2/" }
@@ -70,7 +70,7 @@ allprojects {
     }
 }
 
-apply from: "$rootDir/buildSrc/jacoco.gradle"
+apply from: "$projectDir/jacoco.gradle"
 
 task detektMeli(type: io.gitlab.arturbosch.detekt.Detekt) {
     description = "Runs a failfast detekt build."

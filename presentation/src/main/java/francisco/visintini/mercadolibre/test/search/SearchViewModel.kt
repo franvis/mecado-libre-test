@@ -140,8 +140,7 @@ class SearchViewModel(
                     }
 
                     is Error -> {
-                        lastIntent = intent
-                        updateViewStateForError(result.error)
+                        updateViewStateForError(result.error, intent)
                     }
                 }
             } catch (exception: Exception) {
@@ -151,11 +150,16 @@ class SearchViewModel(
         }
     }
 
-    private fun updateViewStateForError(error: ErrorEntity = ErrorEntity.UnknownError) {
+    private fun updateViewStateForError(
+        error: ErrorEntity = ErrorEntity.UnknownError,
+        intent: Search? = null
+    ) {
         updateViewState { oldState ->
             when (error) {
-                is ErrorEntity.NetworkError, ErrorEntity.ServiceUnavailable ->
+                is ErrorEntity.NetworkError, ErrorEntity.ServiceUnavailable -> {
+                    lastIntent = intent
                     oldState.copy(contentState = NetworkErrorRetry)
+                }
                 is ErrorEntity.NotFound -> oldState.copy(contentState = Empty)
                 else -> oldState.copy(contentState = UnknownError)
             }

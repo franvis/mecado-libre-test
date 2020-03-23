@@ -17,6 +17,6 @@ internal data class SearchDto(
             siteId = siteId,
             query = query,
             paging = paging.mapToDomain(),
-            results = results.map { it.mapToDomain() }
+            results = results.mapNotNull { it.mapToDomain() }
         )
 }

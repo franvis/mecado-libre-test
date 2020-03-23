@@ -2,9 +2,9 @@ package francisco.visintini.mercadolibre.test.product
 
 import androidx.lifecycle.SavedStateHandle
 import androidx.lifecycle.viewModelScope
-import francisco.visintini.mercadolibre.domain.entity.ErrorEntity
 import francisco.visintini.mercadolibre.domain.entity.Result.Error
 import francisco.visintini.mercadolibre.domain.entity.Result.Success
+import francisco.visintini.mercadolibre.domain.error.ErrorEntity
 import francisco.visintini.mercadolibre.domain.interactor.GetProduct
 import francisco.visintini.mercadolibre.test.di.ViewModelFactory
 import francisco.visintini.mercadolibre.test.product.ProductIntent.ImageGalleryPositionChanged

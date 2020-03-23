@@ -16,7 +16,7 @@
         android:layout_marginEnd="@dimen/gap_2"
         android:scaleType="matrix"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@id/view_vertical_guideline"
+        app:layout_constraintEnd_toStartOf="@id/view_search_result_vertical_guideline"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@id/view_search_result_title"
         app:layout_constraintVertical_bias="0"
@@ -31,7 +31,7 @@
         android:layout_marginEnd="@dimen/gap_4"
         android:textAppearance="@style/H2"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@id/view_vertical_guideline"
+        app:layout_constraintStart_toEndOf="@id/view_search_result_vertical_guideline"
         app:layout_constraintTop_toTopOf="parent"
         tools:text="@sample/search_result.json/product_name" />
 
@@ -59,7 +59,7 @@
         tools:text="@sample/search_result.json/product_price" />
 
     <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/view_vertical_guideline"
+        android:id="@+id/view_search_result_vertical_guideline"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical"

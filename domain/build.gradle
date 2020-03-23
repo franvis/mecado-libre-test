@@ -29,17 +29,11 @@ dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
     // Kotlin
     implementation deps.kotlin_stdlib
-
     // Dagger2
     implementation deps.dagger.values()
     kapt deps.daggerKapt.values()
-
     // Testing
     testImplementation 'junit:junit:4.12'
-
-    // Canary Leak
-    debugImplementation deps.canaryLeak
-
     // Android testing
     androidTestImplementation 'androidx.test.ext:junit:1.1.1'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'

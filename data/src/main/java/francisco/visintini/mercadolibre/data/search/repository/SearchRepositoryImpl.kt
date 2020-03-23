@@ -4,7 +4,7 @@ import francisco.visintini.mercadolibre.data.search.service.SearchService
 import francisco.visintini.mercadolibre.data.utils.wrapDataCall
 import francisco.visintini.mercadolibre.domain.entity.Result
 import francisco.visintini.mercadolibre.domain.entity.SearchResult
-import francisco.visintini.mercadolibre.domain.repository.ErrorHandler
+import francisco.visintini.mercadolibre.domain.error.ErrorHandler
 import francisco.visintini.mercadolibre.domain.repository.SearchRepository
 import javax.inject.Inject
 

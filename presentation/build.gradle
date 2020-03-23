@@ -25,6 +25,10 @@ android {
             minifyEnabled true
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
+
+        debug {
+            testCoverageEnabled true
+        }
     }
     kotlinOptions {
         jvmTarget = "1.8"
@@ -61,6 +65,8 @@ dependencies {
     implementation project(':domain')
     // Groupie
     implementation deps.groupie.values()
+    // Timber
+    implementation deps.timber
     // Dagger
     implementation deps.dagger.values()
     kapt deps.daggerKapt.values()

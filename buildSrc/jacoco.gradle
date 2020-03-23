@@ -2,7 +2,7 @@ subprojects { it ->
     apply plugin: 'jacoco'
 
     jacoco {
-        toolVersion = "0.8.2"
+        toolVersion = "0.8.5"
         reportsDir = file("$buildDir/reports")
     }
 
@@ -11,7 +11,6 @@ subprojects { it ->
     }
 
     project.afterEvaluate {
-
         if (it.hasProperty('android') && it['android'].hasProperty('applicationVariants')) {
             android.applicationVariants.all { variant ->
                 def variantName = variant.name
@@ -46,8 +45,6 @@ subprojects { it ->
                             '**/*WebViewClient.*',
                             '**/*WebView$*.*',
                             '**/*WebView.*',
-                            '**/*Organism$*.*',
-                            '**/*Organism.*',
                             '**/*Fragment.*',
                             '**/*Fragment$*.*',
                             '**/*Listener.*',
@@ -112,8 +109,6 @@ subprojects { it ->
                             '**/*WebViewClient.*',
                             '**/*WebView$*.*',
                             '**/*WebView.*',
-                            '**/*Organism$*.*',
-                            '**/*Organism.*',
                             '**/*Fragment.*',
                             '**/*Fragment$*.*',
                             '**/*Listener.*',

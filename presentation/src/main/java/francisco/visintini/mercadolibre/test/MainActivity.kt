@@ -17,6 +17,7 @@ class MainActivity : AppCompatActivity(R.layout.activity_main), HasAndroidInject
 
     override fun onCreate(savedInstanceState: Bundle?) {
         AndroidInjection.inject(this)
+        // Switch back the background to white after the splash
         window.decorView.setBackgroundColor(Color.WHITE)
         super.onCreate(savedInstanceState)
     }

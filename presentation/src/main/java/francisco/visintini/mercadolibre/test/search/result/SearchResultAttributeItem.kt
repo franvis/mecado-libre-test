@@ -35,9 +35,9 @@ data class SearchResultAttributeItem(val viewState: ViewState) : Item() {
             val spannableDescription = SpannableString(description)
             spannableDescription.setSpan(
                 BulletSpan(
-                    context.convertDpToPixels(BULLET_MARGIN),
+                    context.convertDpToPixels(BULLET_MARGIN_DP),
                     ContextCompat.getColor(context, R.color.black),
-                    BULLET_RADIUS
+                    BULLET_RADIUS_DP
                 ),
                 0,
                 description.length,
@@ -56,8 +56,8 @@ data class SearchResultAttributeItem(val viewState: ViewState) : Item() {
     data class ViewState(val name: String, val description: String) : Parcelable
 
     companion object {
-        const val BULLET_MARGIN = 8
-        const val BULLET_RADIUS = 6
-        const val DESCRIPTION_WITH_BULLET_HTML = "&#8226;&#160;%s"
+        private const val BULLET_MARGIN_DP = 8
+        private const val BULLET_RADIUS_DP = 6
+        private const val DESCRIPTION_WITH_BULLET_HTML = "&#8226;&#160;%s"
     }
 }

@@ -3,9 +3,9 @@ package francisco.visintini.mercadolibre.test.search
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.SavedStateHandle
 import androidx.lifecycle.viewModelScope
-import francisco.visintini.mercadolibre.domain.entity.ErrorEntity
 import francisco.visintini.mercadolibre.domain.entity.Result.Error
 import francisco.visintini.mercadolibre.domain.entity.Result.Success
+import francisco.visintini.mercadolibre.domain.error.ErrorEntity
 import francisco.visintini.mercadolibre.domain.interactor.GetSearchResult
 import francisco.visintini.mercadolibre.test.di.ViewModelFactory
 import francisco.visintini.mercadolibre.test.search.ContentState.Content
@@ -130,11 +130,9 @@ class SearchViewModel(
                                 contentState = if (searchResults.isEmpty()) {
                                     Empty
                                 } else {
-                                    Content(
-                                        searchResults.map { prod ->
-                                            searchResultItemVSMapper.mapToViewState(prod)
-                                        }
-                                    )
+                                    Content(searchResults.map { prod ->
+                                        searchResultItemVSMapper.mapToViewState(prod)
+                                    })
                                 }
                             )
                         }
@@ -156,19 +154,10 @@ class SearchViewModel(
     private fun updateViewStateForError(error: ErrorEntity = ErrorEntity.UnknownError) {
         updateViewState { oldState ->
             when (error) {
-                is ErrorEntity.NetworkError, ErrorEntity.ServiceUnavailable -> {
-                    oldState.copy(
-                        contentState = NetworkErrorRetry
-                    )
-                }
-                is ErrorEntity.NotFound -> oldState.copy(
-                    contentState = Empty
-                )
-                else -> {
-                    oldState.copy(
-                        contentState = UnknownError
-                    )
-                }
+                is ErrorEntity.NetworkError, ErrorEntity.ServiceUnavailable ->
+                    oldState.copy(contentState = NetworkErrorRetry)
+                is ErrorEntity.NotFound -> oldState.copy(contentState = Empty)
+                else -> oldState.copy(contentState = UnknownError)
             }
         }
     }

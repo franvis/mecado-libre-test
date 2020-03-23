@@ -20,6 +20,14 @@ plugins {
 apply plugin: 'io.gitlab.arturbosch.detekt'
 
 ext.projectAndroid = {
+    testOptions {
+        animationsDisabled true
+        unitTests.all {
+            jacoco {
+                includeNoLocationClasses = true
+            }
+        }
+    }
     lintOptions {
         checkAllWarnings true
         warningsAsErrors true

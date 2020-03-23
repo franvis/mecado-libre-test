@@ -4,7 +4,7 @@ import francisco.visintini.mercadolibre.data.product.service.ProductService
 import francisco.visintini.mercadolibre.data.utils.wrapDataCall
 import francisco.visintini.mercadolibre.domain.entity.Product
 import francisco.visintini.mercadolibre.domain.entity.Result
-import francisco.visintini.mercadolibre.domain.repository.ErrorHandler
+import francisco.visintini.mercadolibre.domain.error.ErrorHandler
 import francisco.visintini.mercadolibre.domain.repository.ProductRepository
 import javax.inject.Inject
 

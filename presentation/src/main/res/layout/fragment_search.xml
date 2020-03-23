@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".search.SearchFragment">
+    tools:context=".search.SearchFragment"
+    tools:background="@color/white">
 
     <francisco.visintini.mercadolibre.test.search.bar.SearchBar
         android:id="@+id/view_search_bar"
@@ -23,17 +24,18 @@
         android:id="@+id/view_search_empty_result"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textAppearance="@style/H2"
         android:layout_marginStart="@dimen/gap_4"
         android:layout_marginEnd="@dimen/gap_4"
         android:text="@string/search_empty_results_text"
+        android:textAppearance="@style/H2"
         app:layout_constrainedHeight="true"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.5"
-        tools:text="No encontramos resultados para: 'Francisco'"/>
+        tools:text="No encontramos resultados para: 'Francisco'"
+        tools:visibility="gone" />
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/view_search_list"
@@ -42,13 +44,12 @@
         android:clipToPadding="false"
         android:paddingTop="@dimen/gap_2"
         android:paddingBottom="@dimen/gap_2"
-        app:layout_constrainedHeight="true"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/view_search_bar"
         app:layout_constraintVertical_bias="0"
-        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
         tools:listitem="@layout/item_search_result" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

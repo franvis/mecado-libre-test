@@ -5,7 +5,7 @@ import dagger.Provides
 import francisco.visintini.mercadolibre.data.di.RetrofitDummyWrapper
 import francisco.visintini.mercadolibre.data.search.repository.SearchRepositoryImpl
 import francisco.visintini.mercadolibre.data.search.service.SearchService
-import francisco.visintini.mercadolibre.domain.repository.ErrorHandler
+import francisco.visintini.mercadolibre.domain.error.ErrorHandler
 import francisco.visintini.mercadolibre.domain.repository.SearchRepository
 
 @Module

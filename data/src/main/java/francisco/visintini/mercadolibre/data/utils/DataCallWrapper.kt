@@ -1,7 +1,7 @@
 package francisco.visintini.mercadolibre.data.utils
 
 import francisco.visintini.mercadolibre.domain.entity.Result
-import francisco.visintini.mercadolibre.domain.repository.ErrorHandler
+import francisco.visintini.mercadolibre.domain.error.ErrorHandler
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.withContext
 

@@ -77,7 +77,7 @@ class SearchFragment : Fragment(R.layout.fragment_search) {
         view_search_list.setVisible(content is Content || content is Loading)
         if (currentViewState?.contentState != content) { // Avoid unnecessary re-rendering
             when (content) {
-                is Initial -> adapter.clear() // TODO Add recently searched here
+                is Initial -> adapter.clear() // TODO Add search history here
                 is Loading -> adapter.update((1..4).map { SearchResultItemPlaceholder })
                 is Content -> adapter.update(content.searchResults.map { SearchResultItem(it) })
                 is Empty -> {

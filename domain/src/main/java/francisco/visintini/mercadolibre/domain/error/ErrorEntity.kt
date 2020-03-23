@@ -1,4 +1,4 @@
-package francisco.visintini.mercadolibre.domain.entity
+package francisco.visintini.mercadolibre.domain.error
 
 sealed class ErrorEntity {
     object NetworkError : ErrorEntity()

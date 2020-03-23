@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <com.facebook.shimmer.ShimmerFrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:id="@+id/view_placeholder"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     app:shimmer_base_alpha="1.0"
@@ -22,7 +21,7 @@
             android:layout_marginEnd="@dimen/gap_2"
             android:background="@drawable/bg_placeholder_view"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toStartOf="@id/view_vertical_guideline"
+            app:layout_constraintEnd_toStartOf="@id/view_search_result_vertical_guideline"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="@id/view_search_result_title"
             app:layout_constraintVertical_bias="0"
@@ -36,7 +35,7 @@
             android:layout_marginEnd="@dimen/gap_4"
             android:background="@drawable/bg_placeholder_view"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toEndOf="@id/view_vertical_guideline"
+            app:layout_constraintStart_toEndOf="@id/view_search_result_vertical_guideline"
             app:layout_constraintTop_toTopOf="parent" />
 
         <View
@@ -82,7 +81,7 @@
             app:layout_constraintTop_toBottomOf="@id/view_search_result_attributes_3" />
 
         <androidx.constraintlayout.widget.Guideline
-            android:id="@+id/view_vertical_guideline"
+            android:id="@+id/view_search_result_vertical_guideline"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="vertical"

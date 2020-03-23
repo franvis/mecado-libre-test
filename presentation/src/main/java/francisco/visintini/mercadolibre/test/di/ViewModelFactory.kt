@@ -40,14 +40,14 @@ class GenericSavedStateViewModelFactory<out VM : ViewModel>(
 
 /**
  * Convenience function to use with `by viewModels` that creates an instance of
- * [AbstractSavedStateViewModelFactory] that enables us to pass [SavedStateHandle]
+ * [GenericSavedStateViewModelFactory] that enables us to pass [SavedStateHandle]
  * to the [ViewModel]'s constructor.
  *
  * @param factory instance of [ViewModelFactory] that will be used to construct the [ViewModel]
- * @param owner instance of Fragment or Activity that owns the [ViewModel]
  * @param defaultArgs Bundle with default values to populate the [SavedStateHandle]
  *
  * @see ViewModelFactory
+ * @see GenericSavedStateViewModelFactory
  */
 @MainThread
 inline fun <reified VM : ViewModel> SavedStateRegistryOwner.withFactory(

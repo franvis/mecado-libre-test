@@ -15,9 +15,6 @@ class MessageManagerImpl @Inject constructor(private val resourceProvider: Resou
     override fun showError(view: View, errorMessage: ErrorMessage) {
         when (errorMessage) {
             is NetworkErrorRetry -> {
-                // if(::snackbar.isInitialized) {
-                //     snackbar.dismiss()
-                // }
                 snackbar = Snackbar.make(
                     view,
                     resourceProvider.getString(R.string.error_message_network),

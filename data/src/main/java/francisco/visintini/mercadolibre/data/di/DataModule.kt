@@ -5,7 +5,7 @@ import dagger.Provides
 import francisco.visintini.mercadolibre.data.error.ErrorHandlerImpl
 import francisco.visintini.mercadolibre.data.product.di.ProductModule
 import francisco.visintini.mercadolibre.data.search.di.SearchModule
-import francisco.visintini.mercadolibre.domain.repository.ErrorHandler
+import francisco.visintini.mercadolibre.domain.error.ErrorHandler
 import retrofit2.Retrofit
 import retrofit2.converter.moshi.MoshiConverterFactory
 

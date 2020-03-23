@@ -15,7 +15,7 @@ abstract class BaseSavedStateViewModel<VS>(open val handle: SavedStateHandle) : 
         saveViewState()
     }
 
-    protected fun saveViewState() {
+    private fun saveViewState() {
         _viewState.value?.run { handle[KEY_STATE] = this }
     }
 

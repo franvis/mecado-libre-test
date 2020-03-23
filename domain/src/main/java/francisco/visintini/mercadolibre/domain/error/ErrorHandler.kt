@@ -1,6 +1,4 @@
-package francisco.visintini.mercadolibre.domain.repository
-
-import francisco.visintini.mercadolibre.domain.entity.ErrorEntity
+package francisco.visintini.mercadolibre.domain.error
 
 interface ErrorHandler {
 

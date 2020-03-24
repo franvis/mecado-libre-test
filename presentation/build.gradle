@@ -77,7 +77,6 @@ dependencies {
     // Canary Leak
     debugImplementation deps.canaryLeak
 
-    testImplementation 'junit:junit:4.13'
-    androidTestImplementation 'androidx.test.ext:junit:1.1.1'
-    androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
+    testImplementation deps.junit
+    androidTestImplementation deps.androidx_test.values()
 }

@@ -37,6 +37,7 @@ versions.hyperion = '0.9.27'
 versions.facebookShimmer = '0.5.0'
 versions.canaryLeak = '2.2'
 versions.junit = '4.13'
+versions.kluent = '1.35'
 
 deps.versions = versions
 
@@ -52,6 +53,8 @@ deps.facebook_shimmer = "com.facebook.shimmer:shimmer:$versions.facebookShimmer"
 deps.canaryLeak = "com.squareup.leakcanary:leakcanary-android:$versions.canaryLeak"
 deps.timber = "com.jakewharton.timber:timber:$versions.timber"
 deps.junit = "junit:junit:$versions.junit"
+deps.mockk = "io.mockk:mockk:$versions.mockk"
+deps.kluent = "org.amshove.kluent:kluent-android:$versions.kluent"
 
 def androidx = [:]
 androidx.constraint_layout = "androidx.constraintlayout:constraintlayout:$versions.androidXConstraintLayout"
@@ -63,6 +66,7 @@ deps.androidx = androidx
 
 def kotlinx = [:]
 kotlinx.coroutines_core = "org.jetbrains.kotlinx:kotlinx-coroutines-core:$versions.coroutines"
+kotlinx.coroutines_test = "org.jetbrains.kotlinx:kotlinx-coroutines-test:$versions.coroutines"
 deps.kotlinx = kotlinx
 
 deps.retrofit2 = [

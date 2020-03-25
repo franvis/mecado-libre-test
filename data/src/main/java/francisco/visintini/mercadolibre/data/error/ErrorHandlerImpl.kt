@@ -8,8 +8,7 @@ import java.net.HttpURLConnection
 import retrofit2.HttpException
 import timber.log.Timber
 
-class ErrorHandlerImpl :
-    ErrorHandler {
+class ErrorHandlerImpl : ErrorHandler {
     override fun mapError(throwable: Throwable): ErrorEntity {
         return when (throwable) {
             is IOException -> ErrorEntity.NetworkError

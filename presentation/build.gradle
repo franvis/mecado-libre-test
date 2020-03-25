@@ -82,8 +82,8 @@ dependencies {
     debugImplementation deps.hyperion.values()
     // Canary Leak
     debugImplementation deps.canaryLeak
-
-    implementation "com.squareup.okhttp3:okhttp:4.4.1"
+    // OkHttp
+    implementation deps.okhttp
 
     testImplementation deps.junit
     androidTestImplementation deps.androidx_test.values()

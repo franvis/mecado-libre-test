@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@color/strongYellow" />
+
+    <item
+        android:drawable="@drawable/img_mercado_libre"
+        android:gravity="center" />
+</layer-list>

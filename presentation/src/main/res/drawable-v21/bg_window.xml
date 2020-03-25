@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@color/strongYellow" />
+
+    <item android:gravity="center">
+        <bitmap
+            android:gravity="clip_vertical|center_horizontal"
+            android:src="@drawable/ic_mercado_libre_logo" />
+    </item>
+</layer-list>

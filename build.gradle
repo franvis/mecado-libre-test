@@ -29,7 +29,7 @@ ext.projectAndroid = {
         }
     }
     lintOptions {
-        disable 'IconDensities', 'IconMissingDensityFolder'
+        disable 'IconDensities', 'IconMissingDensityFolder', 'ObsoleteSdkInt'
         checkAllWarnings true
         warningsAsErrors true
     }

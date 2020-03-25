@@ -13,7 +13,7 @@ data class SearchViewState(
 
 sealed class ContentState : Parcelable {
     @Parcelize
-    data class Initial(val searchHistory: List<String>) : ContentState()
+    data class Initial(val searchHistory: List<String> = emptyList()) : ContentState()
     @Parcelize
     data class Content(val searchResults: List<ViewState>) : ContentState()
     @Parcelize

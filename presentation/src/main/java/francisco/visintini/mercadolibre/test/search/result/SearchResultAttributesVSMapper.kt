@@ -7,7 +7,7 @@ import javax.inject.Singleton
 @Singleton
 class SearchResultAttributesVSMapper @Inject constructor() {
 
-    fun transform(productAttributes: List<ProductAttribute>): SearchResultAttributes.ViewState {
+    fun mapToViewState(productAttributes: List<ProductAttribute>): SearchResultAttributes.ViewState {
         return SearchResultAttributes.ViewState(productAttributes.filter { it.valueName != null }.map {
             SearchResultAttributeItem.ViewState(
                 it.name,

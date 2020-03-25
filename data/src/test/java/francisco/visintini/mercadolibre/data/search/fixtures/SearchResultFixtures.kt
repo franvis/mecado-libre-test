@@ -23,8 +23,8 @@ import francisco.visintini.mercadolibre.domain.entity.SearchResult
 import francisco.visintini.mercadolibre.domain.entity.ShippingInfo
 import francisco.visintini.mercadolibre.domain.entity.SummarizedProduct
 
-object SearchResultFixtures {
-    internal fun just() = SearchResult(
+internal object SearchResultFixtures {
+    fun just() = SearchResult(
         siteId = MOCKED_SEARCH_SITE_ID,
         query = MOCKED_SEARCH_QUERY,
         paging = PagingInfo(

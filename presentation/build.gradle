@@ -84,8 +84,12 @@ dependencies {
     debugImplementation deps.canaryLeak
     // OkHttp
     implementation deps.okhttp
-
+    // Testing
+    testImplementation deps.kotlinx.coroutines_test
     testImplementation deps.junit
+    testImplementation deps.mockk
+    testImplementation deps.kluent
+    testImplementation deps.androidx_test_arch_core
     androidTestImplementation deps.androidx_test.values()
     androidTestImplementation deps.mockWebServer
 }

@@ -16,13 +16,13 @@ class ProductContentViewStateMapper @Inject constructor(
     private val productImageGalleryItemVSMapper: ProductImageGalleryItemVSMapper,
     private val resourceProvider: ResourceProvider
 ) {
-    fun transform(product: Product) =
+    fun mapToViewState(product: Product) =
         with(product) {
             Content(
                 title,
                 imageGalleryViewState = ProductImageGalleryViewState(
                     productImageGalleryItemViewStates = pictures.map { productPic ->
-                        productImageGalleryItemVSMapper.transform(productPic)
+                        productImageGalleryItemVSMapper.mapToViewState(productPic)
                     }),
                 price = resourceProvider.getString(
                     R.string.product_formatted_price,

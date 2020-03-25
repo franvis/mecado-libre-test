@@ -68,7 +68,7 @@ class ProductViewModel(
                     is Success -> {
                         updateViewState { oldState ->
                             oldState.copy(
-                                productContentState = productContentViewStateMapper.transform(
+                                productContentState = productContentViewStateMapper.mapToViewState(
                                     result.result
                                 )
                             )

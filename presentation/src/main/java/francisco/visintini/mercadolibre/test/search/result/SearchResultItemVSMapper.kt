@@ -17,7 +17,7 @@ class SearchResultItemVSMapper @Inject constructor(
             summarizedProduct.thumbnailUrl,
             summarizedProduct.title,
             summarizedProduct.id,
-            searchResultAttributesVSMapper.transform(summarizedProduct.attributes),
+            searchResultAttributesVSMapper.mapToViewState(summarizedProduct.attributes),
             resourceProvider.getString(
                 R.string.product_formatted_price,
                 summarizedProduct.price.roundToInt()

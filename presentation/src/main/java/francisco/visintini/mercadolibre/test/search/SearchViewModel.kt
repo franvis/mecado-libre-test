@@ -41,7 +41,7 @@ class SearchViewModel(
         get() = _navigator
 
     fun start() {
-        _viewState.value = getSavedState().value?.let { it } ?: SearchViewState(
+        _viewState.value = getSavedState().value ?: SearchViewState(
             contentState = Initial(emptyList())
         )
         lastIntent?.let { handleIntent(it) }

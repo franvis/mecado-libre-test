@@ -6,8 +6,8 @@ import francisco.visintini.mercadolibre.data.search.fixtures.Constants.MOCKED_PA
 import francisco.visintini.mercadolibre.data.search.fixtures.Constants.MOCKED_PAGING_PRIMARY_RESULTS
 import francisco.visintini.mercadolibre.data.search.fixtures.Constants.MOCKED_PAGING_TOTAL
 
-object PagingDtoFixtures {
-    internal fun just() = PagingDto(
+internal object PagingDtoFixtures {
+    fun just() = PagingDto(
         total = MOCKED_PAGING_TOTAL,
         offset = MOCKED_PAGING_OFFSET,
         limit = MOCKED_PAGING_LIMIT,

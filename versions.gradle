@@ -8,7 +8,7 @@ versions.detekt = '1.6.0'
 versions.googleServices = '4.3.3'
 versions.timber = '4.7.1'
 versions.moshi = '1.9.2'
-versions.retrofit2 = "2.8.0"
+versions.retrofit2 = "2.6.1" // TODO Update to 2.8.0 when https://github.com/square/retrofit/issues/3266 is fixed
 versions.androidXCoreKtx = '1.2.0'
 versions.androidXAppCompat = '1.1.0'
 versions.androidXGradlePlugin = '2.2.0-alpha02'
@@ -20,8 +20,10 @@ versions.androidXViewPager2 = '1.0.0'
 versions.androidXTestExtJUnit = '1.1.1'
 versions.androidXTestEspressoCore = '3.2.0'
 versions.androidXTestEspressoContrib = '3.2.0'
+versions.androidXCoreTestingVersion = '2.1.0'
 versions.androidXTestRules = '1.2.0'
 versions.mockWebServer = '4.4.0'
+versions.androidXCoreTestingVersion = '2.1.0'
 versions.okHttp = '4.4.1'
 versions.glide = '4.11.0'
 versions.groupie = '2.7.2'
@@ -55,6 +57,7 @@ deps.timber = "com.jakewharton.timber:timber:$versions.timber"
 deps.junit = "junit:junit:$versions.junit"
 deps.mockk = "io.mockk:mockk:$versions.mockk"
 deps.kluent = "org.amshove.kluent:kluent-android:$versions.kluent"
+deps.androidx_test_arch_core = "androidx.arch.core:core-testing:$versions.androidXCoreTestingVersion"
 
 def androidx = [:]
 androidx.constraint_layout = "androidx.constraintlayout:constraintlayout:$versions.androidXConstraintLayout"
@@ -75,10 +78,10 @@ deps.retrofit2 = [
 ]
 
 deps.androidx_test = [
-        junit: "androidx.test.ext:junit:$versions.androidXTestExtJUnit",
-        espresso_core: "androidx.test.espresso:espresso-core:$versions.androidXTestEspressoCore",
+        junit           : "androidx.test.ext:junit:$versions.androidXTestExtJUnit",
+        espresso_core   : "androidx.test.espresso:espresso-core:$versions.androidXTestEspressoCore",
         espresso_contrib: "androidx.test.espresso:espresso-contrib:$versions.androidXTestEspressoContrib",
-        rules: "androidx.test:rules:$versions.androidXTestRules"
+        rules           : "androidx.test:rules:$versions.androidXTestRules"
 ]
 deps.mockWebServer = "com.squareup.okhttp3:mockwebserver:$versions.mockWebServer"
 deps.okhttp = "com.squareup.okhttp3:okhttp:$versions.okHttp"
@@ -119,7 +122,7 @@ deps.classpath = [
         kotlinGradlePlugin: "org.jetbrains.kotlin:kotlin-gradle-plugin:$versions.kotlin",
         googleServices    : "com.google.gms:google-services:$versions.googleServices",
         androidXNavigation: "androidx.navigation:navigation-safe-args-gradle-plugin:$versions.androidXGradlePlugin",
-        detekt : "io.gitlab.arturbosch.detekt:detekt-gradle-plugin:$versions.detekt"
+        detekt            : "io.gitlab.arturbosch.detekt:detekt-gradle-plugin:$versions.detekt"
 ]
 deps.dagger = [
         dagger              : "com.google.dagger:dagger:$versions.dagger",

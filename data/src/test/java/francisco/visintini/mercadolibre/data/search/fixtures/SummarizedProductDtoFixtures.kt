@@ -9,8 +9,8 @@ import francisco.visintini.mercadolibre.data.search.fixtures.Constants.MOCKED_PR
 import francisco.visintini.mercadolibre.data.search.fixtures.Constants.MOCKED_PRODUCT_THUMBNAIL_URL
 import francisco.visintini.mercadolibre.data.search.fixtures.Constants.MOCKED_PRODUCT_TITLE
 
-object SummarizedProductDtoFixtures {
-    internal fun just() = SummarizedProductDto(
+internal object SummarizedProductDtoFixtures {
+    fun just() = SummarizedProductDto(
         id = MOCKED_PRODUCT_ID,
         siteId = MOCKED_PRODUCT_SITE_ID,
         title = MOCKED_PRODUCT_TITLE,

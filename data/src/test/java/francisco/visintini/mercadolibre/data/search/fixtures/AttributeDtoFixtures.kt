@@ -5,8 +5,8 @@ import francisco.visintini.mercadolibre.data.search.fixtures.Constants.MOCKED_AT
 import francisco.visintini.mercadolibre.data.search.fixtures.Constants.MOCKED_ATTRIBUTE_NAME
 import francisco.visintini.mercadolibre.data.search.fixtures.Constants.MOCKED_ATTRIBUTE_VALUE_NAME
 
-object AttributeDtoFixtures {
-    internal fun just() = AttributeDto(
+internal object AttributeDtoFixtures {
+    fun just() = AttributeDto(
         id = MOCKED_ATTRIBUTE_ID,
         name = MOCKED_ATTRIBUTE_NAME,
         valueName = MOCKED_ATTRIBUTE_VALUE_NAME

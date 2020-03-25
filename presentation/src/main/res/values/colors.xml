@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources>
+<resources tools:ignore="UnusedResources" xmlns:tools="http://schemas.android.com/tools">
     <color name="white">#FFFFFF</color>
     <color name="subtleGrey">#DDDDDD</color>
     <color name="softGrey">#999999</color>
     <color name="darkGrey">#666666</color>
     <color name="strongGrey">#333333</color>
-    <color name="blue">#0090E3</color>
+    <color name="blueLink">#0090E3</color>
     <color name="yellow">#FFF159</color>
     <color name="strongYellow">#F3E62D</color>
     <color name="darkYellow">#D5CA27</color>

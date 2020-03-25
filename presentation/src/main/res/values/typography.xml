@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources>
+<resources xmlns:tools="http://schemas.android.com/tools"
+    tools:ignore="UnusedResources">
 
     <style name="H1">
         <item name="android:textSize">20sp</item>
@@ -24,7 +25,7 @@
     </style>
 
     <style name="H3.Link" parent="H3">
-        <item name="android:textColor">@color/blue</item>
+        <item name="android:textColor">@color/blueLink</item>
     </style>
 
     <style name="Body">
@@ -35,7 +36,7 @@
     </style>
 
     <style name="Body.Link" parent="Body">
-        <item name="android:textColor">@color/blue</item>
+        <item name="android:textColor">@color/blueLink</item>
     </style>
 
     <style name="Body.Emphasis" parent="Body">

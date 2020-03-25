@@ -29,10 +29,9 @@ ext.projectAndroid = {
         }
     }
     lintOptions {
+        disable 'IconDensities', 'IconMissingDensityFolder'
         checkAllWarnings true
         warningsAsErrors true
-        abortOnError true
-        lintConfig file("$rootDir/lint.xml")
     }
 }
 

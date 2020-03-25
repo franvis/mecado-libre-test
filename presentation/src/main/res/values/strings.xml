@@ -1,14 +1,14 @@
 <resources>
     <string name="mercado_libre_test_app_name">Mercado Libre</string>
-    <string name="search_result_attribute_description">%s: %s</string>
+    <string name="search_result_attribute_description">%1$s: %2$s</string>
     <string name="search_bar_edit_text_hint">Hola, que estas buscando?</string>
     <string name="product_formatted_price">$%d</string>
-    <string name="product_availability">Disponible: %d, Vendido: %d</string>
+    <string name="product_availability">Disponible: %1$d, Vendido: %2$s</string>
     <string name="product_condition_used">Condición: Usado</string>
     <string name="product_condition_new">Condición: Nuevo</string>
     <string name="error_message_network">Hay un problema con la conexion a Internet</string>
     <string name="error_message_network_retry">Reintentar</string>
-    <string name="search_empty_results_text">No encontramos resultados para: \'%s\'. Por favor prueba con otro termino</string>
+    <string name="search_empty_results_text">No encontramos resultados para: &#8216;%s\&#8217;. Por favor prueba con otro termino</string>
     <string name="error_dialog_title">Oops, algo salio mal</string>
     <string name="error_dialog_ok">Aceptar</string>
     <string name="error_dialog_generic_message">Desafortunadamente ocurrio un error inesperado</string>

@@ -5,4 +5,5 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:textAppearance="@style/Body"
+    tools:ignore="UnusedIds"
     tools:text="@sample/search_result.json/product_attribute" />

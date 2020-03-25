@@ -69,7 +69,6 @@
             app:layout_constraintTop_toBottomOf="@id/view_search_result_attributes_2_placeholder" />
 
         <View
-            android:id="@+id/view_search_result_price_placeholder"
             android:layout_width="0dp"
             android:layout_height="10dp"
             android:layout_marginTop="@dimen/gap_3"

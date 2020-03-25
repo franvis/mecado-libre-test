@@ -31,6 +31,7 @@ import kotlinx.android.synthetic.main.fragment_product.*
 class ProductFragment : Fragment(R.layout.fragment_product) {
     @Inject
     lateinit var productViewModelFactory: ProductViewModel.Factory
+
     @Inject
     lateinit var messageManager: MessageManager
 
@@ -41,7 +42,7 @@ class ProductFragment : Fragment(R.layout.fragment_product) {
     }
     private val args: ProductFragmentArgs by navArgs()
     private var currentViewState: ProductViewState? = null
-    lateinit var viewPagerCallback: ViewPager2.OnPageChangeCallback
+    private lateinit var viewPagerCallback: ViewPager2.OnPageChangeCallback
 
     override fun onCreate(savedInstanceState: Bundle?) {
         AndroidSupportInjection.inject(this)
@@ -51,7 +52,13 @@ class ProductFragment : Fragment(R.layout.fragment_product) {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         view_product_view_pager.adapter = adapter
-        subscribeToImageGalleryIntents()
+        subscribeToImageGalleryIntents { position ->
+            productViewModel.handleIntent(
+                ImageGalleryPositionChanged(
+                    position
+                )
+            )
+        }
     }
 
     override fun onStart() {
@@ -125,10 +132,10 @@ class ProductFragment : Fragment(R.layout.fragment_product) {
         }
     }
 
-    private fun subscribeToImageGalleryIntents() {
+    private fun subscribeToImageGalleryIntents(onPageSelected: (position: Int) -> Unit) {
         viewPagerCallback = object : ViewPager2.OnPageChangeCallback() {
             override fun onPageSelected(position: Int) {
-                productViewModel.handleIntent(ImageGalleryPositionChanged(position))
+                onPageSelected.invoke(position)
             }
         }
         view_product_view_pager.registerOnPageChangeCallback(viewPagerCallback)

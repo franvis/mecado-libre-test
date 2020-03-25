@@ -84,7 +84,6 @@
             app:layout_constraintWidth_percent="0.4" />
 
         <View
-            android:id="@+id/view_product_condition_placeholder"
             android:layout_width="0dp"
             android:layout_height="8dp"
             android:layout_marginTop="@dimen/gap_4"

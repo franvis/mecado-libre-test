@@ -14,7 +14,8 @@ android {
         targetSdkVersion build_versions.target_sdk
         versionCode 1
         versionName "1.0"
-        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        testInstrumentationRunner "francisco.visintini.mercadolibre.test.utils.UITestRunner"
+        buildConfigField "String", "API_BASE_URL", '"https://api.mercadolibre.com"'
     }
     compileOptions {
         sourceCompatibility 1.8
@@ -35,6 +36,11 @@ android {
     }
     androidExtensions {
         experimental = true
+    }
+    sourceSets {
+        androidTest {
+            resources.srcDirs += ['src/androidTest/resources']
+        }
     }
 }
 
@@ -77,6 +83,9 @@ dependencies {
     // Canary Leak
     debugImplementation deps.canaryLeak
 
+    implementation "com.squareup.okhttp3:okhttp:4.4.1"
+
     testImplementation deps.junit
     androidTestImplementation deps.androidx_test.values()
+    androidTestImplementation deps.mockWebServer
 }

@@ -8,7 +8,7 @@ versions.detekt = '1.6.0'
 versions.googleServices = '4.3.3'
 versions.timber = '4.7.1'
 versions.moshi = '1.9.2'
-versions.retrofit2 = "2.7.2"
+versions.retrofit2 = "2.8.0"
 versions.androidXCoreKtx = '1.2.0'
 versions.androidXAppCompat = '1.1.0'
 versions.androidXGradlePlugin = '2.2.0-alpha02'
@@ -19,7 +19,10 @@ versions.androidXFragment = '1.2.3'
 versions.androidXViewPager2 = '1.0.0'
 versions.androidXTestExtJUnit = '1.1.1'
 versions.androidXTestEspressoCore = '3.2.0'
+versions.androidXTestEspressoContrib = '3.2.0'
 versions.androidXTestRules = '1.2.0'
+versions.mockWebServer = '4.4.0'
+versions.okHttp = '4.4.1'
 versions.glide = '4.11.0'
 versions.groupie = '2.7.2'
 versions.rxJava = '2.2.19'
@@ -70,8 +73,11 @@ deps.retrofit2 = [
 deps.androidx_test = [
         junit: "androidx.test.ext:junit:$versions.androidXTestExtJUnit",
         espresso_core: "androidx.test.espresso:espresso-core:$versions.androidXTestEspressoCore",
+        espresso_contrib: "androidx.test.espresso:espresso-contrib:$versions.androidXTestEspressoContrib",
         rules: "androidx.test:rules:$versions.androidXTestRules"
 ]
+deps.mockWebServer = "com.squareup.okhttp3:mockwebserver:$versions.mockWebServer"
+deps.okhttp = "com.squareup.okhttp3:okhttp:$versions.okHttp"
 
 deps.moshi = [
         moshi_kotlin        : "com.squareup.moshi:moshi-kotlin:$versions.moshi",

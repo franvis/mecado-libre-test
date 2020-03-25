@@ -14,74 +14,74 @@
         android:orientation="vertical">
 
         <View
-            android:id="@+id/view_search_result_image"
+            android:id="@+id/view_search_result_image_placeholder"
             android:layout_width="0dp"
             android:layout_height="90dp"
             android:layout_marginStart="@dimen/gap_4"
             android:layout_marginEnd="@dimen/gap_2"
             android:background="@drawable/bg_placeholder_view"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toStartOf="@id/view_search_result_vertical_guideline"
+            app:layout_constraintEnd_toStartOf="@id/view_search_result_vertical_guideline_placeholder"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="@id/view_search_result_title"
+            app:layout_constraintTop_toTopOf="@id/view_search_result_title_placeholder"
             app:layout_constraintVertical_bias="0"
             app:layout_constraintVertical_chainStyle="packed" />
 
         <View
-            android:id="@+id/view_search_result_title"
+            android:id="@+id/view_search_result_title_placeholder"
             android:layout_width="0dp"
             android:layout_height="12dp"
             android:layout_marginStart="@dimen/gap_2"
             android:layout_marginEnd="@dimen/gap_4"
             android:background="@drawable/bg_placeholder_view"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toEndOf="@id/view_search_result_vertical_guideline"
+            app:layout_constraintStart_toEndOf="@id/view_search_result_vertical_guideline_placeholder"
             app:layout_constraintTop_toTopOf="parent" />
 
         <View
-            android:id="@+id/view_search_result_attributes_1"
+            android:id="@+id/view_search_result_attributes_1_placeholder"
             android:layout_width="0dp"
             android:layout_height="8dp"
             android:layout_marginTop="@dimen/gap_3"
             android:background="@drawable/bg_placeholder_view"
-            app:layout_constraintEnd_toEndOf="@id/view_search_result_title"
-            app:layout_constraintStart_toStartOf="@id/view_search_result_title"
-            app:layout_constraintTop_toBottomOf="@id/view_search_result_title" />
+            app:layout_constraintEnd_toEndOf="@id/view_search_result_title_placeholder"
+            app:layout_constraintStart_toStartOf="@id/view_search_result_title_placeholder"
+            app:layout_constraintTop_toBottomOf="@id/view_search_result_title_placeholder" />
 
         <View
-            android:id="@+id/view_search_result_attributes_2"
+            android:id="@+id/view_search_result_attributes_2_placeholder"
             android:layout_width="0dp"
             android:layout_height="8dp"
             android:layout_marginTop="@dimen/gap_2"
             android:background="@drawable/bg_placeholder_view"
-            app:layout_constraintEnd_toEndOf="@id/view_search_result_title"
-            app:layout_constraintStart_toStartOf="@id/view_search_result_title"
-            app:layout_constraintTop_toBottomOf="@id/view_search_result_attributes_1" />
+            app:layout_constraintEnd_toEndOf="@id/view_search_result_title_placeholder"
+            app:layout_constraintStart_toStartOf="@id/view_search_result_title_placeholder"
+            app:layout_constraintTop_toBottomOf="@id/view_search_result_attributes_1_placeholder" />
 
         <View
-            android:id="@+id/view_search_result_attributes_3"
+            android:id="@+id/view_search_result_attributes_3_placeholder"
             android:layout_width="0dp"
             android:layout_height="8dp"
             android:layout_marginTop="@dimen/gap_2"
             android:background="@drawable/bg_placeholder_view"
-            app:layout_constraintEnd_toEndOf="@id/view_search_result_title"
-            app:layout_constraintStart_toStartOf="@id/view_search_result_title"
-            app:layout_constraintTop_toBottomOf="@id/view_search_result_attributes_2" />
+            app:layout_constraintEnd_toEndOf="@id/view_search_result_title_placeholder"
+            app:layout_constraintStart_toStartOf="@id/view_search_result_title_placeholder"
+            app:layout_constraintTop_toBottomOf="@id/view_search_result_attributes_2_placeholder" />
 
         <View
-            android:id="@+id/view_search_result_price"
+            android:id="@+id/view_search_result_price_placeholder"
             android:layout_width="0dp"
             android:layout_height="10dp"
             android:layout_marginTop="@dimen/gap_3"
             app:layout_constraintVertical_bias="0"
             app:layout_constraintBottom_toBottomOf="parent"
             android:background="@drawable/bg_placeholder_view"
-            app:layout_constraintEnd_toEndOf="@id/view_search_result_title"
-            app:layout_constraintStart_toStartOf="@id/view_search_result_title"
-            app:layout_constraintTop_toBottomOf="@id/view_search_result_attributes_3" />
+            app:layout_constraintEnd_toEndOf="@id/view_search_result_title_placeholder"
+            app:layout_constraintStart_toStartOf="@id/view_search_result_title_placeholder"
+            app:layout_constraintTop_toBottomOf="@id/view_search_result_attributes_3_placeholder" />
 
         <androidx.constraintlayout.widget.Guideline
-            android:id="@+id/view_search_result_vertical_guideline"
+            android:id="@+id/view_search_result_vertical_guideline_placeholder"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="vertical"

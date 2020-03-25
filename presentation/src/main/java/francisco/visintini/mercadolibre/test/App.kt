@@ -12,13 +12,19 @@ open class App : Application(), HasAndroidInjector {
     @Inject
     lateinit var dispatchingAndroidInjector: DispatchingAndroidInjector<Any>
 
-    lateinit var appComponent: AppComponent
+    open lateinit var appComponent: AppComponent
 
     override fun androidInjector(): AndroidInjector<Any> = dispatchingAndroidInjector
 
     override fun onCreate() {
         super.onCreate()
-        appComponent = DaggerAppComponent.builder().application(this).build()
+        appComponent = buildAppComponent()
         appComponent.inject(this)
     }
+
+    open fun buildAppComponent(): AppComponent = DaggerAppComponent
+        .builder()
+        .application(this)
+        .baseUrl(BuildConfig.API_BASE_URL)
+        .build()
 }

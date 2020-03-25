@@ -6,6 +6,8 @@ import francisco.visintini.mercadolibre.data.error.ErrorHandlerImpl
 import francisco.visintini.mercadolibre.data.product.di.ProductModule
 import francisco.visintini.mercadolibre.data.search.di.SearchModule
 import francisco.visintini.mercadolibre.domain.error.ErrorHandler
+import javax.inject.Named
+import okhttp3.OkHttpClient
 import retrofit2.Retrofit
 import retrofit2.converter.moshi.MoshiConverterFactory
 
@@ -13,21 +15,24 @@ import retrofit2.converter.moshi.MoshiConverterFactory
 class DataModule {
 
     @Provides
-    fun provideRetrofit(): RetrofitDummyWrapper {
+    fun providesOkHttpClient(): OkHttpClient = OkHttpClient.Builder().build()
+
+    @Provides
+    fun provideRetrofit(
+        @Named("BASE_URL") apiBaseUrl: String,
+        okHttpClient: OkHttpClient
+    ): RetrofitDummyWrapper {
         return RetrofitDummyWrapper(
             Retrofit.Builder()
+                .callFactory(okHttpClient)
                 .addConverterFactory(MoshiConverterFactory.create())
-                .baseUrl(API_BASE_URL)
+                .baseUrl(apiBaseUrl)
                 .build()
         )
     }
 
     @Provides
     fun providesErrorHandler(): ErrorHandler = ErrorHandlerImpl()
-
-    companion object {
-        private const val API_BASE_URL = "https://api.mercadolibre.com"
-    }
 }
 
 /**

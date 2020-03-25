@@ -1,0 +1,6686 @@
+{
+  "site_id": "MLA",
+  "query": "sas",
+  "paging": {
+    "total": 3640,
+    "offset": 0,
+    "limit": 50,
+    "primary_results": 1001
+  },
+  "results": [
+    {
+      "id": "MLA837510509",
+      "site_id": "MLA",
+      "title": "Cocina Electrolux 76sas 5 Multigas Acero Inoxidable 110v/220v Puerta Visor 125.1l",
+      "seller": {
+        "id": 12626860,
+        "permalink": null,
+        "power_seller_status": "platinum",
+        "car_dealer": false,
+        "real_estate_agency": false,
+        "tags": []
+      },
+      "price": 40999,
+      "currency_id": "ARS",
+      "available_quantity": 1,
+      "sold_quantity": 5,
+      "buying_mode": "buy_it_now",
+      "listing_type_id": "gold_special",
+      "stop_time": "2040-01-30T04:00:00.000Z",
+      "condition": "new",
+      "permalink": "https://www.mercadolibre.com.ar/cocina-electrolux-76sas-5-multigas-acero-inoxidable-110v220v-puerta-visor-1251l/p/MLA9986781",
+      "thumbnail": "http://mla-s2-p.mlstatic.com/905122-MLA40391854131_012020-I.jpg",
+      "accepts_mercadopago": true,
+      "installments": {
+        "quantity": 12,
+        "amount": 5595.34,
+        "rate": 63.77,
+        "currency_id": "ARS"
+      },
+      "address": {
+        "state_id": "AR-C",
+        "state_name": "Capital Federal",
+        "city_id": "TUxBQkZMTzg5MjFa",
+        "city_name": "Floresta"
+      },
+      "shipping": {
+        "free_shipping": false,
+        "mode": "custom",
+        "tags": [],
+        "logistic_type": "custom",
+        "store_pick_up": true
+      },
+      "seller_address": {
+        "id": "",
+        "comment": "",
+        "address_line": "",
+        "zip_code": "",
+        "country": {
+          "id": "AR",
+          "name": "Argentina"
+        },
+        "state": {
+          "id": "AR-C",
+          "name": "Capital Federal"
+        },
+        "city": {
+          "id": "TUxBQkZMTzg5MjFa",
+          "name": "Floresta"
+        },
+        "latitude": "",
+        "longitude": ""
+      },
+      "attributes": [
+        {
+          "id": "BRAND",
+          "value_name": "Electrolux",
+          "attribute_group_id": "OTHERS",
+          "attribute_group_name": "Otros",
+          "name": "Marca",
+          "value_id": "188",
+          "value_struct": null,
+          "values": [
+            {
+              "id": "188",
+              "name": "Electrolux",
+              "struct": null,
+              "source": 1
+            }
+          ],
+          "source": 1
+        },
+        {
+          "attribute_group_id": "OTHERS",
+          "attribute_group_name": "Otros",
+          "source": 1572,
+          "values": [
+            {
+              "source": 1572,
+              "id": "2230284",
+              "name": "Nuevo",
+              "struct": null
+            }
+          ],
+          "id": "ITEM_CONDITION",
+          "name": "Condición del ítem",
+          "value_id": "2230284",
+          "value_name": "Nuevo",
+          "value_struct": null
+        },
+        {
+          "value_struct": null,
+          "attribute_group_name": "Otros",
+          "id": "MODEL",
+          "name": "Modelo",
+          "value_name": "76SAS",
+          "source": 1,
+          "value_id": "3339958",
+          "values": [
+            {
+              "source": 1,
+              "id": "3339958",
+              "name": "76SAS",
+              "struct": null
+            }
+          ],
+          "attribute_group_id": "OTHERS"
+        }
+      ],
+      "original_price": null,
+      "category_id": "MLA4344",
+      "official_store_id": null,
+      "catalog_product_id": "MLA9986781",
+      "tags": [
+        "extended_warranty_eligible",
+        "good_quality_picture",
+        "good_quality_thumbnail",
+        "brand_verified",
+        "immediate_payment"
+      ],
+      "catalog_listing": true
+    },
+    {
+      "id": "MLA695007886",
+      "site_id": "MLA",
+      "title": "Los Hombres Del Sas. Ben Macintyre. Critica",
+      "seller": {
+        "id": 225091449,
+        "permalink": null,
+        "power_seller_status": "gold",
+        "car_dealer": false,
+        "real_estate_agency": false,
+        "tags": []
+      },
+      "price": 978,
+      "currency_id": "ARS",
+      "available_quantity": 1,
+      "sold_quantity": 5,
+      "buying_mode": "buy_it_now",
+      "listing_type_id": "gold_special",
+      "stop_time": "2037-11-26T15:44:33.000Z",
+      "condition": "new",
+      "permalink": "https://articulo.mercadolibre.com.ar/MLA-695007886-los-hombres-del-sas-ben-macintyre-critica-_JM",
+      "thumbnail": "http://mla-s1-p.mlstatic.com/918767-MLA26471469900_122017-I.jpg",
+      "accepts_mercadopago": true,
+      "installments": {
+        "quantity": 12,
+        "amount": 133.47,
+        "rate": 63.77,
+        "currency_id": "ARS"
+      },
+      "address": {
+        "state_id": "AR-C",
+        "state_name": "Capital Federal",
+        "city_id": null,
+        "city_name": "Capital Federal"
+      },
+      "shipping": {
+        "free_shipping": false,
+        "mode": "me2",
+        "tags": [],
+        "logistic_type": "xd_drop_off",
+        "store_pick_up": false
+      },
+      "seller_address": {
+        "id": "",
+        "comment": "",
+        "address_line": "",
+        "zip_code": "",
+        "country": {
+          "id": "AR",
+          "name": "Argentina"
+        },
+        "state": {
+          "id": "AR-C",
+          "name": "Capital Federal"
+        },
+        "city": {
+          "id": null,
+          "name": "Capital Federal"
+        },
+        "latitude": "",
+        "longitude": ""
+      },
+      "attributes": [
+        {
+          "values": [
+            {
+              "name": "Nuevo",
+              "struct": null,
+              "source": 1577,
+              "id": "2230284"
+            }
+          ],
+          "attribute_group_name": "Otros",
+          "id": "ITEM_CONDITION",
+          "name": "Condición del ítem",
+          "value_name": "Nuevo",
+          "source": 1577,
+          "value_id": "2230284",
+          "value_struct": null,
+          "attribute_group_id": "OTHERS"
+        }
+      ],
+      "original_price": null,
+      "category_id": "MLA412445",
+      "official_store_id": null,
+      "catalog_product_id": null,
+      "tags": [
+        "good_quality_picture",
+        "immediate_payment",
+        "cart_eligible"
+      ]
+    },
+    {
+      "id": "MLA817584418",
+      "site_id": "MLA",
+      "title": "Constitucion Sociedades 24 Hs Sas Soc Acciones Simplificada",
+      "seller": {
+        "id": 190399716,
+        "permalink": null,
+        "power_seller_status": null,
+        "car_dealer": false,
+        "real_estate_agency": false,
+        "tags": []
+      },
+      "price": null,
+      "currency_id": null,
+      "available_quantity": 1,
+      "sold_quantity": 5,
+      "buying_mode": "classified",
+      "listing_type_id": "gold_premium",
+      "stop_time": "2020-03-29T04:00:17.000Z",
+      "condition": null,
+      "permalink": "https://servicio.mercadolibre.com.ar/MLA-817584418-constitucion-sociedades-24-hs-sas-soc-acciones-simplificada-_JM",
+      "thumbnail": "http://mla-s1-p.mlstatic.com/917365-MLA25949628773_092017-I.jpg",
+      "accepts_mercadopago": true,
+      "installments": null,
+      "address": {
+        "state_id": "TUxBUENBUGw3M2E1",
+        "state_name": "Capital Federal",
+        "city_id": "TUxBQ0NBUGZlZG1sYQ",
+        "city_name": "Capital Federal",
+        "area_code": "",
+        "phone1": ""
+      },
+      "shipping": {
+        "free_shipping": false,
+        "mode": "not_specified",
+        "tags": [],
+        "logistic_type": "not_specified",
+        "store_pick_up": false
+      },
+      "seller_address": {
+        "id": "",
+        "comment": "",
+        "address_line": "",
+        "zip_code": "",
+        "country": {
+          "id": "AR",
+          "name": "Argentina"
+        },
+        "state": {
+          "id": "AR-C",
+          "name": "Capital Federal"
+        },
+        "city": {
+          "id": "TUxBQlZJTDQyMjBa",
+          "name": "Villa Crespo"
+        },
+        "latitude": "",
+        "longitude": ""
+      },
+      "seller_contact": {
+        "contact": "Gabriel Devesa",
+        "other_info": "Villa Crespo",
+        "area_code": "",
+        "phone": "",
+        "area_code2": "",
+        "phone2": "",
+        "email": "",
+        "webpage": "www.estudiosolutions.com.ar"
+      },
+      "location": {
+        "address_line": "Av. Angel Gallardo 551",
+        "zip_code": "1405",
+        "subneighborhood": null,
+        "neighborhood": {
+          "id": "TUxBQlZJTDQyMjBa",
+          "name": "Villa Crespo"
+        },
+        "city": {
+          "id": "TUxBQ0NBUGZlZG1sYQ",
+          "name": "Capital Federal"
+        },
+        "state": {
+          "id": "TUxBUENBUGw3M2E1",
+          "name": "Capital Federal"
+        },
+        "country": {
+          "id": "AR",
+          "name": "Argentina"
+        },
+        "latitude": -34.6051606,
+        "longitude": -58.4386369
+      },
+      "attributes": [],
+      "original_price": null,
+      "category_id": "MLA1547",
+      "official_store_id": null,
+      "sale_terms": [
+        {
+          "name": "Modalidad de precio",
+          "value_id": "6178426",
+          "value_name": "Solicitar presupuesto",
+          "value_struct": null,
+          "values": [
+            {
+              "struct": null,
+              "id": "6178426",
+              "name": "Solicitar presupuesto"
+            }
+          ],
+          "id": "PRICE_MODALITY"
+        }
+      ],
+      "catalog_product_id": null,
+      "tags": [
+        "dragged_bids_and_visits",
+        "hirable",
+        "immediate_payment"
+      ]
+    },
+    {
+      "id": "MLA772412230",
+      "site_id": "MLA",
+      "title": "Nissen - La Sociedad Por Acciones Simplificada (sas) 2019",
+      "seller": {
+        "id": 91726049,
+        "permalink": null,
+        "power_seller_status": "gold",
+        "car_dealer": false,
+        "real_estate_agency": false,
+        "tags": []
+      },
+      "price": 650,
+      "currency_id": "ARS",
+      "available_quantity": 1,
+      "sold_quantity": 5,
+      "buying_mode": "buy_it_now",
+      "listing_type_id": "gold_special",
+      "stop_time": "2039-02-17T04:00:00.000Z",
+      "condition": "new",
+      "permalink": "https://articulo.mercadolibre.com.ar/MLA-772412230-nissen-la-sociedad-por-acciones-simplificada-sas-2019-_JM",
+      "thumbnail": "http://mla-s1-p.mlstatic.com/845541-MLA29482279580_022019-I.jpg",
+      "accepts_mercadopago": true,
+      "installments": {
+        "quantity": 12,
+        "amount": 88.71,
+        "rate": 63.77,
+        "currency_id": "ARS"
+      },
+      "address": {
+        "state_id": "AR-C",
+        "state_name": "Capital Federal",
+        "city_id": null,
+        "city_name": "Ciudad de Buenos Aires"
+      },
+      "shipping": {
+        "free_shipping": false,
+        "mode": "me2",
+        "tags": [
+          "self_service_out"
+        ],
+        "logistic_type": "cross_docking",
+        "store_pick_up": false
+      },
+      "seller_address": {
+        "id": "",
+        "comment": "",
+        "address_line": "",
+        "zip_code": "",
+        "country": {
+          "id": "AR",
+          "name": "Argentina"
+        },
+        "state": {
+          "id": "AR-C",
+          "name": "Capital Federal"
+        },
+        "city": {
+          "id": null,
+          "name": "Ciudad de Buenos Aires"
+        },
+        "latitude": "",
+        "longitude": ""
+      },
+      "attributes": [
+        {
+          "id": "ITEM_CONDITION",
+          "value_name": "Nuevo",
+          "value_struct": null,
+          "values": [
+            {
+              "id": "2230284",
+              "name": "Nuevo",
+              "struct": null,
+              "source": 1572
+            }
+          ],
+          "attribute_group_name": "Otros",
+          "name": "Condición del ítem",
+          "value_id": "2230284",
+          "attribute_group_id": "OTHERS",
+          "source": 1572
+        }
+      ],
+      "original_price": null,
+      "category_id": "MLA412445",
+      "official_store_id": null,
+      "catalog_product_id": null,
+      "tags": [
+        "poor_quality_picture",
+        "immediate_payment",
+        "cart_eligible"
+      ]
+    },
+    {
+      "id": "MLA832170261",
+      "site_id": "MLA",
+      "title": "Constitución Sas. Sociedad Anónima Simplificada.",
+      "seller": {
+        "id": 474781541,
+        "permalink": null,
+        "power_seller_status": null,
+        "car_dealer": false,
+        "real_estate_agency": false,
+        "tags": []
+      },
+      "price": null,
+      "currency_id": null,
+      "available_quantity": 1,
+      "sold_quantity": 0,
+      "buying_mode": "classified",
+      "listing_type_id": "gold",
+      "stop_time": "2020-03-27T04:00:53.000Z",
+      "condition": null,
+      "permalink": "https://servicio.mercadolibre.com.ar/MLA-832170261-constitucion-sas-sociedad-anonima-simplificada-_JM",
+      "thumbnail": "http://mla-s2-p.mlstatic.com/794431-MLA32345731629_092019-I.jpg",
+      "accepts_mercadopago": true,
+      "installments": null,
+      "address": {
+        "state_id": "TUxBUEdSQWU4ZDkz",
+        "state_name": "Bs.as. G.b.a. Norte",
+        "city_id": "TUxBQ1RJRzk0ZjQw",
+        "city_name": "Tigre",
+        "area_code": "",
+        "phone1": ""
+      },
+      "shipping": {
+        "free_shipping": false,
+        "mode": "not_specified",
+        "tags": [],
+        "logistic_type": null,
+        "store_pick_up": false
+      },
+      "seller_address": {
+        "id": "",
+        "comment": "",
+        "address_line": "",
+        "zip_code": "",
+        "country": {
+          "id": "AR",
+          "name": "Argentina"
+        },
+        "state": {
+          "id": "AR-B",
+          "name": "Buenos Aires"
+        },
+        "city": {
+          "id": "QVItQkRvbiBUb3JjdWF0bw",
+          "name": "Don Torcuato"
+        },
+        "latitude": "",
+        "longitude": ""
+      },
+      "seller_contact": {
+        "contact": "Soledad o Nahir",
+        "other_info": "Barrio Hindú",
+        "area_code": "",
+        "phone": "",
+        "area_code2": "",
+        "phone2": "",
+        "email": "",
+        "webpage": ""
+      },
+      "location": {
+        "address_line": "Ruta 202 100",
+        "zip_code": "",
+        "subneighborhood": null,
+        "neighborhood": {
+          "id": "TUxBQkRPTjQ3NjZa",
+          "name": "Don Torcuato Oeste"
+        },
+        "city": {
+          "id": "TUxBQ1RJRzk0ZjQw",
+          "name": "Tigre"
+        },
+        "state": {
+          "id": "TUxBUEdSQWU4ZDkz",
+          "name": "Bs.as. G.b.a. Norte"
+        },
+        "country": {
+          "id": "AR",
+          "name": "Argentina"
+        },
+        "latitude": -34.492469,
+        "longitude": -58.62834
+      },
+      "attributes": [],
+      "original_price": null,
+      "category_id": "MLA1547",
+      "official_store_id": null,
+      "sale_terms": [
+        {
+          "id": "PRICE_MODALITY",
+          "name": "Modalidad de precio",
+          "value_id": "6178426",
+          "value_name": "Solicitar presupuesto",
+          "value_struct": null,
+          "values": [
+            {
+              "name": "Solicitar presupuesto",
+              "struct": null,
+              "id": "6178426"
+            }
+          ]
+        }
+      ],
+      "catalog_product_id": null,
+      "tags": [
+        "dragged_bids_and_visits",
+        "hirable",
+        "immediate_payment"
+      ]
+    },
+    {
+      "id": "MLA812866233",
+      "site_id": "MLA",
+      "title": "Disco Rigido Hp Server Hd 2tb Sas 12g 7.2k Sff Gen 9 Gen 10",
+      "seller": {
+        "id": 137072946,
+        "permalink": null,
+        "power_seller_status": "platinum",
+        "car_dealer": false,
+        "real_estate_agency": false,
+        "tags": []
+      },
+      "price": 64361.66,
+      "currency_id": "ARS",
+      "available_quantity": 1,
+      "sold_quantity": 0,
+      "buying_mode": "buy_it_now",
+      "listing_type_id": "gold_special",
+      "stop_time": "2039-08-30T04:00:00.000Z",
+      "condition": "new",
+      "permalink": "https://articulo.mercadolibre.com.ar/MLA-812866233-disco-rigido-hp-server-hd-2tb-sas-12g-72k-sff-gen-9-gen-10-_JM",
+      "thumbnail": "http://mla-s2-p.mlstatic.com/749246-MLA32071909738_092019-I.jpg",
+      "accepts_mercadopago": true,
+      "installments": {
+        "quantity": 12,
+        "amount": 8783.76,
+        "rate": 63.77,
+        "currency_id": "ARS"
+      },
+      "address": {
+        "state_id": "AR-C",
+        "state_name": "Capital Federal",
+        "city_id": "TUxBQlNBTjgxMzNa",
+        "city_name": "San Telmo"
+      },
+      "shipping": {
+        "free_shipping": true,
+        "mode": "me2",
+        "tags": [
+          "self_service_in",
+          "mandatory_free_shipping"
+        ],
+        "logistic_type": "drop_off",
+        "store_pick_up": false
+      },
+      "seller_address": {
+        "id": "",
+        "comment": "",
+        "address_line": "",
+        "zip_code": "",
+        "country": {
+          "id": "AR",
+          "name": "Argentina"
+        },
+        "state": {
+          "id": "AR-C",
+          "name": "Capital Federal"
+        },
+        "city": {
+          "id": "TUxBQlNBTjgxMzNa",
+          "name": "San Telmo"
+        },
+        "latitude": "",
+        "longitude": ""
+      },
+      "attributes": [
+        {
+          "name": "Marca",
+          "values": [
+            {
+              "id": "49944",
+              "name": "HP",
+              "struct": null,
+              "source": 2642037573927936
+            }
+          ],
+          "attribute_group_name": "Otros",
+          "id": "BRAND",
+          "value_id": "49944",
+          "value_name": "HP",
+          "value_struct": null,
+          "attribute_group_id": "OTHERS",
+          "source": 2642037573927936
+        },
+        {
+          "attribute_group_name": "Otros",
+          "source": 4060709329251625,
+          "id": "DETAILED_MODEL",
+          "value_name": null,
+          "values": [
+            {
+              "id": "-1",
+              "name": null,
+              "struct": null,
+              "source": 4060709329251625
+            }
+          ],
+          "attribute_group_id": "OTHERS",
+          "name": "Modelo detallado",
+          "value_id": "-1",
+          "value_struct": null
+        },
+        {
+          "value_id": "2230284",
+          "value_struct": null,
+          "attribute_group_id": "OTHERS",
+          "source": 1,
+          "id": "ITEM_CONDITION",
+          "name": "Condición del ítem",
+          "attribute_group_name": "Otros",
+          "value_name": "Nuevo",
+          "values": [
+            {
+              "id": "2230284",
+              "name": "Nuevo",
+              "struct": null,
+              "source": 1
+            }
+          ]
+        },
+        {
+          "id": "LINE",
+          "source": 4060709329251625,
+          "name": "Línea",
+          "value_id": null,
+          "value_name": "G9/G10",
+          "value_struct": null,
+          "values": [
+            {
+              "name": "G9/G10",
+              "struct": null,
+              "source": 4060709329251625,
+              "id": null
+            }
+          ],
+          "attribute_group_id": "OTHERS",
+          "attribute_group_name": "Otros"
+        },
+        {
+          "value_name": "DL120 G9 DL160 G9 DL180 G9 DL20 G9 DL360 G10 DL360 G9 DL380 G10 DL380 G9 DL385 G10 DL388 G9 DL560 G10 DL560 G8 DL560 G9 DL580 G10 DL580 G9 ML110 G10 ML110 G9 ML150 G9 ML150 G9 ML30 G9 ML350 G10 ML350 G9",
+          "value_struct": null,
+          "attribute_group_id": "OTHERS",
+          "attribute_group_name": "Otros",
+          "source": 2642037573927936,
+          "name": "Modelo",
+          "value_id": null,
+          "values": [
+            {
+              "id": null,
+              "name": "DL120 G9 DL160 G9 DL180 G9 DL20 G9 DL360 G10 DL360 G9 DL380 G10 DL380 G9 DL385 G10 DL388 G9 DL560 G10 DL560 G8 DL560 G9 DL580 G10 DL580 G9 ML110 G10 ML110 G9 ML150 G9 ML150 G9 ML30 G9 ML350 G10 ML350 G9",
+              "struct": null,
+              "source": 2642037573927936
+            }
+          ],
+          "id": "MODEL"
+        }
+      ],
+      "original_price": null,
+      "category_id": "MLA1672",
+      "official_store_id": null,
+      "catalog_product_id": null,
+      "tags": [
+        "brand_verified",
+        "good_quality_picture",
+        "good_quality_thumbnail",
+        "immediate_payment",
+        "cart_eligible"
+      ]
+    },
+    {
+      "id": "MLA757850323",
+      "site_id": "MLA",
+      "title": "Sas - Ley Comentada Sociedades Por Acciones Simpli - Errepar",
+      "seller": {
+        "id": 99621921,
+        "permalink": null,
+        "power_seller_status": "gold",
+        "car_dealer": false,
+        "real_estate_agency": false,
+        "tags": []
+      },
+      "price": 1870,
+      "currency_id": "ARS",
+      "available_quantity": 1,
+      "sold_quantity": 4,
+      "buying_mode": "buy_it_now",
+      "listing_type_id": "gold_special",
+      "stop_time": "2038-11-07T04:00:00.000Z",
+      "condition": "new",
+      "permalink": "https://articulo.mercadolibre.com.ar/MLA-757850323-sas-ley-comentada-sociedades-por-acciones-simpli-errepar-_JM",
+      "thumbnail": "http://mla-s2-p.mlstatic.com/728795-MLA31071644600_062019-I.jpg",
+      "accepts_mercadopago": true,
+      "installments": {
+        "quantity": 12,
+        "amount": 255.21,
+        "rate": 63.77,
+        "currency_id": "ARS"
+      },
+      "address": {
+        "state_id": "AR-B",
+        "state_name": "Buenos Aires",
+        "city_id": "TUxBQ0xBUGxhdGE",
+        "city_name": "La Plata"
+      },
+      "shipping": {
+        "free_shipping": false,
+        "mode": "me2",
+        "tags": [],
+        "logistic_type": "drop_off",
+        "store_pick_up": false
+      },
+      "seller_address": {
+        "id": "",
+        "comment": "",
+        "address_line": "",
+        "zip_code": "",
+        "country": {
+          "id": "AR",
+          "name": "Argentina"
+        },
+        "state": {
+          "id": "AR-B",
+          "name": "Buenos Aires"
+        },
+        "city": {
+          "id": "TUxBQ0xBUGxhdGE",
+          "name": "La Plata"
+        },
+        "latitude": "",
+        "longitude": ""
+      },
+      "attributes": [
+        {
+          "id": "ITEM_CONDITION",
+          "name": "Condición del ítem",
+          "value_struct": null,
+          "attribute_group_name": "Otros",
+          "source": 1572,
+          "value_id": "2230284",
+          "value_name": "Nuevo",
+          "values": [
+            {
+              "name": "Nuevo",
+              "struct": null,
+              "source": 1572,
+              "id": "2230284"
+            }
+          ],
+          "attribute_group_id": "OTHERS"
+        }
+      ],
+      "original_price": null,
+      "category_id": "MLA412445",
+      "official_store_id": null,
+      "catalog_product_id": null,
+      "tags": [
+        "poor_quality_picture",
+        "immediate_payment",
+        "cart_eligible"
+      ]
+    },
+    {
+      "id": "MLA603741303",
+      "site_id": "MLA",
+      "title": "Red Balcon Balcones Proteccion Seguridad Ventana Gato Paloma",
+      "seller": {
+        "id": 50657042,
+        "permalink": null,
+        "power_seller_status": "platinum",
+        "car_dealer": false,
+        "real_estate_agency": false,
+        "tags": []
+      },
+      "price": 47,
+      "currency_id": "ARS",
+      "available_quantity": 50000,
+      "sold_quantity": 5000,
+      "buying_mode": "buy_it_now",
+      "listing_type_id": "gold_special",
+      "stop_time": "2038-01-04T03:18:21.000Z",
+      "condition": "new",
+      "permalink": "https://articulo.mercadolibre.com.ar/MLA-603741303-red-balcon-balcones-proteccion-seguridad-ventana-gato-paloma-_JM",
+      "thumbnail": "http://mla-s2-p.mlstatic.com/977366-MLA29310275478_022019-I.jpg",
+      "accepts_mercadopago": true,
+      "installments": {
+        "quantity": 12,
+        "amount": 6.41,
+        "rate": 63.77,
+        "currency_id": "ARS"
+      },
+      "address": {
+        "state_id": "AR-C",
+        "state_name": "Capital Federal",
+        "city_id": null,
+        "city_name": "caba"
+      },
+      "shipping": {
+        "free_shipping": false,
+        "mode": "me2",
+        "tags": [
+          "self_service_in"
+        ],
+        "logistic_type": "xd_drop_off",
+        "store_pick_up": false
+      },
+      "seller_address": {
+        "id": "",
+        "comment": "",
+        "address_line": "",
+        "zip_code": "",
+        "country": {
+          "id": "AR",
+          "name": "Argentina"
+        },
+        "state": {
+          "id": "AR-C",
+          "name": "Capital Federal"
+        },
+        "city": {
+          "id": null,
+          "name": "caba"
+        },
+        "latitude": "",
+        "longitude": ""
+      },
+      "attributes": [
+        {
+          "source": 1577,
+          "id": "BRAND",
+          "value_name": "SAS",
+          "attribute_group_id": "OTHERS",
+          "values": [
+            {
+              "id": "5557981",
+              "name": "SAS",
+              "struct": null,
+              "source": 1577
+            }
+          ],
+          "attribute_group_name": "Otros",
+          "name": "Marca",
+          "value_id": "5557981",
+          "value_struct": null
+        },
+        {
+          "id": "ITEM_CONDITION",
+          "name": "Condición del ítem",
+          "value_id": "2230284",
+          "value_struct": null,
+          "attribute_group_id": "OTHERS",
+          "attribute_group_name": "Otros",
+          "value_name": "Nuevo",
+          "values": [
+            {
+              "id": "2230284",
+              "name": "Nuevo",
+              "struct": null,
+              "source": null
+            }
+          ],
+          "source": null
+        },
+        {
+          "value_id": null,
+          "value_struct": null,
+          "attribute_group_id": "OTHERS",
+          "values": [
+            {
+              "source": 1577,
+              "id": null,
+              "name": "Transparente",
+              "struct": null
+            }
+          ],
+          "attribute_group_name": "Otros",
+          "source": 1577,
+          "id": "MODEL",
+          "name": "Modelo",
+          "value_name": "Transparente"
+        }
+      ],
+      "original_price": null,
+      "category_id": "MLA372907",
+      "official_store_id": null,
+      "catalog_product_id": null,
+      "tags": [
+        "brand_verified",
+        "dragged_bids_and_visits",
+        "good_quality_picture",
+        "good_quality_thumbnail",
+        "loyalty_discount_eligible",
+        "immediate_payment",
+        "cart_eligible"
+      ]
+    },
+    {
+      "id": "MLA783366971",
+      "site_id": "MLA",
+      "title": "Valijas Valija Mediana Valijas De Viaje Rígida Valijas Medianas Maletas Para Viaje Avion Reforzada Liviana 4 Ruedas 360 ",
+      "seller": {
+        "id": 429643836,
+        "permalink": null,
+        "power_seller_status": null,
+        "car_dealer": false,
+        "real_estate_agency": false,
+        "tags": []
+      },
+      "price": 3650,
+      "currency_id": "ARS",
+      "available_quantity": 50,
+      "sold_quantity": 150,
+      "buying_mode": "buy_it_now",
+      "listing_type_id": "gold_special",
+      "stop_time": "2040-01-29T03:33:05.000Z",
+      "condition": "new",
+      "permalink": "https://articulo.mercadolibre.com.ar/MLA-783366971-valijas-valija-mediana-valijas-de-viaje-rigida-valijas-medianas-maletas-para-viaje-avion-reforzada-liviana-4-ruedas-360-_JM",
+      "thumbnail": "http://mla-s2-p.mlstatic.com/864986-MLA40194613624_122019-I.jpg",
+      "accepts_mercadopago": true,
+      "installments": {
+        "quantity": 12,
+        "amount": 498.13,
+        "rate": 63.77,
+        "currency_id": "ARS"
+      },
+      "address": {
+        "state_id": "AR-C",
+        "state_name": "Capital Federal",
+        "city_id": "TUxBQkFMTTMwNTBa",
+        "city_name": "Almagro"
+      },
+      "shipping": {
+        "free_shipping": true,
+        "mode": "me2",
+        "tags": [
+          "fulfillment",
+          "mandatory_free_shipping"
+        ],
+        "logistic_type": "fulfillment",
+        "store_pick_up": false
+      },
+      "seller_address": {
+        "id": "",
+        "comment": "",
+        "address_line": "",
+        "zip_code": "",
+        "country": {
+          "id": "AR",
+          "name": "Argentina"
+        },
+        "state": {
+          "id": "AR-C",
+          "name": "Capital Federal"
+        },
+        "city": {
+          "id": "TUxBQkFMTTMwNTBa",
+          "name": "Almagro"
+        },
+        "latitude": "",
+        "longitude": ""
+      },
+      "attributes": [
+        {
+          "attribute_group_name": "Otros",
+          "source": 3376461333454861,
+          "values": [
+            {
+              "id": null,
+              "name": "SAS Travel",
+              "struct": null,
+              "source": 3376461333454861
+            }
+          ],
+          "attribute_group_id": "OTHERS",
+          "id": "BRAND",
+          "name": "Marca",
+          "value_id": null,
+          "value_name": "SAS Travel",
+          "value_struct": null
+        },
+        {
+          "attribute_group_id": "OTHERS",
+          "attribute_group_name": "Otros",
+          "source": 1572,
+          "name": "Condición del ítem",
+          "value_name": "Nuevo",
+          "values": [
+            {
+              "id": "2230284",
+              "name": "Nuevo",
+              "struct": null,
+              "source": 1572
+            }
+          ],
+          "id": "ITEM_CONDITION",
+          "value_id": "2230284",
+          "value_struct": null
+        },
+        {
+          "value_id": null,
+          "value_name": "40.1000A.3",
+          "value_struct": null,
+          "values": [
+            {
+              "struct": null,
+              "source": 3376461333454861,
+              "id": null,
+              "name": "40.1000A.3"
+            }
+          ],
+          "attribute_group_name": "Otros",
+          "source": 3376461333454861,
+          "id": "MODEL",
+          "name": "Modelo",
+          "attribute_group_id": "OTHERS"
+        }
+      ],
+      "original_price": 3999,
+      "category_id": "MLA120354",
+      "official_store_id": null,
+      "catalog_product_id": null,
+      "tags": [
+        "good_quality_picture",
+        "good_quality_thumbnail",
+        "loyalty_discount_eligible",
+        "today_promotion",
+        "immediate_payment"
+      ]
+    },
+    {
+      "id": "MLA817805340",
+      "site_id": "MLA",
+      "title": "Estudio Contable Integral Sociedades Sas/srl/sa. Moratorias.",
+      "seller": {
+        "id": 77454640,
+        "permalink": null,
+        "power_seller_status": null,
+        "car_dealer": false,
+        "real_estate_agency": false,
+        "tags": []
+      },
+      "price": null,
+      "currency_id": null,
+      "available_quantity": 1,
+      "sold_quantity": 0,
+      "buying_mode": "classified",
+      "listing_type_id": "silver",
+      "stop_time": "2020-03-30T16:11:28.000Z",
+      "condition": null,
+      "permalink": "https://servicio.mercadolibre.com.ar/MLA-817805340-estudio-contable-integral-sociedades-sassrlsa-moratorias-_JM",
+      "thumbnail": "http://mla-s1-p.mlstatic.com/199811-MLA20676279342_042016-I.jpg",
+      "accepts_mercadopago": true,
+      "installments": null,
+      "address": {
+        "state_id": "TUxBUENBUGw3M2E1",
+        "state_name": "Capital Federal",
+        "city_id": "TUxBQ0NBUGZlZG1sYQ",
+        "city_name": "Capital Federal",
+        "area_code": "",
+        "phone1": ""
+      },
+      "shipping": {
+        "free_shipping": false,
+        "mode": "not_specified",
+        "tags": [],
+        "logistic_type": "not_specified",
+        "store_pick_up": false
+      },
+      "seller_address": {
+        "id": "",
+        "comment": "",
+        "address_line": "",
+        "zip_code": "",
+        "country": {
+          "id": "AR",
+          "name": "Argentina"
+        },
+        "state": {
+          "id": "AR-C",
+          "name": "Capital Federal"
+        },
+        "city": {
+          "id": null,
+          "name": "BUENOS AIRES"
+        },
+        "latitude": "",
+        "longitude": ""
+      },
+      "seller_contact": {
+        "contact": "Sr. Leonardo M. Pereira",
+        "other_info": "",
+        "area_code": "",
+        "phone": "",
+        "area_code2": "",
+        "phone2": "",
+        "email": "",
+        "webpage": ""
+      },
+      "location": {
+        "address_line": "Av Lope de Vega 1334",
+        "zip_code": "1417",
+        "subneighborhood": null,
+        "neighborhood": {
+          "id": "TUxBQlZJTDYzNzZa",
+          "name": "Villa Devoto"
+        },
+        "city": {
+          "id": "TUxBQ0NBUGZlZG1sYQ",
+          "name": "Capital Federal"
+        },
+        "state": {
+          "id": "TUxBUENBUGw3M2E1",
+          "name": "Capital Federal"
+        },
+        "country": {
+          "id": "AR",
+          "name": "Argentina"
+        },
+        "latitude": -34.6274146,
+        "longitude": -58.5079758
+      },
+      "attributes": [],
+      "original_price": null,
+      "category_id": "MLA1547",
+      "official_store_id": null,
+      "sale_terms": [
+        {
+          "values": [
+            {
+              "struct": null,
+              "id": "6178426",
+              "name": "Solicitar presupuesto"
+            }
+          ],
+          "id": "PRICE_MODALITY",
+          "name": "Modalidad de precio",
+          "value_id": "6178426",
+          "value_name": "Solicitar presupuesto",
+          "value_struct": null
+        }
+      ],
+      "catalog_product_id": null,
+      "tags": [
+        "hirable",
+        "dragged_bids_and_visits",
+        "immediate_payment"
+      ]
+    },
+    {
+      "id": "MLA784601591",
+      "site_id": "MLA",
+      "title": "Cuerpxs En Fuga - Sasa Testa - Ed. Espacio Hudson",
+      "seller": {
+        "id": 49117916,
+        "permalink": null,
+        "power_seller_status": "platinum",
+        "car_dealer": false,
+        "real_estate_agency": false,
+        "tags": []
+      },
+      "price": 420,
+      "currency_id": "ARS",
+      "available_quantity": 1,
+      "sold_quantity": 1,
+      "buying_mode": "buy_it_now",
+      "listing_type_id": "gold_special",
+      "stop_time": "2039-04-29T04:00:00.000Z",
+      "condition": "new",
+      "permalink": "https://articulo.mercadolibre.com.ar/MLA-784601591-cuerpxs-en-fuga-sasa-testa-ed-espacio-hudson-_JM",
+      "thumbnail": "http://mla-s2-p.mlstatic.com/637482-MLA30261408414_052019-I.jpg",
+      "accepts_mercadopago": true,
+      "installments": {
+        "quantity": 12,
+        "amount": 57.32,
+        "rate": 63.77,
+        "currency_id": "ARS"
+      },
+      "address": {
+        "state_id": "AR-C",
+        "state_name": "Capital Federal",
+        "city_id": null,
+        "city_name": "Congreso"
+      },
+      "shipping": {
+        "free_shipping": false,
+        "mode": "me2",
+        "tags": [],
+        "logistic_type": "cross_docking",
+        "store_pick_up": false
+      },
+      "seller_address": {
+        "id": "",
+        "comment": "",
+        "address_line": "",
+        "zip_code": "",
+        "country": {
+          "id": "AR",
+          "name": "Argentina"
+        },
+        "state": {
+          "id": "AR-C",
+          "name": "Capital Federal"
+        },
+        "city": {
+          "id": null,
+          "name": "Congreso"
+        },
+        "latitude": "",
+        "longitude": ""
+      },
+      "attributes": [
+        {
+          "name": "Condición del ítem",
+          "value_id": "2230284",
+          "value_struct": null,
+          "id": "ITEM_CONDITION",
+          "value_name": "Nuevo",
+          "values": [
+            {
+              "id": "2230284",
+              "name": "Nuevo",
+              "struct": null,
+              "source": 1572
+            }
+          ],
+          "attribute_group_id": "OTHERS",
+          "attribute_group_name": "Otros",
+          "source": 1572
+        }
+      ],
+      "original_price": null,
+      "category_id": "MLA412445",
+      "official_store_id": null,
+      "catalog_product_id": null,
+      "tags": [
+        "poor_quality_picture",
+        "immediate_payment",
+        "cart_eligible"
+      ]
+    },
+    {
+      "id": "MLA617578124",
+      "site_id": "MLA",
+      "title": "Tray Dell 3.5  Sas/sata Lff  R430 R530 R630 R730 R730xd T430",
+      "seller": {
+        "id": 137072946,
+        "permalink": null,
+        "power_seller_status": "platinum",
+        "car_dealer": false,
+        "real_estate_agency": false,
+        "tags": []
+      },
+      "price": 2926.15,
+      "currency_id": "ARS",
+      "available_quantity": 1,
+      "sold_quantity": 50,
+      "buying_mode": "buy_it_now",
+      "listing_type_id": "gold_special",
+      "stop_time": "2036-04-17T20:10:02.000Z",
+      "condition": "new",
+      "permalink": "https://articulo.mercadolibre.com.ar/MLA-617578124-tray-dell-35-sassata-lff-r430-r530-r630-r730-r730xd-t430-_JM",
+      "thumbnail": "http://mla-s1-p.mlstatic.com/962821-MLA29531717725_032019-I.jpg",
+      "accepts_mercadopago": true,
+      "installments": {
+        "quantity": 12,
+        "amount": 399.35,
+        "rate": 63.77,
+        "currency_id": "ARS"
+      },
+      "address": {
+        "state_id": "AR-C",
+        "state_name": "Capital Federal",
+        "city_id": "TUxBQlNBTjgxMzNa",
+        "city_name": "San Telmo"
+      },
+      "shipping": {
+        "free_shipping": true,
+        "mode": "me2",
+        "tags": [
+          "self_service_in",
+          "mandatory_free_shipping"
+        ],
+        "logistic_type": "drop_off",
+        "store_pick_up": false
+      },
+      "seller_address": {
+        "id": "",
+        "comment": "",
+        "address_line": "",
+        "zip_code": "",
+        "country": {
+          "id": "AR",
+          "name": "Argentina"
+        },
+        "state": {
+          "id": "AR-C",
+          "name": "Capital Federal"
+        },
+        "city": {
+          "id": "TUxBQlNBTjgxMzNa",
+          "name": "San Telmo"
+        },
+        "latitude": "",
+        "longitude": ""
+      },
+      "attributes": [
+        {
+          "attribute_group_name": "Otros",
+          "source": 2642037573927936,
+          "value_id": "8216",
+          "value_name": "Dell",
+          "values": [
+            {
+              "id": "8216",
+              "name": "Dell",
+              "struct": null,
+              "source": 2642037573927936
+            }
+          ],
+          "attribute_group_id": "OTHERS",
+          "id": "BRAND",
+          "name": "Marca",
+          "value_struct": null
+        },
+        {
+          "value_struct": null,
+          "values": [
+            {
+              "id": "2230284",
+              "name": "Nuevo",
+              "struct": null,
+              "source": 1
+            }
+          ],
+          "attribute_group_id": "OTHERS",
+          "attribute_group_name": "Otros",
+          "source": 1,
+          "value_id": "2230284",
+          "value_name": "Nuevo",
+          "id": "ITEM_CONDITION",
+          "name": "Condición del ítem"
+        },
+        {
+          "name": "Modelo",
+          "values": [
+            {
+              "id": null,
+              "name": "0KG1CH",
+              "struct": null,
+              "source": 2642037573927936
+            }
+          ],
+          "attribute_group_name": "Otros",
+          "id": "MODEL",
+          "value_id": null,
+          "value_name": "0KG1CH",
+          "value_struct": null,
+          "attribute_group_id": "OTHERS",
+          "source": 2642037573927936
+        }
+      ],
+      "original_price": null,
+      "category_id": "MLA7032",
+      "official_store_id": null,
+      "catalog_product_id": null,
+      "tags": [
+        "brand_verified",
+        "good_quality_picture",
+        "good_quality_thumbnail",
+        "immediate_payment",
+        "cart_eligible"
+      ]
+    },
+    {
+      "id": "MLA789603205",
+      "site_id": "MLA",
+      "title": "Sophie La Girafe - 100% Caucho Natural - Tienda Oficial.",
+      "seller": {
+        "id": 231796999,
+        "permalink": null,
+        "power_seller_status": null,
+        "car_dealer": false,
+        "real_estate_agency": false,
+        "tags": []
+      },
+      "price": 2990,
+      "currency_id": "ARS",
+      "available_quantity": 1,
+      "sold_quantity": 200,
+      "buying_mode": "buy_it_now",
+      "listing_type_id": "gold_special",
+      "stop_time": "2039-08-06T01:04:45.000Z",
+      "condition": "new",
+      "permalink": "https://articulo.mercadolibre.com.ar/MLA-789603205-sophie-la-girafe-100-caucho-natural-tienda-oficial-_JM",
+      "thumbnail": "http://mla-s2-p.mlstatic.com/722870-MLA32946638375_112019-I.jpg",
+      "accepts_mercadopago": true,
+      "installments": {
+        "quantity": 12,
+        "amount": 408.06,
+        "rate": 63.77,
+        "currency_id": "ARS"
+      },
+      "address": {
+        "state_id": "AR-B",
+        "state_name": "Buenos Aires",
+        "city_id": null,
+        "city_name": "Martinez"
+      },
+      "shipping": {
+        "free_shipping": true,
+        "mode": "me2",
+        "tags": [
+          "fulfillment",
+          "mandatory_free_shipping",
+          "self_service_out"
+        ],
+        "logistic_type": "fulfillment",
+        "store_pick_up": false
+      },
+      "seller_address": {
+        "id": "",
+        "comment": "",
+        "address_line": "",
+        "zip_code": "",
+        "country": {
+          "id": "AR",
+          "name": "Argentina"
+        },
+        "state": {
+          "id": "AR-B",
+          "name": "Buenos Aires"
+        },
+        "city": {
+          "id": null,
+          "name": "Martinez"
+        },
+        "latitude": "",
+        "longitude": ""
+      },
+      "attributes": [
+        {
+          "attribute_group_name": "Otros",
+          "source": 7092,
+          "id": "BRAND",
+          "value_name": "Sophie la girafe®",
+          "value_struct": null,
+          "values": [
+            {
+              "id": null,
+              "name": "Sophie la girafe®",
+              "struct": null,
+              "source": 7092
+            }
+          ],
+          "attribute_group_id": "OTHERS",
+          "name": "Marca",
+          "value_id": null
+        },
+        {
+          "name": "Condición del ítem",
+          "value_struct": null,
+          "values": [
+            {
+              "id": "2230284",
+              "name": "Nuevo",
+              "struct": null,
+              "source": 1
+            }
+          ],
+          "attribute_group_id": "OTHERS",
+          "source": 1,
+          "id": "ITEM_CONDITION",
+          "value_id": "2230284",
+          "value_name": "Nuevo",
+          "attribute_group_name": "Otros"
+        },
+        {
+          "value_name": "616400-1",
+          "value_struct": null,
+          "attribute_group_id": "OTHERS",
+          "source": 7092,
+          "id": "MODEL",
+          "name": "Modelo",
+          "value_id": null,
+          "values": [
+            {
+              "name": "616400-1",
+              "struct": null,
+              "source": 7092,
+              "id": null
+            }
+          ],
+          "attribute_group_name": "Otros"
+        }
+      ],
+      "original_price": null,
+      "category_id": "MLA1887",
+      "official_store_id": null,
+      "catalog_product_id": null,
+      "tags": [
+        "good_quality_thumbnail",
+        "loyalty_discount_eligible",
+        "brand_verified",
+        "good_quality_picture",
+        "immediate_payment",
+        "cart_eligible"
+      ]
+    },
+    {
+      "id": "MLA803507570",
+      "site_id": "MLA",
+      "title": " Sociedad Anonima Sas Srl Sa Con Libros Digitales 48hs",
+      "seller": {
+        "id": 253288488,
+        "permalink": null,
+        "power_seller_status": null,
+        "car_dealer": false,
+        "real_estate_agency": false,
+        "tags": []
+      },
+      "price": 13500,
+      "currency_id": "ARS",
+      "available_quantity": 500,
+      "sold_quantity": 0,
+      "buying_mode": "buy_it_now",
+      "listing_type_id": "gold_special",
+      "stop_time": "2039-07-20T04:00:00.000Z",
+      "condition": "new",
+      "permalink": "https://articulo.mercadolibre.com.ar/MLA-803507570-sociedad-anonima-sas-srl-sa-con-libros-digitales-48hs-_JM",
+      "thumbnail": "http://mla-s1-p.mlstatic.com/667112-MLA31567954686_072019-I.jpg",
+      "accepts_mercadopago": true,
+      "installments": {
+        "quantity": 12,
+        "amount": 1842.41,
+        "rate": 63.77,
+        "currency_id": "ARS"
+      },
+      "address": {
+        "state_id": "AR-C",
+        "state_name": "Capital Federal",
+        "city_id": null,
+        "city_name": "CABA"
+      },
+      "shipping": {
+        "free_shipping": true,
+        "mode": "me2",
+        "tags": [
+          "mandatory_free_shipping"
+        ],
+        "logistic_type": "xd_drop_off",
+        "store_pick_up": false
+      },
+      "seller_address": {
+        "id": "",
+        "comment": "",
+        "address_line": "",
+        "zip_code": "",
+        "country": {
+          "id": "AR",
+          "name": "Argentina"
+        },
+        "state": {
+          "id": "AR-C",
+          "name": "Capital Federal"
+        },
+        "city": {
+          "id": null,
+          "name": "CABA"
+        },
+        "latitude": "",
+        "longitude": ""
+      },
+      "attributes": [
+        {
+          "id": "ITEM_CONDITION",
+          "value_name": "Nuevo",
+          "source": 3570163010178927,
+          "name": "Condición del ítem",
+          "value_id": "2230284",
+          "value_struct": null,
+          "values": [
+            {
+              "id": "2230284",
+              "name": "Nuevo",
+              "struct": null,
+              "source": 3570163010178927
+            }
+          ],
+          "attribute_group_id": "OTHERS",
+          "attribute_group_name": "Otros"
+        }
+      ],
+      "original_price": null,
+      "category_id": "MLA412445",
+      "official_store_id": null,
+      "catalog_product_id": null,
+      "tags": [
+        "good_quality_picture",
+        "good_quality_thumbnail",
+        "immediate_payment",
+        "cart_eligible"
+      ]
+    },
+    {
+      "id": "MLA840749790",
+      "site_id": "MLA",
+      "title": "Sociedad Simplificada   S. A. S.",
+      "seller": {
+        "id": 90627003,
+        "permalink": null,
+        "power_seller_status": null,
+        "car_dealer": false,
+        "real_estate_agency": false,
+        "tags": []
+      },
+      "price": null,
+      "currency_id": null,
+      "available_quantity": 1,
+      "sold_quantity": 0,
+      "buying_mode": "classified",
+      "listing_type_id": "bronze",
+      "stop_time": "2020-05-24T04:02:20.000Z",
+      "condition": null,
+      "permalink": "https://servicio.mercadolibre.com.ar/MLA-840749790-sociedad-simplificada-s-a-s-_JM",
+      "thumbnail": "http://mla-s1-p.mlstatic.com/971657-MLA40890941281_022020-I.jpg",
+      "accepts_mercadopago": true,
+      "installments": null,
+      "address": {
+        "state_id": "TUxBUENBUGw3M2E1",
+        "state_name": "Capital Federal",
+        "city_id": "TUxBQ0NBUGZlZG1sYQ",
+        "city_name": "Capital Federal",
+        "area_code": "",
+        "phone1": ""
+      },
+      "shipping": {
+        "free_shipping": false,
+        "mode": "not_specified",
+        "tags": [],
+        "logistic_type": null,
+        "store_pick_up": false
+      },
+      "seller_address": {
+        "id": "",
+        "comment": "",
+        "address_line": "",
+        "zip_code": "",
+        "country": {
+          "id": "AR",
+          "name": "Argentina"
+        },
+        "state": {
+          "id": "AR-C",
+          "name": "Capital Federal"
+        },
+        "city": {
+          "id": null,
+          "name": "ZONA OBELISCO"
+        },
+        "latitude": "",
+        "longitude": ""
+      },
+      "seller_contact": {
+        "contact": "JURIDIKUS",
+        "other_info": "ZONA OBELISCO",
+        "area_code": "",
+        "phone": "",
+        "area_code2": "",
+        "phone2": "",
+        "email": "",
+        "webpage": "https://perfil.mercadolibre.com.ar/JURIDIKUS+SOCIEDADES"
+      },
+      "location": {
+        "address_line": "AV CORRIENTES 900",
+        "zip_code": "1043",
+        "subneighborhood": null,
+        "neighborhood": {
+          "id": "TUxBQlNBTjgzMjRa",
+          "name": "San Nicolás"
+        },
+        "city": {
+          "id": "TUxBQ0NBUGZlZG1sYQ",
+          "name": "Capital Federal"
+        },
+        "state": {
+          "id": "TUxBUENBUGw3M2E1",
+          "name": "Capital Federal"
+        },
+        "country": {
+          "id": "AR",
+          "name": "Argentina"
+        },
+        "latitude": -34.6037855,
+        "longitude": -58.3793372
+      },
+      "attributes": [],
+      "original_price": null,
+      "category_id": "MLA1547",
+      "official_store_id": null,
+      "sale_terms": [
+        {
+          "value_name": "Solicitar presupuesto",
+          "value_struct": null,
+          "values": [
+            {
+              "name": "Solicitar presupuesto",
+              "struct": null,
+              "id": "6178426"
+            }
+          ],
+          "id": "PRICE_MODALITY",
+          "name": "Modalidad de precio",
+          "value_id": "6178426"
+        }
+      ],
+      "catalog_product_id": null,
+      "tags": [
+        "hirable",
+        "immediate_payment"
+      ]
+    },
+    {
+      "id": "MLA816971288",
+      "site_id": "MLA",
+      "title": "Tray Dell Poweredge 3.5  Sas/sata R440 R540 R640 R740 R740xd",
+      "seller": {
+        "id": 16584772,
+        "permalink": null,
+        "power_seller_status": null,
+        "car_dealer": false,
+        "real_estate_agency": false,
+        "tags": []
+      },
+      "price": 3560,
+      "currency_id": "ARS",
+      "available_quantity": 1,
+      "sold_quantity": 4,
+      "buying_mode": "buy_it_now",
+      "listing_type_id": "gold_special",
+      "stop_time": "2039-09-22T04:00:00.000Z",
+      "condition": "new",
+      "permalink": "https://articulo.mercadolibre.com.ar/MLA-816971288-tray-dell-poweredge-35-sassata-r440-r540-r640-r740-r740xd-_JM",
+      "thumbnail": "http://mla-s1-p.mlstatic.com/648239-MLA32337890952_092019-I.jpg",
+      "accepts_mercadopago": true,
+      "installments": {
+        "quantity": 12,
+        "amount": 485.85,
+        "rate": 63.77,
+        "currency_id": "ARS"
+      },
+      "address": {
+        "state_id": "AR-C",
+        "state_name": "Capital Federal",
+        "city_id": "TUxBQkZMTzg5MjFa",
+        "city_name": "Floresta"
+      },
+      "shipping": {
+        "free_shipping": true,
+        "mode": "me2",
+        "tags": [
+          "mandatory_free_shipping"
+        ],
+        "logistic_type": "xd_drop_off",
+        "store_pick_up": false
+      },
+      "seller_address": {
+        "id": "",
+        "comment": "",
+        "address_line": "",
+        "zip_code": "",
+        "country": {
+          "id": "AR",
+          "name": "Argentina"
+        },
+        "state": {
+          "id": "AR-C",
+          "name": "Capital Federal"
+        },
+        "city": {
+          "id": "TUxBQkZMTzg5MjFa",
+          "name": "Floresta"
+        },
+        "latitude": "",
+        "longitude": ""
+      },
+      "attributes": [
+        {
+          "id": "BRAND",
+          "name": "Marca",
+          "value_name": "Dell",
+          "value_struct": null,
+          "value_id": "8216",
+          "values": [
+            {
+              "id": "8216",
+              "name": "Dell",
+              "struct": null,
+              "source": 8342579661593500
+            }
+          ],
+          "attribute_group_id": "OTHERS",
+          "attribute_group_name": "Otros",
+          "source": 8342579661593500
+        },
+        {
+          "attribute_group_name": "Otros",
+          "id": "ITEM_CONDITION",
+          "name": "Condición del ítem",
+          "value_id": "2230284",
+          "values": [
+            {
+              "struct": null,
+              "source": 8342579661593500,
+              "id": "2230284",
+              "name": "Nuevo"
+            }
+          ],
+          "value_name": "Nuevo",
+          "value_struct": null,
+          "attribute_group_id": "OTHERS",
+          "source": 8342579661593500
+        },
+        {
+          "name": "Modelo",
+          "value_struct": null,
+          "attribute_group_id": "OTHERS",
+          "source": 8342579661593500,
+          "id": "MODEL",
+          "value_id": null,
+          "value_name": "3.5 SAS",
+          "values": [
+            {
+              "name": "3.5 SAS",
+              "struct": null,
+              "source": 8342579661593500,
+              "id": null
+            }
+          ],
+          "attribute_group_name": "Otros"
+        }
+      ],
+      "original_price": null,
+      "category_id": "MLA7032",
+      "official_store_id": null,
+      "catalog_product_id": null,
+      "tags": [
+        "brand_verified",
+        "good_quality_picture",
+        "good_quality_thumbnail",
+        "immediate_payment",
+        "cart_eligible"
+      ]
+    },
+    {
+      "id": "MLA750867422",
+      "site_id": "MLA",
+      "title": "Sociedades Por Acciones Simplificadas - Sas Y Simples Sirena",
+      "seller": {
+        "id": 117313418,
+        "permalink": null,
+        "power_seller_status": null,
+        "car_dealer": false,
+        "real_estate_agency": false,
+        "tags": []
+      },
+      "price": 1850,
+      "currency_id": "ARS",
+      "available_quantity": 1,
+      "sold_quantity": 3,
+      "buying_mode": "buy_it_now",
+      "listing_type_id": "gold_special",
+      "stop_time": "2038-09-26T04:00:00.000Z",
+      "condition": "new",
+      "permalink": "https://articulo.mercadolibre.com.ar/MLA-750867422-sociedades-por-acciones-simplificadas-sas-y-simples-sirena-_JM",
+      "thumbnail": "http://mla-s1-p.mlstatic.com/681866-MLA28272992676_102018-I.jpg",
+      "accepts_mercadopago": true,
+      "installments": {
+        "quantity": 12,
+        "amount": 252.48,
+        "rate": 63.77,
+        "currency_id": "ARS"
+      },
+      "address": {
+        "state_id": "AR-C",
+        "state_name": "Capital Federal",
+        "city_id": null,
+        "city_name": "capital federal"
+      },
+      "shipping": {
+        "free_shipping": false,
+        "mode": "me2",
+        "tags": [
+          "self_service_out"
+        ],
+        "logistic_type": "xd_drop_off",
+        "store_pick_up": false
+      },
+      "seller_address": {
+        "id": "",
+        "comment": "",
+        "address_line": "",
+        "zip_code": "",
+        "country": {
+          "id": "AR",
+          "name": "Argentina"
+        },
+        "state": {
+          "id": "AR-C",
+          "name": "Capital Federal"
+        },
+        "city": {
+          "id": null,
+          "name": "capital federal"
+        },
+        "latitude": "",
+        "longitude": ""
+      },
+      "attributes": [
+        {
+          "id": "ITEM_CONDITION",
+          "name": "Condición del ítem",
+          "value_id": "2230284",
+          "source": 1572,
+          "value_name": "Nuevo",
+          "value_struct": null,
+          "values": [
+            {
+              "id": "2230284",
+              "name": "Nuevo",
+              "struct": null,
+              "source": 1572
+            }
+          ],
+          "attribute_group_id": "OTHERS",
+          "attribute_group_name": "Otros"
+        }
+      ],
+      "original_price": null,
+      "category_id": "MLA412445",
+      "official_store_id": null,
+      "catalog_product_id": null,
+      "tags": [
+        "poor_quality_picture",
+        "immediate_payment",
+        "cart_eligible"
+      ]
+    },
+    {
+      "id": "MLA787958329",
+      "site_id": "MLA",
+      "title": "Valija Carry On Cabina Chica De Viaje Semi Rígida De Mano ",
+      "seller": {
+        "id": 429643836,
+        "permalink": null,
+        "power_seller_status": null,
+        "car_dealer": false,
+        "real_estate_agency": false,
+        "tags": []
+      },
+      "price": 3599,
+      "currency_id": "ARS",
+      "available_quantity": 1,
+      "sold_quantity": 250,
+      "buying_mode": "buy_it_now",
+      "listing_type_id": "gold_special",
+      "stop_time": "2040-01-30T13:42:22.000Z",
+      "condition": "new",
+      "permalink": "https://articulo.mercadolibre.com.ar/MLA-787958329-valija-carry-on-cabina-chica-de-viaje-semi-rigida-de-mano-_JM",
+      "thumbnail": "http://mla-s2-p.mlstatic.com/771306-MLA40187052920_122019-I.jpg",
+      "accepts_mercadopago": true,
+      "installments": {
+        "quantity": 12,
+        "amount": 491.17,
+        "rate": 63.77,
+        "currency_id": "ARS"
+      },
+      "address": {
+        "state_id": "AR-C",
+        "state_name": "Capital Federal",
+        "city_id": "TUxBQkFMTTMwNTBa",
+        "city_name": "Almagro"
+      },
+      "shipping": {
+        "free_shipping": true,
+        "mode": "me2",
+        "tags": [
+          "fulfillment",
+          "mandatory_free_shipping"
+        ],
+        "logistic_type": "fulfillment",
+        "store_pick_up": false
+      },
+      "seller_address": {
+        "id": "",
+        "comment": "",
+        "address_line": "",
+        "zip_code": "",
+        "country": {
+          "id": "AR",
+          "name": "Argentina"
+        },
+        "state": {
+          "id": "AR-C",
+          "name": "Capital Federal"
+        },
+        "city": {
+          "id": "TUxBQkFMTTMwNTBa",
+          "name": "Almagro"
+        },
+        "latitude": "",
+        "longitude": ""
+      },
+      "attributes": [
+        {
+          "values": [
+            {
+              "id": null,
+              "name": "SAS Travel",
+              "struct": null,
+              "source": 3376461333454861
+            }
+          ],
+          "name": "Marca",
+          "value_id": null,
+          "value_struct": null,
+          "attribute_group_id": "OTHERS",
+          "attribute_group_name": "Otros",
+          "source": 3376461333454861,
+          "id": "BRAND",
+          "value_name": "SAS Travel"
+        },
+        {
+          "id": "ITEM_CONDITION",
+          "value_id": "2230284",
+          "values": [
+            {
+              "id": "2230284",
+              "name": "Nuevo",
+              "struct": null,
+              "source": 1572
+            }
+          ],
+          "name": "Condición del ítem",
+          "value_name": "Nuevo",
+          "value_struct": null,
+          "attribute_group_id": "OTHERS",
+          "attribute_group_name": "Otros",
+          "source": 1572
+        },
+        {
+          "id": "MODEL",
+          "value_id": null,
+          "value_name": "40.1000A.2 cabinera low cost pequeña carrion",
+          "values": [
+            {
+              "id": null,
+              "name": "40.1000A.2 cabinera low cost pequeña carrion",
+              "struct": null,
+              "source": 3376461333454861
+            }
+          ],
+          "source": 3376461333454861,
+          "name": "Modelo",
+          "value_struct": null,
+          "attribute_group_id": "OTHERS",
+          "attribute_group_name": "Otros"
+        }
+      ],
+      "original_price": 3999,
+      "category_id": "MLA120354",
+      "official_store_id": null,
+      "catalog_product_id": null,
+      "tags": [
+        "loyalty_discount_eligible",
+        "today_promotion",
+        "brand_verified",
+        "good_quality_picture",
+        "good_quality_thumbnail",
+        "immediate_payment"
+      ]
+    },
+    {
+      "id": "MLA639214798",
+      "site_id": "MLA",
+      "title": "Cercos Piletas Seguridad. Red Proteccion Piletas. Mallas",
+      "seller": {
+        "id": 50657042,
+        "permalink": null,
+        "power_seller_status": "platinum",
+        "car_dealer": false,
+        "real_estate_agency": false,
+        "tags": []
+      },
+      "price": 80,
+      "currency_id": "ARS",
+      "available_quantity": 500,
+      "sold_quantity": 5000,
+      "buying_mode": "buy_it_now",
+      "listing_type_id": "gold_special",
+      "stop_time": "2036-10-13T14:05:36.000Z",
+      "condition": "new",
+      "permalink": "https://articulo.mercadolibre.com.ar/MLA-639214798-cercos-piletas-seguridad-red-proteccion-piletas-mallas-_JM",
+      "thumbnail": "http://mla-s1-p.mlstatic.com/851606-MLA40603811895_012020-I.jpg",
+      "accepts_mercadopago": true,
+      "installments": {
+        "quantity": 12,
+        "amount": 10.92,
+        "rate": 63.77,
+        "currency_id": "ARS"
+      },
+      "address": {
+        "state_id": "AR-C",
+        "state_name": "Capital Federal",
+        "city_id": null,
+        "city_name": "caba"
+      },
+      "shipping": {
+        "free_shipping": false,
+        "mode": "custom",
+        "tags": [],
+        "logistic_type": "custom",
+        "store_pick_up": false
+      },
+      "seller_address": {
+        "id": "",
+        "comment": "",
+        "address_line": "",
+        "zip_code": "",
+        "country": {
+          "id": "AR",
+          "name": "Argentina"
+        },
+        "state": {
+          "id": "AR-C",
+          "name": "Capital Federal"
+        },
+        "city": {
+          "id": null,
+          "name": "caba"
+        },
+        "latitude": "",
+        "longitude": ""
+      },
+      "attributes": [
+        {
+          "value_struct": null,
+          "values": [
+            {
+              "id": null,
+              "name": "Sanipro",
+              "struct": null,
+              "source": 1577
+            }
+          ],
+          "attribute_group_id": "OTHERS",
+          "attribute_group_name": "Otros",
+          "id": "BRAND",
+          "name": "Marca",
+          "value_id": null,
+          "value_name": "Sanipro",
+          "source": 1577
+        },
+        {
+          "value_struct": null,
+          "attribute_group_name": "Otros",
+          "source": 1577,
+          "id": "ITEM_CONDITION",
+          "name": "Condición del ítem",
+          "value_name": "Nuevo",
+          "value_id": "2230284",
+          "values": [
+            {
+              "name": "Nuevo",
+              "struct": null,
+              "source": 1577,
+              "id": "2230284"
+            }
+          ],
+          "attribute_group_id": "OTHERS"
+        },
+        {
+          "values": [
+            {
+              "id": null,
+              "name": "SOS",
+              "struct": null,
+              "source": 1577
+            }
+          ],
+          "attribute_group_name": "Otros",
+          "id": "MODEL",
+          "name": "Modelo",
+          "value_id": null,
+          "source": 1577,
+          "value_name": "SOS",
+          "value_struct": null,
+          "attribute_group_id": "OTHERS"
+        }
+      ],
+      "original_price": null,
+      "category_id": "MLA30988",
+      "official_store_id": null,
+      "catalog_product_id": null,
+      "tags": [
+        "loyalty_discount_eligible",
+        "brand_verified",
+        "good_quality_picture",
+        "good_quality_thumbnail",
+        "immediate_payment"
+      ]
+    },
+    {
+      "id": "MLA823793114",
+      "site_id": "MLA",
+      "title": "Sas Sociedad Por Acciones Simplificada Ramírez",
+      "seller": {
+        "id": 304072102,
+        "permalink": null,
+        "power_seller_status": null,
+        "car_dealer": false,
+        "real_estate_agency": false,
+        "tags": []
+      },
+      "price": 280,
+      "currency_id": "ARS",
+      "available_quantity": 1,
+      "sold_quantity": 2,
+      "buying_mode": "buy_it_now",
+      "listing_type_id": "gold_special",
+      "stop_time": "2039-10-31T04:00:00.000Z",
+      "condition": "new",
+      "permalink": "https://articulo.mercadolibre.com.ar/MLA-823793114-sas-sociedad-por-acciones-simplificada-ramirez-_JM",
+      "thumbnail": "http://mla-s1-p.mlstatic.com/695991-MLA32784374050_112019-I.jpg",
+      "accepts_mercadopago": true,
+      "installments": {
+        "quantity": 12,
+        "amount": 38.21,
+        "rate": 63.77,
+        "currency_id": "ARS"
+      },
+      "address": {
+        "state_id": "AR-B",
+        "state_name": "Buenos Aires",
+        "city_id": null,
+        "city_name": "Envió por mail a todo el país"
+      },
+      "shipping": {
+        "free_shipping": false,
+        "mode": "not_specified",
+        "tags": [
+          "me2_available"
+        ],
+        "logistic_type": "not_specified",
+        "store_pick_up": false
+      },
+      "seller_address": {
+        "id": "",
+        "comment": "",
+        "address_line": "",
+        "zip_code": "",
+        "country": {
+          "id": "AR",
+          "name": "Argentina"
+        },
+        "state": {
+          "id": "AR-B",
+          "name": "Buenos Aires"
+        },
+        "city": {
+          "id": null,
+          "name": "Envió por mail a todo el país"
+        },
+        "latitude": "",
+        "longitude": ""
+      },
+      "attributes": [
+        {
+          "source": 8342579661593500,
+          "values": [
+            {
+              "source": 8342579661593500,
+              "id": "2230284",
+              "name": "Nuevo",
+              "struct": null
+            }
+          ],
+          "name": "Condición del ítem",
+          "value_id": "2230284",
+          "value_name": "Nuevo",
+          "value_struct": null,
+          "attribute_group_id": "OTHERS",
+          "attribute_group_name": "Otros",
+          "id": "ITEM_CONDITION"
+        }
+      ],
+      "original_price": null,
+      "category_id": "MLA412445",
+      "official_store_id": null,
+      "catalog_product_id": null,
+      "tags": [
+        "good_quality_picture",
+        "immediate_payment"
+      ]
+    },
+    {
+      "id": "MLA803203740",
+      "site_id": "MLA",
+      "title": "Disco Rigido 2tb Seagate 3.5 Sas2 Scsi 7200rpm Pull Servidor",
+      "seller": {
+        "id": 61852079,
+        "permalink": null,
+        "power_seller_status": "platinum",
+        "car_dealer": false,
+        "real_estate_agency": false,
+        "tags": []
+      },
+      "price": 2981.51,
+      "currency_id": "ARS",
+      "available_quantity": 1,
+      "sold_quantity": 4,
+      "buying_mode": "buy_it_now",
+      "listing_type_id": "gold_special",
+      "stop_time": "2039-07-19T04:00:00.000Z",
+      "condition": "new",
+      "permalink": "https://articulo.mercadolibre.com.ar/MLA-803203740-disco-rigido-2tb-seagate-35-sas2-scsi-7200rpm-pull-servidor-_JM",
+      "thumbnail": "http://mla-s1-p.mlstatic.com/606383-MLA31356300663_072019-I.jpg",
+      "accepts_mercadopago": true,
+      "installments": {
+        "quantity": 12,
+        "amount": 406.9,
+        "rate": 63.77,
+        "currency_id": "ARS"
+      },
+      "address": {
+        "state_id": "AR-C",
+        "state_name": "Capital Federal",
+        "city_id": null,
+        "city_name": "c.a.b.a."
+      },
+      "shipping": {
+        "free_shipping": true,
+        "mode": "me2",
+        "tags": [
+          "mandatory_free_shipping"
+        ],
+        "logistic_type": "cross_docking",
+        "store_pick_up": false
+      },
+      "seller_address": {
+        "id": "",
+        "comment": "",
+        "address_line": "",
+        "zip_code": "",
+        "country": {
+          "id": "AR",
+          "name": "Argentina"
+        },
+        "state": {
+          "id": "AR-C",
+          "name": "Capital Federal"
+        },
+        "city": {
+          "id": null,
+          "name": "c.a.b.a."
+        },
+        "latitude": "",
+        "longitude": ""
+      },
+      "attributes": [
+        {
+          "id": "BRAND",
+          "name": "Marca",
+          "value_struct": null,
+          "values": [
+            {
+              "id": "9597",
+              "name": "Seagate",
+              "struct": null,
+              "source": 8342579661593500
+            }
+          ],
+          "attribute_group_id": "OTHERS",
+          "attribute_group_name": "Otros",
+          "source": 8342579661593500,
+          "value_id": "9597",
+          "value_name": "Seagate"
+        },
+        {
+          "id": "DETAILED_MODEL",
+          "value_struct": null,
+          "attribute_group_id": "OTHERS",
+          "attribute_group_name": "Otros",
+          "source": 8342579661593500,
+          "name": "Modelo detallado",
+          "value_id": null,
+          "value_name": "ST2000NM0023",
+          "values": [
+            {
+              "id": null,
+              "name": "ST2000NM0023",
+              "struct": null,
+              "source": 8342579661593500
+            }
+          ]
+        },
+        {
+          "id": "ITEM_CONDITION",
+          "value_name": "Reacondicionado",
+          "values": [
+            {
+              "id": "2230582",
+              "name": "Reacondicionado",
+              "struct": null,
+              "source": 8342579661593500
+            }
+          ],
+          "attribute_group_id": "OTHERS",
+          "source": 8342579661593500,
+          "name": "Condición del ítem",
+          "value_id": "2230582",
+          "value_struct": null,
+          "attribute_group_name": "Otros"
+        },
+        {
+          "source": 8342579661593500,
+          "id": "LINE",
+          "name": "Línea",
+          "value_id": "262560",
+          "value_struct": null,
+          "values": [
+            {
+              "id": "262560",
+              "name": "Constellation",
+              "struct": null,
+              "source": 8342579661593500
+            }
+          ],
+          "attribute_group_id": "OTHERS",
+          "attribute_group_name": "Otros",
+          "value_name": "Constellation"
+        },
+        {
+          "name": "Modelo",
+          "value_name": "Constellation ES.3",
+          "values": [
+            {
+              "name": "Constellation ES.3",
+              "struct": null,
+              "source": 8342579661593500,
+              "id": null
+            }
+          ],
+          "attribute_group_id": "OTHERS",
+          "id": "MODEL",
+          "value_struct": null,
+          "attribute_group_name": "Otros",
+          "source": 8342579661593500,
+          "value_id": null
+        }
+      ],
+      "original_price": null,
+      "category_id": "MLA1672",
+      "official_store_id": null,
+      "catalog_product_id": null,
+      "tags": [
+        "brand_verified",
+        "good_quality_picture",
+        "immediate_payment",
+        "cart_eligible"
+      ]
+    },
+    {
+      "id": "MLA690505051",
+      "site_id": "MLA",
+      "title": "Redes Proteccion En Villa Urquiza. Proteccion A Su Familia",
+      "seller": {
+        "id": 103346298,
+        "permalink": null,
+        "power_seller_status": "platinum",
+        "car_dealer": false,
+        "real_estate_agency": false,
+        "tags": []
+      },
+      "price": 89,
+      "currency_id": "ARS",
+      "available_quantity": 50000,
+      "sold_quantity": 500,
+      "buying_mode": "buy_it_now",
+      "listing_type_id": "gold_pro",
+      "stop_time": "2037-10-28T22:58:02.000Z",
+      "condition": "new",
+      "permalink": "https://articulo.mercadolibre.com.ar/MLA-690505051-redes-proteccion-en-villa-urquiza-proteccion-a-su-familia-_JM",
+      "thumbnail": "http://mla-s2-p.mlstatic.com/659330-MLA29310081389_022019-I.jpg",
+      "accepts_mercadopago": true,
+      "installments": {
+        "quantity": 6,
+        "amount": 14.83,
+        "rate": 0,
+        "currency_id": "ARS"
+      },
+      "address": {
+        "state_id": "AR-C",
+        "state_name": "Capital Federal",
+        "city_id": null,
+        "city_name": "CABA"
+      },
+      "shipping": {
+        "free_shipping": false,
+        "mode": "me2",
+        "tags": [
+          "self_service_in"
+        ],
+        "logistic_type": "xd_drop_off",
+        "store_pick_up": false
+      },
+      "seller_address": {
+        "id": "",
+        "comment": "",
+        "address_line": "",
+        "zip_code": "",
+        "country": {
+          "id": "AR",
+          "name": "Argentina"
+        },
+        "state": {
+          "id": "AR-C",
+          "name": "Capital Federal"
+        },
+        "city": {
+          "id": null,
+          "name": "CABA"
+        },
+        "latitude": "",
+        "longitude": ""
+      },
+      "attributes": [
+        {
+          "value_id": null,
+          "value_struct": null,
+          "values": [
+            {
+              "name": "Villa Urquiza Red",
+              "struct": null,
+              "source": 3376461333454861,
+              "id": null
+            }
+          ],
+          "attribute_group_id": "OTHERS",
+          "id": "BRAND",
+          "value_name": "Villa Urquiza Red",
+          "attribute_group_name": "Otros",
+          "source": 3376461333454861,
+          "name": "Marca"
+        },
+        {
+          "id": "ITEM_CONDITION",
+          "value_struct": null,
+          "attribute_group_name": "Otros",
+          "source": 1,
+          "name": "Condición del ítem",
+          "value_id": "2230284",
+          "value_name": "Nuevo",
+          "values": [
+            {
+              "id": "2230284",
+              "name": "Nuevo",
+              "struct": null,
+              "source": 1
+            }
+          ],
+          "attribute_group_id": "OTHERS"
+        },
+        {
+          "id": "MODEL",
+          "name": "Modelo",
+          "value_name": "Translucida",
+          "source": 1577,
+          "value_id": null,
+          "value_struct": null,
+          "values": [
+            {
+              "id": null,
+              "name": "Translucida",
+              "struct": null,
+              "source": 1577
+            }
+          ],
+          "attribute_group_id": "OTHERS",
+          "attribute_group_name": "Otros"
+        }
+      ],
+      "differential_pricing": {
+        "id": 33678187
+      },
+      "original_price": null,
+      "category_id": "MLA372907",
+      "official_store_id": null,
+      "catalog_product_id": null,
+      "tags": [
+        "brand_verified",
+        "good_quality_picture",
+        "good_quality_thumbnail",
+        "loyalty_discount_eligible",
+        "immediate_payment",
+        "cart_eligible"
+      ]
+    },
+    {
+      "id": "MLA745407455",
+      "site_id": "MLA",
+      "title": "Redes De Proteccion Terrazas Con Estructura Metalica Balcon",
+      "seller": {
+        "id": 50657042,
+        "permalink": null,
+        "power_seller_status": "platinum",
+        "car_dealer": false,
+        "real_estate_agency": false,
+        "tags": []
+      },
+      "price": 39,
+      "currency_id": "ARS",
+      "available_quantity": 1,
+      "sold_quantity": 5000,
+      "buying_mode": "buy_it_now",
+      "listing_type_id": "gold_special",
+      "stop_time": "2038-08-23T04:00:00.000Z",
+      "condition": "new",
+      "permalink": "https://articulo.mercadolibre.com.ar/MLA-745407455-redes-de-proteccion-terrazas-con-estructura-metalica-balcon-_JM",
+      "thumbnail": "http://mla-s2-p.mlstatic.com/795429-MLA28275415715_102018-I.jpg",
+      "accepts_mercadopago": true,
+      "installments": {
+        "quantity": 12,
+        "amount": 5.32,
+        "rate": 63.77,
+        "currency_id": "ARS"
+      },
+      "address": {
+        "state_id": "AR-C",
+        "state_name": "Capital Federal",
+        "city_id": null,
+        "city_name": "caba"
+      },
+      "shipping": {
+        "free_shipping": false,
+        "mode": "me2",
+        "tags": [
+          "self_service_in"
+        ],
+        "logistic_type": "xd_drop_off",
+        "store_pick_up": false
+      },
+      "seller_address": {
+        "id": "",
+        "comment": "",
+        "address_line": "",
+        "zip_code": "",
+        "country": {
+          "id": "AR",
+          "name": "Argentina"
+        },
+        "state": {
+          "id": "AR-C",
+          "name": "Capital Federal"
+        },
+        "city": {
+          "id": null,
+          "name": "caba"
+        },
+        "latitude": "",
+        "longitude": ""
+      },
+      "attributes": [
+        {
+          "name": "Marca",
+          "value_struct": null,
+          "values": [
+            {
+              "id": null,
+              "name": "Cristalinas",
+              "struct": null,
+              "source": 3376461333454861
+            }
+          ],
+          "source": 3376461333454861,
+          "id": "BRAND",
+          "value_name": "Cristalinas",
+          "attribute_group_id": "OTHERS",
+          "attribute_group_name": "Otros",
+          "value_id": null
+        },
+        {
+          "id": "ITEM_CONDITION",
+          "name": "Condición del ítem",
+          "value_id": "2230284",
+          "source": 1572,
+          "attribute_group_name": "Otros",
+          "value_name": "Nuevo",
+          "value_struct": null,
+          "values": [
+            {
+              "struct": null,
+              "source": 1572,
+              "id": "2230284",
+              "name": "Nuevo"
+            }
+          ],
+          "attribute_group_id": "OTHERS"
+        },
+        {
+          "value_struct": null,
+          "attribute_group_name": "Otros",
+          "id": "MODEL",
+          "name": "Modelo",
+          "values": [
+            {
+              "id": null,
+              "name": "Traslucida",
+              "struct": null,
+              "source": 1572
+            }
+          ],
+          "attribute_group_id": "OTHERS",
+          "source": 1572,
+          "value_id": null,
+          "value_name": "Traslucida"
+        }
+      ],
+      "original_price": null,
+      "category_id": "MLA372907",
+      "official_store_id": null,
+      "catalog_product_id": null,
+      "tags": [
+        "brand_verified",
+        "good_quality_picture",
+        "good_quality_thumbnail",
+        "immediate_payment",
+        "cart_eligible"
+      ]
+    },
+    {
+      "id": "MLA838101346",
+      "site_id": "MLA",
+      "title": "Sas La Caza Del Hombre De Peru - Gerard De Villiers",
+      "seller": {
+        "id": 35116239,
+        "permalink": null,
+        "power_seller_status": null,
+        "car_dealer": false,
+        "real_estate_agency": false,
+        "tags": []
+      },
+      "price": 170,
+      "currency_id": "ARS",
+      "available_quantity": 1,
+      "sold_quantity": 1,
+      "buying_mode": "buy_it_now",
+      "listing_type_id": "gold_special",
+      "stop_time": "2040-02-02T04:00:00.000Z",
+      "condition": "used",
+      "permalink": "https://articulo.mercadolibre.com.ar/MLA-838101346-sas-la-caza-del-hombre-de-peru-gerard-de-villiers-_JM",
+      "thumbnail": "http://mla-s1-p.mlstatic.com/627346-MLA40781478788_022020-I.jpg",
+      "accepts_mercadopago": true,
+      "installments": {
+        "quantity": 12,
+        "amount": 23.2,
+        "rate": 63.77,
+        "currency_id": "ARS"
+      },
+      "address": {
+        "state_id": "AR-C",
+        "state_name": "Capital Federal",
+        "city_id": null,
+        "city_name": "BARRIO NORTE"
+      },
+      "shipping": {
+        "free_shipping": false,
+        "mode": "me2",
+        "tags": [],
+        "logistic_type": "drop_off",
+        "store_pick_up": false
+      },
+      "seller_address": {
+        "id": "",
+        "comment": "",
+        "address_line": "",
+        "zip_code": "",
+        "country": {
+          "id": "AR",
+          "name": "Argentina"
+        },
+        "state": {
+          "id": "AR-C",
+          "name": "Capital Federal"
+        },
+        "city": {
+          "id": null,
+          "name": "BARRIO NORTE"
+        },
+        "latitude": "",
+        "longitude": ""
+      },
+      "attributes": [
+        {
+          "values": [
+            {
+              "id": "2230581",
+              "name": "Usado",
+              "struct": null,
+              "source": 2860837171021627
+            }
+          ],
+          "attribute_group_id": "OTHERS",
+          "id": "ITEM_CONDITION",
+          "name": "Condición del ítem",
+          "value_id": "2230581",
+          "value_name": "Usado",
+          "value_struct": null,
+          "attribute_group_name": "Otros",
+          "source": 2860837171021627
+        }
+      ],
+      "original_price": null,
+      "category_id": "MLA412445",
+      "official_store_id": null,
+      "catalog_product_id": null,
+      "tags": [
+        "good_quality_picture",
+        "immediate_payment",
+        "cart_eligible"
+      ]
+    },
+    {
+      "id": "MLA672679312",
+      "site_id": "MLA",
+      "title": "Kit Alarma Domiciliaria Inalambrica Gsm Wl Español Zdas35",
+      "seller": {
+        "id": 130774908,
+        "permalink": null,
+        "power_seller_status": "platinum",
+        "car_dealer": false,
+        "real_estate_agency": false,
+        "tags": []
+      },
+      "price": 8300,
+      "currency_id": "ARS",
+      "available_quantity": 1,
+      "sold_quantity": 500,
+      "buying_mode": "buy_it_now",
+      "listing_type_id": "gold_special",
+      "stop_time": "2037-06-25T18:42:16.000Z",
+      "condition": "new",
+      "permalink": "https://articulo.mercadolibre.com.ar/MLA-672679312-kit-alarma-domiciliaria-inalambrica-gsm-wl-espanol-zdas35-_JM",
+      "thumbnail": "http://mla-s1-p.mlstatic.com/958065-MLA40986852602_032020-I.jpg",
+      "accepts_mercadopago": true,
+      "installments": {
+        "quantity": 12,
+        "amount": 1132.74,
+        "rate": 63.77,
+        "currency_id": "ARS"
+      },
+      "address": {
+        "state_id": "AR-C",
+        "state_name": "Capital Federal",
+        "city_id": "TUxBQkJBUjM0MDha",
+        "city_name": "Barracas"
+      },
+      "shipping": {
+        "free_shipping": true,
+        "mode": "me2",
+        "tags": [
+          "mandatory_free_shipping"
+        ],
+        "logistic_type": "cross_docking",
+        "store_pick_up": false
+      },
+      "seller_address": {
+        "id": "",
+        "comment": "",
+        "address_line": "",
+        "zip_code": "",
+        "country": {
+          "id": "AR",
+          "name": "Argentina"
+        },
+        "state": {
+          "id": "AR-C",
+          "name": "Capital Federal"
+        },
+        "city": {
+          "id": "TUxBQkJBUjM0MDha",
+          "name": "Barracas"
+        },
+        "latitude": "",
+        "longitude": ""
+      },
+      "attributes": [
+        {
+          "name": "Marca",
+          "attribute_group_name": "Otros",
+          "source": 1577,
+          "id": "BRAND",
+          "value_name": "sasa",
+          "value_struct": null,
+          "values": [
+            {
+              "name": "sasa",
+              "struct": null,
+              "source": 1577,
+              "id": null
+            }
+          ],
+          "attribute_group_id": "OTHERS",
+          "value_id": null
+        },
+        {
+          "id": "ITEM_CONDITION",
+          "value_struct": null,
+          "values": [
+            {
+              "id": "2230284",
+              "name": "Nuevo",
+              "struct": null,
+              "source": 1
+            }
+          ],
+          "source": 1,
+          "name": "Condición del ítem",
+          "value_id": "2230284",
+          "value_name": "Nuevo",
+          "attribute_group_id": "OTHERS",
+          "attribute_group_name": "Otros"
+        },
+        {
+          "value_struct": null,
+          "attribute_group_id": "OTHERS",
+          "value_id": null,
+          "value_name": "GSM",
+          "values": [
+            {
+              "id": null,
+              "name": "GSM",
+              "struct": null,
+              "source": 1572
+            }
+          ],
+          "attribute_group_name": "Otros",
+          "source": 1572,
+          "id": "LINE",
+          "name": "Línea"
+        },
+        {
+          "attribute_group_id": "OTHERS",
+          "source": 1577,
+          "name": "Modelo",
+          "value_name": "zdas350",
+          "values": [
+            {
+              "name": "zdas350",
+              "struct": null,
+              "source": 1577,
+              "id": null
+            }
+          ],
+          "attribute_group_name": "Otros",
+          "id": "MODEL",
+          "value_id": null,
+          "value_struct": null
+        }
+      ],
+      "original_price": null,
+      "category_id": "MLA4625",
+      "official_store_id": null,
+      "catalog_product_id": null,
+      "tags": [
+        "brand_verified",
+        "good_quality_picture",
+        "good_quality_thumbnail",
+        "loyalty_discount_eligible",
+        "immediate_payment",
+        "cart_eligible"
+      ]
+    },
+    {
+      "id": "MLA787951081",
+      "site_id": "MLA",
+      "title": "Valija Chica Cabina Carry On De Mano Rigida De Viaje Low C. ",
+      "seller": {
+        "id": 429643836,
+        "permalink": null,
+        "power_seller_status": null,
+        "car_dealer": false,
+        "real_estate_agency": false,
+        "tags": []
+      },
+      "price": 3450,
+      "currency_id": "ARS",
+      "available_quantity": 1,
+      "sold_quantity": 200,
+      "buying_mode": "buy_it_now",
+      "listing_type_id": "gold_special",
+      "stop_time": "2039-11-09T15:48:54.000Z",
+      "condition": "new",
+      "permalink": "https://articulo.mercadolibre.com.ar/MLA-787951081-valija-chica-cabina-carry-on-de-mano-rigida-de-viaje-low-c-_JM",
+      "thumbnail": "http://mla-s2-p.mlstatic.com/707949-MLA41024353488_032020-I.jpg",
+      "accepts_mercadopago": true,
+      "installments": {
+        "quantity": 12,
+        "amount": 470.84,
+        "rate": 63.77,
+        "currency_id": "ARS"
+      },
+      "address": {
+        "state_id": "AR-C",
+        "state_name": "Capital Federal",
+        "city_id": "TUxBQkFMTTMwNTBa",
+        "city_name": "Almagro"
+      },
+      "shipping": {
+        "free_shipping": true,
+        "mode": "me2",
+        "tags": [
+          "fulfillment",
+          "mandatory_free_shipping"
+        ],
+        "logistic_type": "fulfillment",
+        "store_pick_up": false
+      },
+      "seller_address": {
+        "id": "",
+        "comment": "",
+        "address_line": "",
+        "zip_code": "",
+        "country": {
+          "id": "AR",
+          "name": "Argentina"
+        },
+        "state": {
+          "id": "AR-C",
+          "name": "Capital Federal"
+        },
+        "city": {
+          "id": "TUxBQkFMTTMwNTBa",
+          "name": "Almagro"
+        },
+        "latitude": "",
+        "longitude": ""
+      },
+      "attributes": [
+        {
+          "id": "BRAND",
+          "value_id": null,
+          "value_name": "SAS Travel",
+          "attribute_group_name": "Otros",
+          "source": 3376461333454861,
+          "name": "Marca",
+          "value_struct": null,
+          "values": [
+            {
+              "id": null,
+              "name": "SAS Travel",
+              "struct": null,
+              "source": 3376461333454861
+            }
+          ],
+          "attribute_group_id": "OTHERS"
+        },
+        {
+          "value_id": "2230284",
+          "value_struct": null,
+          "values": [
+            {
+              "id": "2230284",
+              "name": "Nuevo",
+              "struct": null,
+              "source": 1572
+            }
+          ],
+          "attribute_group_name": "Otros",
+          "source": 1572,
+          "id": "ITEM_CONDITION",
+          "name": "Condición del ítem",
+          "value_name": "Nuevo",
+          "attribute_group_id": "OTHERS"
+        },
+        {
+          "id": "MODEL",
+          "value_struct": null,
+          "values": [
+            {
+              "name": "40.1000g.2 cabinera low cost carrion",
+              "struct": null,
+              "source": 3376461333454861,
+              "id": null
+            }
+          ],
+          "attribute_group_id": "OTHERS",
+          "attribute_group_name": "Otros",
+          "name": "Modelo",
+          "value_id": null,
+          "value_name": "40.1000g.2 cabinera low cost carrion",
+          "source": 3376461333454861
+        }
+      ],
+      "original_price": 3999,
+      "category_id": "MLA120354",
+      "official_store_id": null,
+      "catalog_product_id": null,
+      "tags": [
+        "today_promotion",
+        "brand_verified",
+        "good_quality_picture",
+        "good_quality_thumbnail",
+        "loyalty_discount_eligible",
+        "immediate_payment",
+        "cart_eligible"
+      ]
+    },
+    {
+      "id": "MLA813034166",
+      "site_id": "MLA",
+      "title": " Sas - Sociedad Por Acciones Simplificada ",
+      "seller": {
+        "id": 24120468,
+        "permalink": null,
+        "power_seller_status": null,
+        "car_dealer": false,
+        "real_estate_agency": false,
+        "tags": []
+      },
+      "price": 3200,
+      "currency_id": "ARS",
+      "available_quantity": 1,
+      "sold_quantity": 3,
+      "buying_mode": "buy_it_now",
+      "listing_type_id": "gold_special",
+      "stop_time": "2039-08-31T04:00:00.000Z",
+      "condition": "new",
+      "permalink": "https://articulo.mercadolibre.com.ar/MLA-813034166-sas-sociedad-por-acciones-simplificada-_JM",
+      "thumbnail": "http://mla-s1-p.mlstatic.com/924544-MLA32080799570_092019-I.jpg",
+      "accepts_mercadopago": true,
+      "installments": {
+        "quantity": 12,
+        "amount": 436.72,
+        "rate": 63.77,
+        "currency_id": "ARS"
+      },
+      "address": {
+        "state_id": "AR-C",
+        "state_name": "Capital Federal",
+        "city_id": null,
+        "city_name": "Buenos Aires"
+      },
+      "shipping": {
+        "free_shipping": true,
+        "mode": "me2",
+        "tags": [
+          "mandatory_free_shipping"
+        ],
+        "logistic_type": "xd_drop_off",
+        "store_pick_up": false
+      },
+      "seller_address": {
+        "id": "",
+        "comment": "",
+        "address_line": "",
+        "zip_code": "",
+        "country": {
+          "id": "AR",
+          "name": "Argentina"
+        },
+        "state": {
+          "id": "AR-C",
+          "name": "Capital Federal"
+        },
+        "city": {
+          "id": null,
+          "name": "Buenos Aires"
+        },
+        "latitude": "",
+        "longitude": ""
+      },
+      "attributes": [
+        {
+          "value_id": "2230284",
+          "attribute_group_name": "Otros",
+          "name": "Condición del ítem",
+          "value_name": "Nuevo",
+          "value_struct": null,
+          "values": [
+            {
+              "source": 8342579661593500,
+              "id": "2230284",
+              "name": "Nuevo",
+              "struct": null
+            }
+          ],
+          "attribute_group_id": "OTHERS",
+          "source": 8342579661593500,
+          "id": "ITEM_CONDITION"
+        }
+      ],
+      "original_price": null,
+      "category_id": "MLA412445",
+      "official_store_id": null,
+      "catalog_product_id": null,
+      "tags": [
+        "good_quality_picture",
+        "immediate_payment",
+        "cart_eligible"
+      ]
+    },
+    {
+      "id": "MLA816973103",
+      "site_id": "MLA",
+      "title": "Tray Dell Poweredge 2.5  Sas/sata R440 R540 R640 R740 R740xd",
+      "seller": {
+        "id": 16584772,
+        "permalink": null,
+        "power_seller_status": null,
+        "car_dealer": false,
+        "real_estate_agency": false,
+        "tags": []
+      },
+      "price": 3120,
+      "currency_id": "ARS",
+      "available_quantity": 1,
+      "sold_quantity": 2,
+      "buying_mode": "buy_it_now",
+      "listing_type_id": "gold_special",
+      "stop_time": "2039-09-22T04:00:00.000Z",
+      "condition": "new",
+      "permalink": "https://articulo.mercadolibre.com.ar/MLA-816973103-tray-dell-poweredge-25-sassata-r440-r540-r640-r740-r740xd-_JM",
+      "thumbnail": "http://mla-s2-p.mlstatic.com/770461-MLA32338059678_092019-I.jpg",
+      "accepts_mercadopago": true,
+      "installments": {
+        "quantity": 12,
+        "amount": 425.8,
+        "rate": 63.77,
+        "currency_id": "ARS"
+      },
+      "address": {
+        "state_id": "AR-C",
+        "state_name": "Capital Federal",
+        "city_id": "TUxBQkZMTzg5MjFa",
+        "city_name": "Floresta"
+      },
+      "shipping": {
+        "free_shipping": true,
+        "mode": "me2",
+        "tags": [
+          "mandatory_free_shipping"
+        ],
+        "logistic_type": "xd_drop_off",
+        "store_pick_up": false
+      },
+      "seller_address": {
+        "id": "",
+        "comment": "",
+        "address_line": "",
+        "zip_code": "",
+        "country": {
+          "id": "AR",
+          "name": "Argentina"
+        },
+        "state": {
+          "id": "AR-C",
+          "name": "Capital Federal"
+        },
+        "city": {
+          "id": "TUxBQkZMTzg5MjFa",
+          "name": "Floresta"
+        },
+        "latitude": "",
+        "longitude": ""
+      },
+      "attributes": [
+        {
+          "source": 8342579661593500,
+          "id": "BRAND",
+          "value_id": "8216",
+          "value_name": "Dell",
+          "values": [
+            {
+              "name": "Dell",
+              "struct": null,
+              "source": 8342579661593500,
+              "id": "8216"
+            }
+          ],
+          "attribute_group_name": "Otros",
+          "name": "Marca",
+          "value_struct": null,
+          "attribute_group_id": "OTHERS"
+        },
+        {
+          "name": "Condición del ítem",
+          "value_id": "2230284",
+          "values": [
+            {
+              "id": "2230284",
+              "name": "Nuevo",
+              "struct": null,
+              "source": 8342579661593500
+            }
+          ],
+          "attribute_group_name": "Otros",
+          "source": 8342579661593500,
+          "id": "ITEM_CONDITION",
+          "value_name": "Nuevo",
+          "value_struct": null,
+          "attribute_group_id": "OTHERS"
+        },
+        {
+          "id": "MODEL",
+          "name": "Modelo",
+          "value_struct": null,
+          "source": 8342579661593500,
+          "value_id": null,
+          "value_name": "3.5 SAS",
+          "values": [
+            {
+              "id": null,
+              "name": "3.5 SAS",
+              "struct": null,
+              "source": 8342579661593500
+            }
+          ],
+          "attribute_group_id": "OTHERS",
+          "attribute_group_name": "Otros"
+        }
+      ],
+      "original_price": null,
+      "category_id": "MLA7032",
+      "official_store_id": null,
+      "catalog_product_id": null,
+      "tags": [
+        "brand_verified",
+        "good_quality_picture",
+        "good_quality_thumbnail",
+        "immediate_payment",
+        "cart_eligible"
+      ]
+    },
+    {
+      "id": "MLA715936068",
+      "site_id": "MLA",
+      "title": "Instalacion Cercos Piletas. Pilar, Vicente Lopez Zona Norte",
+      "seller": {
+        "id": 50657042,
+        "permalink": null,
+        "power_seller_status": "platinum",
+        "car_dealer": false,
+        "real_estate_agency": false,
+        "tags": []
+      },
+      "price": 65,
+      "currency_id": "ARS",
+      "available_quantity": 5000,
+      "sold_quantity": 500,
+      "buying_mode": "buy_it_now",
+      "listing_type_id": "gold_special",
+      "stop_time": "2038-03-26T04:00:00.000Z",
+      "condition": "new",
+      "permalink": "https://articulo.mercadolibre.com.ar/MLA-715936068-instalacion-cercos-piletas-pilar-vicente-lopez-zona-norte-_JM",
+      "thumbnail": "http://mla-s1-p.mlstatic.com/793935-MLA40603841496_012020-I.jpg",
+      "accepts_mercadopago": true,
+      "installments": {
+        "quantity": 12,
+        "amount": 8.87,
+        "rate": 63.77,
+        "currency_id": "ARS"
+      },
+      "address": {
+        "state_id": "AR-C",
+        "state_name": "Capital Federal",
+        "city_id": null,
+        "city_name": "caba"
+      },
+      "shipping": {
+        "free_shipping": false,
+        "mode": "not_specified",
+        "tags": [],
+        "logistic_type": "not_specified",
+        "store_pick_up": false
+      },
+      "seller_address": {
+        "id": "",
+        "comment": "",
+        "address_line": "",
+        "zip_code": "",
+        "country": {
+          "id": "AR",
+          "name": "Argentina"
+        },
+        "state": {
+          "id": "AR-C",
+          "name": "Capital Federal"
+        },
+        "city": {
+          "id": null,
+          "name": "caba"
+        },
+        "latitude": "",
+        "longitude": ""
+      },
+      "attributes": [
+        {
+          "id": "BRAND",
+          "value_id": null,
+          "attribute_group_id": "OTHERS",
+          "name": "Marca",
+          "value_name": "Red-SAS",
+          "value_struct": null,
+          "values": [
+            {
+              "source": 1572,
+              "id": null,
+              "name": "Red-SAS",
+              "struct": null
+            }
+          ],
+          "attribute_group_name": "Otros",
+          "source": 1572
+        },
+        {
+          "name": "Condición del ítem",
+          "value_id": "2230284",
+          "values": [
+            {
+              "source": 1572,
+              "id": "2230284",
+              "name": "Nuevo",
+              "struct": null
+            }
+          ],
+          "attribute_group_name": "Otros",
+          "source": 1572,
+          "id": "ITEM_CONDITION",
+          "value_name": "Nuevo",
+          "value_struct": null,
+          "attribute_group_id": "OTHERS"
+        },
+        {
+          "attribute_group_id": "OTHERS",
+          "source": 1572,
+          "name": "Modelo",
+          "values": [
+            {
+              "id": null,
+              "name": "Piscina",
+              "struct": null,
+              "source": 1572
+            }
+          ],
+          "value_name": "Piscina",
+          "value_struct": null,
+          "attribute_group_name": "Otros",
+          "id": "MODEL",
+          "value_id": null
+        }
+      ],
+      "original_price": null,
+      "category_id": "MLA30988",
+      "official_store_id": null,
+      "catalog_product_id": null,
+      "tags": [
+        "brand_verified",
+        "good_quality_picture",
+        "good_quality_thumbnail",
+        "immediate_payment"
+      ]
+    },
+    {
+      "id": "MLA837222405",
+      "site_id": "MLA",
+      "title": "Contabilidad -  Aplicación Práctica Comentada",
+      "seller": {
+        "id": 98304170,
+        "permalink": null,
+        "power_seller_status": null,
+        "car_dealer": false,
+        "real_estate_agency": false,
+        "tags": []
+      },
+      "price": 200,
+      "currency_id": "ARS",
+      "available_quantity": 1,
+      "sold_quantity": 0,
+      "buying_mode": "buy_it_now",
+      "listing_type_id": "gold_special",
+      "stop_time": "2040-01-28T04:00:00.000Z",
+      "condition": "used",
+      "permalink": "https://articulo.mercadolibre.com.ar/MLA-837222405-contabilidad-aplicacion-practica-comentada-_JM",
+      "thumbnail": "http://mla-s2-p.mlstatic.com/923150-MLA40635172165_022020-I.jpg",
+      "accepts_mercadopago": true,
+      "installments": {
+        "quantity": 12,
+        "amount": 27.3,
+        "rate": 63.77,
+        "currency_id": "ARS"
+      },
+      "address": {
+        "state_id": "AR-C",
+        "state_name": "Capital Federal",
+        "city_id": null,
+        "city_name": "Retiro"
+      },
+      "shipping": {
+        "free_shipping": false,
+        "mode": "me2",
+        "tags": [],
+        "logistic_type": "drop_off",
+        "store_pick_up": false
+      },
+      "seller_address": {
+        "id": "",
+        "comment": "",
+        "address_line": "",
+        "zip_code": "",
+        "country": {
+          "id": "AR",
+          "name": "Argentina"
+        },
+        "state": {
+          "id": "AR-C",
+          "name": "Capital Federal"
+        },
+        "city": {
+          "id": null,
+          "name": "Retiro"
+        },
+        "latitude": "",
+        "longitude": ""
+      },
+      "attributes": [
+        {
+          "value_id": "2230581",
+          "value_name": "Usado",
+          "value_struct": null,
+          "values": [
+            {
+              "id": "2230581",
+              "name": "Usado",
+              "struct": null,
+              "source": 7092
+            }
+          ],
+          "attribute_group_id": "OTHERS",
+          "attribute_group_name": "Otros",
+          "id": "ITEM_CONDITION",
+          "source": 7092,
+          "name": "Condición del ítem"
+        }
+      ],
+      "original_price": null,
+      "category_id": "MLA412445",
+      "official_store_id": null,
+      "catalog_product_id": null,
+      "tags": [
+        "good_quality_picture",
+        "immediate_payment",
+        "cart_eligible"
+      ]
+    },
+    {
+      "id": "MLA769446685",
+      "site_id": "MLA",
+      "title": "Seagate 900gb 6g Sas Sff 2,5 Pulgadas 10k St900mm0006",
+      "seller": {
+        "id": 29601781,
+        "permalink": null,
+        "power_seller_status": null,
+        "car_dealer": false,
+        "real_estate_agency": false,
+        "tags": []
+      },
+      "price": 25990,
+      "currency_id": "ARS",
+      "available_quantity": 1,
+      "sold_quantity": 2,
+      "buying_mode": "buy_it_now",
+      "listing_type_id": "gold_special",
+      "stop_time": "2039-01-29T04:00:00.000Z",
+      "condition": "new",
+      "permalink": "https://articulo.mercadolibre.com.ar/MLA-769446685-seagate-900gb-6g-sas-sff-25-pulgadas-10k-st900mm0006-_JM",
+      "thumbnail": "http://mla-s2-p.mlstatic.com/702067-MLA29323645501_022019-I.jpg",
+      "accepts_mercadopago": true,
+      "installments": {
+        "quantity": 12,
+        "amount": 3546.99,
+        "rate": 63.77,
+        "currency_id": "ARS"
+      },
+      "address": {
+        "state_id": "AR-B",
+        "state_name": "Buenos Aires",
+        "city_id": null,
+        "city_name": "Victoria"
+      },
+      "shipping": {
+        "free_shipping": true,
+        "mode": "me2",
+        "tags": [
+          "mandatory_free_shipping"
+        ],
+        "logistic_type": "drop_off",
+        "store_pick_up": false
+      },
+      "seller_address": {
+        "id": "",
+        "comment": "",
+        "address_line": "",
+        "zip_code": "",
+        "country": {
+          "id": "AR",
+          "name": "Argentina"
+        },
+        "state": {
+          "id": "AR-B",
+          "name": "Buenos Aires"
+        },
+        "city": {
+          "id": null,
+          "name": "Victoria"
+        },
+        "latitude": "",
+        "longitude": ""
+      },
+      "attributes": [
+        {
+          "id": "BRAND",
+          "value_name": "Seagate",
+          "value_struct": null,
+          "values": [
+            {
+              "id": "9597",
+              "name": "Seagate",
+              "struct": null,
+              "source": 1572
+            }
+          ],
+          "source": 1572,
+          "name": "Marca",
+          "value_id": "9597",
+          "attribute_group_id": "OTHERS",
+          "attribute_group_name": "Otros"
+        },
+        {
+          "id": "DETAILED_MODEL",
+          "name": "Modelo detallado",
+          "value_id": null,
+          "value_struct": null,
+          "attribute_group_id": "OTHERS",
+          "source": 1572,
+          "value_name": "900GB SAS 2,5 10K",
+          "values": [
+            {
+              "id": null,
+              "name": "900GB SAS 2,5\" 10K",
+              "struct": null,
+              "source": 1572
+            }
+          ],
+          "attribute_group_name": "Otros"
+        },
+        {
+          "id": "ITEM_CONDITION",
+          "value_id": "2230284",
+          "value_name": "Nuevo",
+          "values": [
+            {
+              "source": 1572,
+              "id": "2230284",
+              "name": "Nuevo",
+              "struct": null
+            }
+          ],
+          "attribute_group_id": "OTHERS",
+          "attribute_group_name": "Otros",
+          "name": "Condición del ítem",
+          "value_struct": null,
+          "source": 1572
+        },
+        {
+          "attribute_group_name": "Otros",
+          "source": 1572,
+          "value_name": "SFF",
+          "value_struct": null,
+          "values": [
+            {
+              "struct": null,
+              "source": 1572,
+              "id": null,
+              "name": "SFF"
+            }
+          ],
+          "attribute_group_id": "OTHERS",
+          "id": "LINE",
+          "name": "Línea",
+          "value_id": null
+        },
+        {
+          "value_name": "2.5 in",
+          "values": [
+            {
+              "id": null,
+              "name": "2.5 in",
+              "struct": null,
+              "source": 1572
+            }
+          ],
+          "attribute_group_id": "OTHERS",
+          "source": 1572,
+          "name": "Modelo",
+          "value_id": null,
+          "attribute_group_name": "Otros",
+          "id": "MODEL",
+          "value_struct": null
+        }
+      ],
+      "original_price": null,
+      "category_id": "MLA1672",
+      "official_store_id": null,
+      "catalog_product_id": null,
+      "tags": [
+        "brand_verified",
+        "good_quality_picture",
+        "immediate_payment",
+        "cart_eligible"
+      ]
+    },
+    {
+      "id": "MLA607571569",
+      "site_id": "MLA",
+      "title": "Redes Contencion. Proteccion Balcones. Rejas Ventanas",
+      "seller": {
+        "id": 50657042,
+        "permalink": null,
+        "power_seller_status": "platinum",
+        "car_dealer": false,
+        "real_estate_agency": false,
+        "tags": []
+      },
+      "price": 57.89,
+      "currency_id": "ARS",
+      "available_quantity": 5000,
+      "sold_quantity": 500,
+      "buying_mode": "buy_it_now",
+      "listing_type_id": "gold_pro",
+      "stop_time": "2037-10-31T03:46:09.000Z",
+      "condition": "new",
+      "permalink": "https://articulo.mercadolibre.com.ar/MLA-607571569-redes-contencion-proteccion-balcones-rejas-ventanas-_JM",
+      "thumbnail": "http://mla-s2-p.mlstatic.com/732493-MLA29697882897_032019-I.jpg",
+      "accepts_mercadopago": true,
+      "installments": {
+        "quantity": 6,
+        "amount": 9.65,
+        "rate": 0,
+        "currency_id": "ARS"
+      },
+      "address": {
+        "state_id": "AR-C",
+        "state_name": "Capital Federal",
+        "city_id": null,
+        "city_name": "caba"
+      },
+      "shipping": {
+        "free_shipping": false,
+        "mode": "me2",
+        "tags": [
+          "self_service_in"
+        ],
+        "logistic_type": "xd_drop_off",
+        "store_pick_up": false
+      },
+      "seller_address": {
+        "id": "",
+        "comment": "",
+        "address_line": "",
+        "zip_code": "",
+        "country": {
+          "id": "AR",
+          "name": "Argentina"
+        },
+        "state": {
+          "id": "AR-C",
+          "name": "Capital Federal"
+        },
+        "city": {
+          "id": null,
+          "name": "caba"
+        },
+        "latitude": "",
+        "longitude": ""
+      },
+      "attributes": [
+        {
+          "source": 1577,
+          "id": "BRAND",
+          "name": "Marca",
+          "value_id": "4438156",
+          "value_name": "SOS",
+          "value_struct": null,
+          "values": [
+            {
+              "source": 1577,
+              "id": "4438156",
+              "name": "SOS",
+              "struct": null
+            }
+          ],
+          "attribute_group_id": "OTHERS",
+          "attribute_group_name": "Otros"
+        },
+        {
+          "value_name": "Nuevo",
+          "value_struct": null,
+          "attribute_group_id": "OTHERS",
+          "attribute_group_name": "Otros",
+          "source": null,
+          "id": "ITEM_CONDITION",
+          "value_id": "2230284",
+          "name": "Condición del ítem",
+          "values": [
+            {
+              "id": "2230284",
+              "name": "Nuevo",
+              "struct": null,
+              "source": null
+            }
+          ]
+        },
+        {
+          "value_name": "Trasluz",
+          "value_struct": null,
+          "attribute_group_id": "OTHERS",
+          "source": 1577,
+          "id": "MODEL",
+          "name": "Modelo",
+          "value_id": null,
+          "values": [
+            {
+              "source": 1577,
+              "id": null,
+              "name": "Trasluz",
+              "struct": null
+            }
+          ],
+          "attribute_group_name": "Otros"
+        }
+      ],
+      "differential_pricing": {
+        "id": 33678187
+      },
+      "original_price": null,
+      "category_id": "MLA372907",
+      "official_store_id": null,
+      "catalog_product_id": null,
+      "tags": [
+        "brand_verified",
+        "dragged_bids_and_visits",
+        "good_quality_picture",
+        "good_quality_thumbnail",
+        "loyalty_discount_eligible",
+        "immediate_payment",
+        "cart_eligible"
+      ]
+    },
+    {
+      "id": "MLA610896221",
+      "site_id": "MLA",
+      "title": "Puas Espanta Pajaro Pinchos Ahuyenta Palomas Control De Aves",
+      "seller": {
+        "id": 50657042,
+        "permalink": null,
+        "power_seller_status": "platinum",
+        "car_dealer": false,
+        "real_estate_agency": false,
+        "tags": []
+      },
+      "price": 85,
+      "currency_id": "ARS",
+      "available_quantity": 5000,
+      "sold_quantity": 500,
+      "buying_mode": "buy_it_now",
+      "listing_type_id": "gold_special",
+      "stop_time": "2037-12-12T13:20:26.000Z",
+      "condition": "new",
+      "permalink": "https://articulo.mercadolibre.com.ar/MLA-610896221-puas-espanta-pajaro-pinchos-ahuyenta-palomas-control-de-aves-_JM",
+      "thumbnail": "http://mla-s2-p.mlstatic.com/913638-MLA31644350822_072019-I.jpg",
+      "accepts_mercadopago": true,
+      "installments": {
+        "quantity": 12,
+        "amount": 11.6,
+        "rate": 63.77,
+        "currency_id": "ARS"
+      },
+      "address": {
+        "state_id": "AR-C",
+        "state_name": "Capital Federal",
+        "city_id": null,
+        "city_name": "caba"
+      },
+      "shipping": {
+        "free_shipping": false,
+        "mode": "me2",
+        "tags": [
+          "self_service_in"
+        ],
+        "logistic_type": "xd_drop_off",
+        "store_pick_up": false
+      },
+      "seller_address": {
+        "id": "",
+        "comment": "",
+        "address_line": "",
+        "zip_code": "",
+        "country": {
+          "id": "AR",
+          "name": "Argentina"
+        },
+        "state": {
+          "id": "AR-C",
+          "name": "Capital Federal"
+        },
+        "city": {
+          "id": null,
+          "name": "caba"
+        },
+        "latitude": "",
+        "longitude": ""
+      },
+      "attributes": [
+        {
+          "name": "Marca",
+          "value_name": "SAS",
+          "attribute_group_name": "Otros",
+          "source": 1577,
+          "id": "BRAND",
+          "value_struct": null,
+          "values": [
+            {
+              "name": "SAS",
+              "struct": null,
+              "source": 1577,
+              "id": "5557981"
+            }
+          ],
+          "attribute_group_id": "OTHERS",
+          "value_id": "5557981"
+        },
+        {
+          "name": "Condición del ítem",
+          "value_id": "2230284",
+          "value_struct": null,
+          "attribute_group_id": "OTHERS",
+          "attribute_group_name": "Otros",
+          "id": "ITEM_CONDITION",
+          "value_name": "Nuevo",
+          "values": [
+            {
+              "struct": null,
+              "source": null,
+              "id": "2230284",
+              "name": "Nuevo"
+            }
+          ],
+          "source": null
+        },
+        {
+          "attribute_group_id": "OTHERS",
+          "value_id": null,
+          "value_name": "Transparente",
+          "value_struct": null,
+          "values": [
+            {
+              "id": null,
+              "name": "Transparente",
+              "struct": null,
+              "source": 1577
+            }
+          ],
+          "attribute_group_name": "Otros",
+          "source": 1577,
+          "id": "MODEL",
+          "name": "Modelo"
+        }
+      ],
+      "original_price": null,
+      "category_id": "MLA433001",
+      "official_store_id": null,
+      "catalog_product_id": null,
+      "tags": [
+        "good_quality_picture",
+        "good_quality_thumbnail",
+        "brand_verified",
+        "dragged_bids_and_visits",
+        "immediate_payment",
+        "cart_eligible"
+      ]
+    },
+    {
+      "id": "MLA823656524",
+      "site_id": "MLA",
+      "title": "Las Cuentas Y Su Analisis Sasso B",
+      "seller": {
+        "id": 179193519,
+        "permalink": null,
+        "power_seller_status": null,
+        "car_dealer": false,
+        "real_estate_agency": false,
+        "tags": []
+      },
+      "price": 500,
+      "currency_id": "ARS",
+      "available_quantity": 1,
+      "sold_quantity": 0,
+      "buying_mode": "buy_it_now",
+      "listing_type_id": "gold_special",
+      "stop_time": "2039-10-31T04:00:00.000Z",
+      "condition": "used",
+      "permalink": "https://articulo.mercadolibre.com.ar/MLA-823656524-las-cuentas-y-su-analisis-sasso-b-_JM",
+      "thumbnail": "http://mla-s1-p.mlstatic.com/964573-MLA32776084741_112019-I.jpg",
+      "accepts_mercadopago": true,
+      "installments": {
+        "quantity": 12,
+        "amount": 68.24,
+        "rate": 63.77,
+        "currency_id": "ARS"
+      },
+      "address": {
+        "state_id": "AR-B",
+        "state_name": "Buenos Aires",
+        "city_id": null,
+        "city_name": "Guernica"
+      },
+      "shipping": {
+        "free_shipping": false,
+        "mode": "me2",
+        "tags": [],
+        "logistic_type": "drop_off",
+        "store_pick_up": false
+      },
+      "seller_address": {
+        "id": "",
+        "comment": "",
+        "address_line": "",
+        "zip_code": "",
+        "country": {
+          "id": "AR",
+          "name": "Argentina"
+        },
+        "state": {
+          "id": "AR-B",
+          "name": "Buenos Aires"
+        },
+        "city": {
+          "id": null,
+          "name": "Guernica"
+        },
+        "latitude": "",
+        "longitude": ""
+      },
+      "attributes": [
+        {
+          "value_name": "Usado",
+          "value_struct": null,
+          "values": [
+            {
+              "id": "2230581",
+              "name": "Usado",
+              "struct": null,
+              "source": 7092
+            }
+          ],
+          "attribute_group_name": "Otros",
+          "id": "ITEM_CONDITION",
+          "name": "Condición del ítem",
+          "value_id": "2230581",
+          "attribute_group_id": "OTHERS",
+          "source": 7092
+        }
+      ],
+      "original_price": null,
+      "category_id": "MLA412445",
+      "official_store_id": null,
+      "catalog_product_id": null,
+      "tags": [
+        "good_quality_picture",
+        "incomplete_technical_specs",
+        "immediate_payment",
+        "cart_eligible"
+      ]
+    },
+    {
+      "id": "MLA784447243",
+      "site_id": "MLA",
+      "title": "Valija Mediana De Viaje Rigidas Medianas Con Ruedas 15 Kg",
+      "seller": {
+        "id": 429643836,
+        "permalink": null,
+        "power_seller_status": null,
+        "car_dealer": false,
+        "real_estate_agency": false,
+        "tags": []
+      },
+      "price": 4299,
+      "currency_id": "ARS",
+      "available_quantity": 1,
+      "sold_quantity": 50,
+      "buying_mode": "buy_it_now",
+      "listing_type_id": "gold_special",
+      "stop_time": "2039-12-04T19:18:22.000Z",
+      "condition": "new",
+      "permalink": "https://articulo.mercadolibre.com.ar/MLA-784447243-valija-mediana-de-viaje-rigidas-medianas-con-ruedas-15-kg-_JM",
+      "thumbnail": "http://mla-s2-p.mlstatic.com/920072-MLA40463929677_012020-I.jpg",
+      "accepts_mercadopago": true,
+      "installments": {
+        "quantity": 12,
+        "amount": 586.71,
+        "rate": 63.77,
+        "currency_id": "ARS"
+      },
+      "address": {
+        "state_id": "AR-C",
+        "state_name": "Capital Federal",
+        "city_id": "TUxBQkFMTTMwNTBa",
+        "city_name": "Almagro"
+      },
+      "shipping": {
+        "free_shipping": true,
+        "mode": "me2",
+        "tags": [
+          "fulfillment",
+          "mandatory_free_shipping"
+        ],
+        "logistic_type": "fulfillment",
+        "store_pick_up": false
+      },
+      "seller_address": {
+        "id": "",
+        "comment": "",
+        "address_line": "",
+        "zip_code": "",
+        "country": {
+          "id": "AR",
+          "name": "Argentina"
+        },
+        "state": {
+          "id": "AR-C",
+          "name": "Capital Federal"
+        },
+        "city": {
+          "id": "TUxBQkFMTTMwNTBa",
+          "name": "Almagro"
+        },
+        "latitude": "",
+        "longitude": ""
+      },
+      "attributes": [
+        {
+          "id": "BRAND",
+          "name": "Marca",
+          "value_struct": null,
+          "source": 3376461333454861,
+          "attribute_group_name": "Otros",
+          "value_id": null,
+          "value_name": "SAS Travel",
+          "values": [
+            {
+              "id": null,
+              "name": "SAS Travel",
+              "struct": null,
+              "source": 3376461333454861
+            }
+          ],
+          "attribute_group_id": "OTHERS"
+        },
+        {
+          "attribute_group_id": "OTHERS",
+          "source": 1572,
+          "id": "ITEM_CONDITION",
+          "name": "Condición del ítem",
+          "value_name": "Nuevo",
+          "value_struct": null,
+          "values": [
+            {
+              "source": 1572,
+              "id": "2230284",
+              "name": "Nuevo",
+              "struct": null
+            }
+          ],
+          "value_id": "2230284",
+          "attribute_group_name": "Otros"
+        },
+        {
+          "value_struct": null,
+          "values": [
+            {
+              "source": 3376461333454861,
+              "id": null,
+              "name": "40.1000g.3",
+              "struct": null
+            }
+          ],
+          "attribute_group_id": "OTHERS",
+          "attribute_group_name": "Otros",
+          "source": 3376461333454861,
+          "id": "MODEL",
+          "value_id": null,
+          "value_name": "40.1000g.3",
+          "name": "Modelo"
+        }
+      ],
+      "original_price": null,
+      "category_id": "MLA120354",
+      "official_store_id": null,
+      "catalog_product_id": null,
+      "tags": [
+        "brand_verified",
+        "good_quality_picture",
+        "good_quality_thumbnail",
+        "immediate_payment",
+        "cart_eligible"
+      ]
+    },
+    {
+      "id": "MLA609096438",
+      "site_id": "MLA",
+      "title": "Repelente Palomas. Espanta Palomas. Espanta Pajaros",
+      "seller": {
+        "id": 50657042,
+        "permalink": null,
+        "power_seller_status": "platinum",
+        "car_dealer": false,
+        "real_estate_agency": false,
+        "tags": []
+      },
+      "price": 93,
+      "currency_id": "ARS",
+      "available_quantity": 5000,
+      "sold_quantity": 500,
+      "buying_mode": "buy_it_now",
+      "listing_type_id": "gold_special",
+      "stop_time": "2037-12-12T13:28:06.000Z",
+      "condition": "new",
+      "permalink": "https://articulo.mercadolibre.com.ar/MLA-609096438-repelente-palomas-espanta-palomas-espanta-pajaros-_JM",
+      "thumbnail": "http://mla-s1-p.mlstatic.com/698750-MLA31576115675_072019-I.jpg",
+      "accepts_mercadopago": true,
+      "installments": {
+        "quantity": 12,
+        "amount": 12.69,
+        "rate": 63.77,
+        "currency_id": "ARS"
+      },
+      "address": {
+        "state_id": "AR-C",
+        "state_name": "Capital Federal",
+        "city_id": null,
+        "city_name": "caba"
+      },
+      "shipping": {
+        "free_shipping": false,
+        "mode": "custom",
+        "tags": [],
+        "logistic_type": "custom",
+        "store_pick_up": false
+      },
+      "seller_address": {
+        "id": "",
+        "comment": "",
+        "address_line": "",
+        "zip_code": "",
+        "country": {
+          "id": "AR",
+          "name": "Argentina"
+        },
+        "state": {
+          "id": "AR-C",
+          "name": "Capital Federal"
+        },
+        "city": {
+          "id": null,
+          "name": "caba"
+        },
+        "latitude": "",
+        "longitude": ""
+      },
+      "attributes": [
+        {
+          "name": "Marca",
+          "value_struct": null,
+          "source": 1577,
+          "id": "BRAND",
+          "value_id": null,
+          "value_name": "Sanipro",
+          "values": [
+            {
+              "id": null,
+              "name": "Sanipro",
+              "struct": null,
+              "source": 1577
+            }
+          ],
+          "attribute_group_id": "OTHERS",
+          "attribute_group_name": "Otros"
+        },
+        {
+          "value_name": "Nuevo",
+          "attribute_group_id": "OTHERS",
+          "attribute_group_name": "Otros",
+          "id": "ITEM_CONDITION",
+          "name": "Condición del ítem",
+          "values": [
+            {
+              "struct": null,
+              "source": null,
+              "id": "2230284",
+              "name": "Nuevo"
+            }
+          ],
+          "source": null,
+          "value_id": "2230284",
+          "value_struct": null
+        },
+        {
+          "value_struct": null,
+          "values": [
+            {
+              "id": null,
+              "name": "PalomaStop",
+              "struct": null,
+              "source": 1577
+            }
+          ],
+          "attribute_group_name": "Otros",
+          "source": 1577,
+          "name": "Modelo",
+          "value_id": null,
+          "value_name": "PalomaStop",
+          "attribute_group_id": "OTHERS",
+          "id": "MODEL"
+        }
+      ],
+      "original_price": null,
+      "category_id": "MLA1901",
+      "official_store_id": null,
+      "catalog_product_id": null,
+      "tags": [
+        "good_quality_picture",
+        "good_quality_thumbnail",
+        "brand_verified",
+        "dragged_bids_and_visits",
+        "immediate_payment"
+      ]
+    },
+    {
+      "id": "MLA833942305",
+      "site_id": "MLA",
+      "title": "El Proceso Contable Hugo Luis Sasso",
+      "seller": {
+        "id": 98652717,
+        "permalink": null,
+        "power_seller_status": null,
+        "car_dealer": false,
+        "real_estate_agency": false,
+        "tags": []
+      },
+      "price": 250,
+      "currency_id": "ARS",
+      "available_quantity": 1,
+      "sold_quantity": 0,
+      "buying_mode": "buy_it_now",
+      "listing_type_id": "gold_special",
+      "stop_time": "2040-01-06T04:00:00.000Z",
+      "condition": "used",
+      "permalink": "https://articulo.mercadolibre.com.ar/MLA-833942305-el-proceso-contable-hugo-luis-sasso-_JM",
+      "thumbnail": "http://mla-s2-p.mlstatic.com/949526-MLA40399488722_012020-I.jpg",
+      "accepts_mercadopago": true,
+      "installments": {
+        "quantity": 12,
+        "amount": 34.12,
+        "rate": 63.77,
+        "currency_id": "ARS"
+      },
+      "address": {
+        "state_id": "AR-C",
+        "state_name": "Capital Federal",
+        "city_id": "TUxBQk1BVDMwMDJa",
+        "city_name": "Mataderos"
+      },
+      "shipping": {
+        "free_shipping": false,
+        "mode": "me2",
+        "tags": [],
+        "logistic_type": "drop_off",
+        "store_pick_up": false
+      },
+      "seller_address": {
+        "id": "",
+        "comment": "",
+        "address_line": "",
+        "zip_code": "",
+        "country": {
+          "id": "AR",
+          "name": "Argentina"
+        },
+        "state": {
+          "id": "AR-C",
+          "name": "Capital Federal"
+        },
+        "city": {
+          "id": "TUxBQk1BVDMwMDJa",
+          "name": "Mataderos"
+        },
+        "latitude": "",
+        "longitude": ""
+      },
+      "attributes": [
+        {
+          "attribute_group_name": "Otros",
+          "name": "Condición del ítem",
+          "value_name": "Usado",
+          "value_struct": null,
+          "values": [
+            {
+              "name": "Usado",
+              "struct": null,
+              "source": 3045741222775799,
+              "id": "2230581"
+            }
+          ],
+          "attribute_group_id": "OTHERS",
+          "id": "ITEM_CONDITION",
+          "value_id": "2230581",
+          "source": 3045741222775799
+        }
+      ],
+      "original_price": null,
+      "category_id": "MLA412445",
+      "official_store_id": null,
+      "catalog_product_id": null,
+      "tags": [
+        "poor_quality_picture",
+        "immediate_payment",
+        "cart_eligible"
+      ]
+    },
+    {
+      "id": "MLA824715474",
+      "site_id": "MLA",
+      "title": "Disco Hgst 600gb 15k Rpm Sas 6gb/s 64mb 3.5  ",
+      "seller": {
+        "id": 81637382,
+        "permalink": null,
+        "power_seller_status": "gold",
+        "car_dealer": false,
+        "real_estate_agency": false,
+        "tags": []
+      },
+      "price": 24900,
+      "currency_id": "ARS",
+      "available_quantity": 1,
+      "sold_quantity": 1,
+      "buying_mode": "buy_it_now",
+      "listing_type_id": "gold_special",
+      "stop_time": "2039-11-06T04:00:00.000Z",
+      "condition": "new",
+      "permalink": "https://articulo.mercadolibre.com.ar/MLA-824715474-disco-hgst-600gb-15k-rpm-sas-6gbs-64mb-35-_JM",
+      "thumbnail": "http://mla-s1-p.mlstatic.com/829722-MLA32844421040_112019-I.jpg",
+      "accepts_mercadopago": true,
+      "installments": {
+        "quantity": 12,
+        "amount": 3398.23,
+        "rate": 63.77,
+        "currency_id": "ARS"
+      },
+      "address": {
+        "state_id": "AR-C",
+        "state_name": "Capital Federal",
+        "city_id": null,
+        "city_name": "Capital Federal"
+      },
+      "shipping": {
+        "free_shipping": true,
+        "mode": "me2",
+        "tags": [
+          "self_service_in",
+          "mandatory_free_shipping"
+        ],
+        "logistic_type": "drop_off",
+        "store_pick_up": false
+      },
+      "seller_address": {
+        "id": "",
+        "comment": "",
+        "address_line": "",
+        "zip_code": "",
+        "country": {
+          "id": "AR",
+          "name": "Argentina"
+        },
+        "state": {
+          "id": "AR-C",
+          "name": "Capital Federal"
+        },
+        "city": {
+          "id": null,
+          "name": "Capital Federal"
+        },
+        "latitude": "",
+        "longitude": ""
+      },
+      "attributes": [
+        {
+          "value_struct": null,
+          "values": [
+            {
+              "id": "132847",
+              "name": "HGST",
+              "struct": null,
+              "source": 3570163010178927
+            }
+          ],
+          "attribute_group_name": "Otros",
+          "source": 3570163010178927,
+          "id": "BRAND",
+          "name": "Marca",
+          "value_id": "132847",
+          "value_name": "HGST",
+          "attribute_group_id": "OTHERS"
+        },
+        {
+          "attribute_group_name": "Otros",
+          "source": 3570163010178927,
+          "name": "Condición del ítem",
+          "value_name": "Nuevo",
+          "value_struct": null,
+          "values": [
+            {
+              "id": "2230284",
+              "name": "Nuevo",
+              "struct": null,
+              "source": 3570163010178927
+            }
+          ],
+          "id": "ITEM_CONDITION",
+          "value_id": "2230284",
+          "attribute_group_id": "OTHERS"
+        },
+        {
+          "attribute_group_name": "Otros",
+          "source": 3570163010178927,
+          "id": "MODEL",
+          "name": "Modelo",
+          "value_id": null,
+          "value_name": "0B23663",
+          "value_struct": null,
+          "values": [
+            {
+              "struct": null,
+              "source": 3570163010178927,
+              "id": null,
+              "name": "0B23663"
+            }
+          ],
+          "attribute_group_id": "OTHERS"
+        }
+      ],
+      "original_price": null,
+      "category_id": "MLA1675",
+      "official_store_id": null,
+      "catalog_product_id": null,
+      "tags": [
+        "brand_verified",
+        "good_quality_picture",
+        "good_quality_thumbnail",
+        "immediate_payment",
+        "cart_eligible"
+      ]
+    },
+    {
+      "id": "MLA614569607",
+      "site_id": "MLA",
+      "title": "Ahuyenta Palomas. Puas Ahuyenta Aves. Repelente Palomas",
+      "seller": {
+        "id": 50657042,
+        "permalink": null,
+        "power_seller_status": "platinum",
+        "car_dealer": false,
+        "real_estate_agency": false,
+        "tags": []
+      },
+      "price": 85.89,
+      "currency_id": "ARS",
+      "available_quantity": 5000,
+      "sold_quantity": 500,
+      "buying_mode": "buy_it_now",
+      "listing_type_id": "gold_special",
+      "stop_time": "2037-12-10T21:32:07.000Z",
+      "condition": "new",
+      "permalink": "https://articulo.mercadolibre.com.ar/MLA-614569607-ahuyenta-palomas-puas-ahuyenta-aves-repelente-palomas-_JM",
+      "thumbnail": "http://mla-s2-p.mlstatic.com/751828-MLA40582184733_012020-I.jpg",
+      "accepts_mercadopago": true,
+      "installments": {
+        "quantity": 12,
+        "amount": 11.72,
+        "rate": 63.77,
+        "currency_id": "ARS"
+      },
+      "address": {
+        "state_id": "AR-C",
+        "state_name": "Capital Federal",
+        "city_id": null,
+        "city_name": "caba"
+      },
+      "shipping": {
+        "free_shipping": false,
+        "mode": "me2",
+        "tags": [
+          "self_service_in"
+        ],
+        "logistic_type": "xd_drop_off",
+        "store_pick_up": false
+      },
+      "seller_address": {
+        "id": "",
+        "comment": "",
+        "address_line": "",
+        "zip_code": "",
+        "country": {
+          "id": "AR",
+          "name": "Argentina"
+        },
+        "state": {
+          "id": "AR-C",
+          "name": "Capital Federal"
+        },
+        "city": {
+          "id": null,
+          "name": "caba"
+        },
+        "latitude": "",
+        "longitude": ""
+      },
+      "attributes": [
+        {
+          "value_struct": null,
+          "attribute_group_name": "Otros",
+          "id": "BRAND",
+          "name": "Marca",
+          "value_id": "4438156",
+          "value_name": "SOS",
+          "values": [
+            {
+              "id": "4438156",
+              "name": "SOS",
+              "struct": null,
+              "source": 1577
+            }
+          ],
+          "attribute_group_id": "OTHERS",
+          "source": 1577
+        },
+        {
+          "values": [
+            {
+              "struct": null,
+              "source": null,
+              "id": "2230284",
+              "name": "Nuevo"
+            }
+          ],
+          "attribute_group_name": "Otros",
+          "name": "Condición del ítem",
+          "value_id": "2230284",
+          "value_name": "Nuevo",
+          "value_struct": null,
+          "id": "ITEM_CONDITION",
+          "attribute_group_id": "OTHERS",
+          "source": null
+        },
+        {
+          "id": "MODEL",
+          "value_name": "Policar",
+          "value_struct": null,
+          "values": [
+            {
+              "name": "Policar",
+              "struct": null,
+              "source": 1577,
+              "id": null
+            }
+          ],
+          "attribute_group_id": "OTHERS",
+          "source": 1577,
+          "name": "Modelo",
+          "value_id": null,
+          "attribute_group_name": "Otros"
+        }
+      ],
+      "original_price": null,
+      "category_id": "MLA373507",
+      "official_store_id": null,
+      "catalog_product_id": null,
+      "tags": [
+        "good_quality_thumbnail",
+        "brand_verified",
+        "dragged_bids_and_visits",
+        "good_quality_picture",
+        "immediate_payment",
+        "cart_eligible"
+      ]
+    },
+    {
+      "id": "MLA717329311",
+      "site_id": "MLA",
+      "title": "Sociedades Por Acciones Simpl. Sas / Simples 2º Ed.  Errepar",
+      "seller": {
+        "id": 99621921,
+        "permalink": null,
+        "power_seller_status": "gold",
+        "car_dealer": false,
+        "real_estate_agency": false,
+        "tags": []
+      },
+      "price": 1899,
+      "currency_id": "ARS",
+      "available_quantity": 1,
+      "sold_quantity": 5,
+      "buying_mode": "buy_it_now",
+      "listing_type_id": "gold_special",
+      "stop_time": "2038-04-03T04:00:00.000Z",
+      "condition": "new",
+      "permalink": "https://articulo.mercadolibre.com.ar/MLA-717329311-sociedades-por-acciones-simpl-sas-simples-2-ed-errepar-_JM",
+      "thumbnail": "http://mla-s2-p.mlstatic.com/655656-MLA31117614205_062019-I.jpg",
+      "accepts_mercadopago": true,
+      "installments": {
+        "quantity": 12,
+        "amount": 259.17,
+        "rate": 63.77,
+        "currency_id": "ARS"
+      },
+      "address": {
+        "state_id": "AR-B",
+        "state_name": "Buenos Aires",
+        "city_id": "TUxBQ0xBUGxhdGE",
+        "city_name": "La Plata"
+      },
+      "shipping": {
+        "free_shipping": false,
+        "mode": "me2",
+        "tags": [],
+        "logistic_type": "drop_off",
+        "store_pick_up": false
+      },
+      "seller_address": {
+        "id": "",
+        "comment": "",
+        "address_line": "",
+        "zip_code": "",
+        "country": {
+          "id": "AR",
+          "name": "Argentina"
+        },
+        "state": {
+          "id": "AR-B",
+          "name": "Buenos Aires"
+        },
+        "city": {
+          "id": "TUxBQ0xBUGxhdGE",
+          "name": "La Plata"
+        },
+        "latitude": "",
+        "longitude": ""
+      },
+      "attributes": [
+        {
+          "value_id": "2230284",
+          "value_name": "Nuevo",
+          "value_struct": null,
+          "attribute_group_id": "OTHERS",
+          "attribute_group_name": "Otros",
+          "source": 1572,
+          "id": "ITEM_CONDITION",
+          "values": [
+            {
+              "id": "2230284",
+              "name": "Nuevo",
+              "struct": null,
+              "source": 1572
+            }
+          ],
+          "name": "Condición del ítem"
+        }
+      ],
+      "original_price": null,
+      "category_id": "MLA412445",
+      "official_store_id": null,
+      "catalog_product_id": null,
+      "tags": [
+        "poor_quality_picture",
+        "immediate_payment",
+        "cart_eligible"
+      ]
+    },
+    {
+      "id": "MLA814407465",
+      "site_id": "MLA",
+      "title": "Disco Rigido Hp 300gb 6g Sas 15k Rpm Sff 652611-b21",
+      "seller": {
+        "id": 137072946,
+        "permalink": null,
+        "power_seller_status": "platinum",
+        "car_dealer": false,
+        "real_estate_agency": false,
+        "tags": []
+      },
+      "price": 38627.49,
+      "currency_id": "ARS",
+      "available_quantity": 1,
+      "sold_quantity": 1,
+      "buying_mode": "buy_it_now",
+      "listing_type_id": "gold_special",
+      "stop_time": "2039-09-07T04:00:00.000Z",
+      "condition": "new",
+      "permalink": "https://articulo.mercadolibre.com.ar/MLA-814407465-disco-rigido-hp-300gb-6g-sas-15k-rpm-sff-652611-b21-_JM",
+      "thumbnail": "http://mla-s2-p.mlstatic.com/980495-MLA32158064914_092019-I.jpg",
+      "accepts_mercadopago": true,
+      "installments": {
+        "quantity": 12,
+        "amount": 5271.69,
+        "rate": 63.77,
+        "currency_id": "ARS"
+      },
+      "address": {
+        "state_id": "AR-C",
+        "state_name": "Capital Federal",
+        "city_id": "TUxBQlNBTjgxMzNa",
+        "city_name": "San Telmo"
+      },
+      "shipping": {
+        "free_shipping": true,
+        "mode": "me2",
+        "tags": [
+          "self_service_in",
+          "mandatory_free_shipping"
+        ],
+        "logistic_type": "drop_off",
+        "store_pick_up": false
+      },
+      "seller_address": {
+        "id": "",
+        "comment": "",
+        "address_line": "",
+        "zip_code": "",
+        "country": {
+          "id": "AR",
+          "name": "Argentina"
+        },
+        "state": {
+          "id": "AR-C",
+          "name": "Capital Federal"
+        },
+        "city": {
+          "id": "TUxBQlNBTjgxMzNa",
+          "name": "San Telmo"
+        },
+        "latitude": "",
+        "longitude": ""
+      },
+      "attributes": [
+        {
+          "id": "BRAND",
+          "name": "Marca",
+          "value_name": "HP",
+          "value_struct": null,
+          "source": 2642037573927936,
+          "value_id": "49944",
+          "values": [
+            {
+              "id": "49944",
+              "name": "HP",
+              "struct": null,
+              "source": 2642037573927936
+            }
+          ],
+          "attribute_group_id": "OTHERS",
+          "attribute_group_name": "Otros"
+        },
+        {
+          "id": "DETAILED_MODEL",
+          "value_struct": null,
+          "attribute_group_id": "OTHERS",
+          "attribute_group_name": "Otros",
+          "source": 3376461333454861,
+          "name": "Modelo detallado",
+          "value_id": null,
+          "value_name": "652611-b21",
+          "values": [
+            {
+              "id": null,
+              "name": "652611-b21",
+              "struct": null,
+              "source": 3376461333454861
+            }
+          ]
+        },
+        {
+          "source": 1,
+          "id": "ITEM_CONDITION",
+          "name": "Condición del ítem",
+          "value_name": "Nuevo",
+          "values": [
+            {
+              "id": "2230284",
+              "name": "Nuevo",
+              "struct": null,
+              "source": 1
+            }
+          ],
+          "attribute_group_name": "Otros",
+          "value_id": "2230284",
+          "value_struct": null,
+          "attribute_group_id": "OTHERS"
+        },
+        {
+          "value_id": null,
+          "value_name": "652611",
+          "value_struct": null,
+          "attribute_group_id": "OTHERS",
+          "id": "LINE",
+          "name": "Línea",
+          "values": [
+            {
+              "id": null,
+              "name": "652611",
+              "struct": null,
+              "source": 3376461333454861
+            }
+          ],
+          "attribute_group_name": "Otros",
+          "source": 3376461333454861
+        },
+        {
+          "id": "MODEL",
+          "name": "Modelo",
+          "value_name": "652611-B21/R",
+          "value_struct": null,
+          "attribute_group_id": "OTHERS",
+          "attribute_group_name": "Otros",
+          "value_id": null,
+          "values": [
+            {
+              "id": null,
+              "name": "652611-B21/R",
+              "struct": null,
+              "source": 2642037573927936
+            }
+          ],
+          "source": 2642037573927936
+        }
+      ],
+      "original_price": null,
+      "category_id": "MLA1672",
+      "official_store_id": null,
+      "catalog_product_id": null,
+      "tags": [
+        "brand_verified",
+        "good_quality_picture",
+        "immediate_payment",
+        "cart_eligible"
+      ]
+    },
+    {
+      "id": "MLA614463038",
+      "site_id": "MLA",
+      "title": "Etoken 5110 Firma Digital Anmat Onti Abogados Dnrpa Ioma Sas",
+      "seller": {
+        "id": 44292154,
+        "permalink": null,
+        "power_seller_status": "gold",
+        "car_dealer": false,
+        "real_estate_agency": false,
+        "tags": []
+      },
+      "price": 2399,
+      "currency_id": "ARS",
+      "available_quantity": 1,
+      "sold_quantity": 500,
+      "buying_mode": "buy_it_now",
+      "listing_type_id": "gold_special",
+      "stop_time": "2036-03-24T20:08:44.000Z",
+      "condition": "new",
+      "permalink": "https://articulo.mercadolibre.com.ar/MLA-614463038-etoken-5110-firma-digital-anmat-onti-abogados-dnrpa-ioma-sas-_JM",
+      "thumbnail": "http://mla-s1-p.mlstatic.com/651784-MLA31024829715_062019-I.jpg",
+      "accepts_mercadopago": true,
+      "installments": {
+        "quantity": 12,
+        "amount": 327.4,
+        "rate": 63.77,
+        "currency_id": "ARS"
+      },
+      "address": {
+        "state_id": "AR-C",
+        "state_name": "Capital Federal",
+        "city_id": "TUxBQk1PTjUxOTJa",
+        "city_name": "Monserrat"
+      },
+      "shipping": {
+        "free_shipping": false,
+        "mode": "me2",
+        "tags": [
+          "self_service_in",
+          "fs_removed_by_tagger"
+        ],
+        "logistic_type": "xd_drop_off",
+        "store_pick_up": false
+      },
+      "seller_address": {
+        "id": "",
+        "comment": "",
+        "address_line": "",
+        "zip_code": "",
+        "country": {
+          "id": "AR",
+          "name": "Argentina"
+        },
+        "state": {
+          "id": "AR-C",
+          "name": "Capital Federal"
+        },
+        "city": {
+          "id": "TUxBQk1PTjUxOTJa",
+          "name": "Monserrat"
+        },
+        "latitude": "",
+        "longitude": ""
+      },
+      "attributes": [
+        {
+          "attribute_group_id": "OTHERS",
+          "source": 1577,
+          "id": "BRAND",
+          "value_id": null,
+          "value_name": "Safenet",
+          "value_struct": null,
+          "values": [
+            {
+              "id": null,
+              "name": "Safenet",
+              "struct": null,
+              "source": 1577
+            }
+          ],
+          "name": "Marca",
+          "attribute_group_name": "Otros"
+        },
+        {
+          "attribute_group_name": "Otros",
+          "id": "ITEM_CONDITION",
+          "name": "Condición del ítem",
+          "value_id": "2230284",
+          "value_struct": null,
+          "values": [
+            {
+              "id": "2230284",
+              "name": "Nuevo",
+              "struct": null,
+              "source": 1
+            }
+          ],
+          "attribute_group_id": "OTHERS",
+          "value_name": "Nuevo",
+          "source": 1
+        },
+        {
+          "name": "Modelo",
+          "value_name": "5110",
+          "attribute_group_id": "OTHERS",
+          "id": "MODEL",
+          "value_id": null,
+          "value_struct": null,
+          "values": [
+            {
+              "id": null,
+              "name": "5110",
+              "struct": null,
+              "source": 1577
+            }
+          ],
+          "attribute_group_name": "Otros",
+          "source": 1577
+        }
+      ],
+      "original_price": null,
+      "category_id": "MLA429609",
+      "official_store_id": null,
+      "catalog_product_id": null,
+      "tags": [
+        "brand_verified",
+        "dragged_bids_and_visits",
+        "good_quality_picture",
+        "good_quality_thumbnail",
+        "loyalty_discount_eligible",
+        "immediate_payment",
+        "cart_eligible"
+      ]
+    },
+    {
+      "id": "MLA785946474",
+      "site_id": "MLA",
+      "title": "Juguete De Baño - Tienda Oficial Sophie La Girafe®",
+      "seller": {
+        "id": 231796999,
+        "permalink": null,
+        "power_seller_status": null,
+        "car_dealer": false,
+        "real_estate_agency": false,
+        "tags": []
+      },
+      "price": 1590,
+      "currency_id": "ARS",
+      "available_quantity": 1,
+      "sold_quantity": 5,
+      "buying_mode": "buy_it_now",
+      "listing_type_id": "gold_special",
+      "stop_time": "2039-08-06T01:05:10.000Z",
+      "condition": "new",
+      "permalink": "https://articulo.mercadolibre.com.ar/MLA-785946474-juguete-de-bano-tienda-oficial-sophie-la-girafe-_JM",
+      "thumbnail": "http://mla-s1-p.mlstatic.com/927779-MLA32685804335_102019-I.jpg",
+      "accepts_mercadopago": true,
+      "installments": {
+        "quantity": 12,
+        "amount": 217,
+        "rate": 63.77,
+        "currency_id": "ARS"
+      },
+      "address": {
+        "state_id": "AR-B",
+        "state_name": "Buenos Aires",
+        "city_id": null,
+        "city_name": "Martinez"
+      },
+      "shipping": {
+        "free_shipping": false,
+        "mode": "me2",
+        "tags": [
+          "fulfillment",
+          "self_service_out"
+        ],
+        "logistic_type": "fulfillment",
+        "store_pick_up": false
+      },
+      "seller_address": {
+        "id": "",
+        "comment": "",
+        "address_line": "",
+        "zip_code": "",
+        "country": {
+          "id": "AR",
+          "name": "Argentina"
+        },
+        "state": {
+          "id": "AR-B",
+          "name": "Buenos Aires"
+        },
+        "city": {
+          "id": null,
+          "name": "Martinez"
+        },
+        "latitude": "",
+        "longitude": ""
+      },
+      "attributes": [
+        {
+          "name": "Marca",
+          "value_struct": null,
+          "attribute_group_name": "Otros",
+          "source": 1572,
+          "id": "BRAND",
+          "value_id": null,
+          "value_name": "Sophie la girafe®",
+          "values": [
+            {
+              "source": 1572,
+              "id": null,
+              "name": "Sophie la girafe®",
+              "struct": null
+            }
+          ],
+          "attribute_group_id": "OTHERS"
+        },
+        {
+          "values": [
+            {
+              "source": 1572,
+              "id": "2230284",
+              "name": "Nuevo",
+              "struct": null
+            }
+          ],
+          "source": 1572,
+          "id": "ITEM_CONDITION",
+          "value_id": "2230284",
+          "value_name": "Nuevo",
+          "attribute_group_name": "Otros",
+          "name": "Condición del ítem",
+          "value_struct": null,
+          "attribute_group_id": "OTHERS"
+        },
+        {
+          "attribute_group_name": "Otros",
+          "source": 1572,
+          "id": "MODEL",
+          "name": "Modelo",
+          "value_id": null,
+          "attribute_group_id": "OTHERS",
+          "value_name": "010400",
+          "value_struct": null,
+          "values": [
+            {
+              "struct": null,
+              "source": 1572,
+              "id": null,
+              "name": "010400"
+            }
+          ]
+        }
+      ],
+      "original_price": null,
+      "category_id": "MLA74001",
+      "official_store_id": null,
+      "catalog_product_id": null,
+      "tags": [
+        "brand_verified",
+        "good_quality_picture",
+        "good_quality_thumbnail",
+        "immediate_payment",
+        "cart_eligible"
+      ]
+    },
+    {
+      "id": "MLA841110714",
+      "site_id": "MLA",
+      "title": "Delta Force,seal Y Sas En La Guerra De Irak - Osprey",
+      "seller": {
+        "id": 518758632,
+        "permalink": null,
+        "power_seller_status": null,
+        "car_dealer": false,
+        "real_estate_agency": false,
+        "tags": []
+      },
+      "price": 600,
+      "currency_id": "ARS",
+      "available_quantity": 1,
+      "sold_quantity": 0,
+      "buying_mode": "buy_it_now",
+      "listing_type_id": "gold_special",
+      "stop_time": "2040-02-21T04:00:00.000Z",
+      "condition": "new",
+      "permalink": "https://articulo.mercadolibre.com.ar/MLA-841110714-delta-forceseal-y-sas-en-la-guerra-de-irak-osprey-_JM",
+      "thumbnail": "http://mla-s1-p.mlstatic.com/843838-MLA40921912594_022020-I.jpg",
+      "accepts_mercadopago": true,
+      "installments": {
+        "quantity": 12,
+        "amount": 81.89,
+        "rate": 63.77,
+        "currency_id": "ARS"
+      },
+      "address": {
+        "state_id": "AR-B",
+        "state_name": "Buenos Aires",
+        "city_id": null,
+        "city_name": "Berazategui"
+      },
+      "shipping": {
+        "free_shipping": false,
+        "mode": "me2",
+        "tags": [],
+        "logistic_type": "drop_off",
+        "store_pick_up": false
+      },
+      "seller_address": {
+        "id": "",
+        "comment": "",
+        "address_line": "",
+        "zip_code": "",
+        "country": {
+          "id": "AR",
+          "name": "Argentina"
+        },
+        "state": {
+          "id": "AR-B",
+          "name": "Buenos Aires"
+        },
+        "city": {
+          "id": null,
+          "name": "Berazategui"
+        },
+        "latitude": "",
+        "longitude": ""
+      },
+      "attributes": [
+        {
+          "value_struct": null,
+          "attribute_group_id": "OTHERS",
+          "attribute_group_name": "Otros",
+          "name": "Condición del ítem",
+          "value_id": "2230284",
+          "value_name": "Nuevo",
+          "id": "ITEM_CONDITION",
+          "values": [
+            {
+              "id": "2230284",
+              "name": "Nuevo",
+              "struct": null,
+              "source": 1505
+            }
+          ],
+          "source": 1505
+        }
+      ],
+      "original_price": null,
+      "category_id": "MLA412445",
+      "official_store_id": null,
+      "catalog_product_id": null,
+      "tags": [
+        "poor_quality_picture",
+        "immediate_payment",
+        "cart_eligible"
+      ]
+    },
+    {
+      "id": "MLA784444551",
+      "site_id": "MLA",
+      "title": "Valija Mediana Maletas Viaje Rigidas Medianas De Viaje 360",
+      "seller": {
+        "id": 429643836,
+        "permalink": null,
+        "power_seller_status": null,
+        "car_dealer": false,
+        "real_estate_agency": false,
+        "tags": []
+      },
+      "price": 3990,
+      "currency_id": "ARS",
+      "available_quantity": 1,
+      "sold_quantity": 5,
+      "buying_mode": "buy_it_now",
+      "listing_type_id": "gold_special",
+      "stop_time": "2039-11-07T20:04:58.000Z",
+      "condition": "new",
+      "permalink": "https://articulo.mercadolibre.com.ar/MLA-784444551-valija-mediana-maletas-viaje-rigidas-medianas-de-viaje-360-_JM",
+      "thumbnail": "http://mla-s2-p.mlstatic.com/878402-MLA41024558007_032020-I.jpg",
+      "accepts_mercadopago": true,
+      "installments": {
+        "quantity": 12,
+        "amount": 544.54,
+        "rate": 63.77,
+        "currency_id": "ARS"
+      },
+      "address": {
+        "state_id": "AR-C",
+        "state_name": "Capital Federal",
+        "city_id": "TUxBQkFMTTMwNTBa",
+        "city_name": "Almagro"
+      },
+      "shipping": {
+        "free_shipping": true,
+        "mode": "me2",
+        "tags": [
+          "fulfillment",
+          "mandatory_free_shipping"
+        ],
+        "logistic_type": "fulfillment",
+        "store_pick_up": false
+      },
+      "seller_address": {
+        "id": "",
+        "comment": "",
+        "address_line": "",
+        "zip_code": "",
+        "country": {
+          "id": "AR",
+          "name": "Argentina"
+        },
+        "state": {
+          "id": "AR-C",
+          "name": "Capital Federal"
+        },
+        "city": {
+          "id": "TUxBQkFMTTMwNTBa",
+          "name": "Almagro"
+        },
+        "latitude": "",
+        "longitude": ""
+      },
+      "attributes": [
+        {
+          "id": "BRAND",
+          "name": "Marca",
+          "value_id": null,
+          "value_name": "SAS Travel",
+          "value_struct": null,
+          "values": [
+            {
+              "id": null,
+              "name": "SAS Travel",
+              "struct": null,
+              "source": 3376461333454861
+            }
+          ],
+          "attribute_group_id": "OTHERS",
+          "attribute_group_name": "Otros",
+          "source": 3376461333454861
+        },
+        {
+          "name": "Condición del ítem",
+          "value_name": "Nuevo",
+          "value_struct": null,
+          "values": [
+            {
+              "id": "2230284",
+              "name": "Nuevo",
+              "struct": null,
+              "source": 1572
+            }
+          ],
+          "attribute_group_name": "Otros",
+          "source": 1572,
+          "id": "ITEM_CONDITION",
+          "value_id": "2230284",
+          "attribute_group_id": "OTHERS"
+        },
+        {
+          "attribute_group_name": "Otros",
+          "name": "Modelo",
+          "value_id": null,
+          "value_name": "40.1000n.3",
+          "value_struct": null,
+          "values": [
+            {
+              "id": null,
+              "name": "40.1000n.3",
+              "struct": null,
+              "source": 3376461333454861
+            }
+          ],
+          "id": "MODEL",
+          "attribute_group_id": "OTHERS",
+          "source": 3376461333454861
+        }
+      ],
+      "original_price": null,
+      "category_id": "MLA120354",
+      "official_store_id": null,
+      "catalog_product_id": null,
+      "tags": [
+        "loyalty_discount_eligible",
+        "brand_verified",
+        "good_quality_picture",
+        "good_quality_thumbnail",
+        "immediate_payment",
+        "cart_eligible"
+      ]
+    },
+    {
+      "id": "MLA619008755",
+      "site_id": "MLA",
+      "title": "Cerramiento Con Redes. Redes Para Patios, Terrazas, Balcones",
+      "seller": {
+        "id": 50657042,
+        "permalink": null,
+        "power_seller_status": "platinum",
+        "car_dealer": false,
+        "real_estate_agency": false,
+        "tags": []
+      },
+      "price": 67.9,
+      "currency_id": "ARS",
+      "available_quantity": 5000,
+      "sold_quantity": 500,
+      "buying_mode": "buy_it_now",
+      "listing_type_id": "gold_pro",
+      "stop_time": "2037-10-31T14:38:20.000Z",
+      "condition": "new",
+      "permalink": "https://articulo.mercadolibre.com.ar/MLA-619008755-cerramiento-con-redes-redes-para-patios-terrazas-balcones-_JM",
+      "thumbnail": "http://mla-s2-p.mlstatic.com/937191-MLA29424117878_022019-I.jpg",
+      "accepts_mercadopago": true,
+      "installments": {
+        "quantity": 6,
+        "amount": 11.32,
+        "rate": 0,
+        "currency_id": "ARS"
+      },
+      "address": {
+        "state_id": "AR-C",
+        "state_name": "Capital Federal",
+        "city_id": null,
+        "city_name": "caba"
+      },
+      "shipping": {
+        "free_shipping": false,
+        "mode": "custom",
+        "tags": [],
+        "logistic_type": "custom",
+        "store_pick_up": false
+      },
+      "seller_address": {
+        "id": "",
+        "comment": "",
+        "address_line": "",
+        "zip_code": "",
+        "country": {
+          "id": "AR",
+          "name": "Argentina"
+        },
+        "state": {
+          "id": "AR-C",
+          "name": "Capital Federal"
+        },
+        "city": {
+          "id": null,
+          "name": "caba"
+        },
+        "latitude": "",
+        "longitude": ""
+      },
+      "attributes": [
+        {
+          "source": 1577,
+          "values": [
+            {
+              "id": "5557981",
+              "name": "SAS",
+              "struct": null,
+              "source": 1577
+            }
+          ],
+          "attribute_group_name": "Otros",
+          "value_id": "5557981",
+          "value_name": "SAS",
+          "value_struct": null,
+          "attribute_group_id": "OTHERS",
+          "id": "BRAND",
+          "name": "Marca"
+        },
+        {
+          "id": "ITEM_CONDITION",
+          "name": "Condición del ítem",
+          "value_id": "2230284",
+          "source": null,
+          "value_name": "Nuevo",
+          "value_struct": null,
+          "values": [
+            {
+              "name": "Nuevo",
+              "struct": null,
+              "source": null,
+              "id": "2230284"
+            }
+          ],
+          "attribute_group_id": "OTHERS",
+          "attribute_group_name": "Otros"
+        },
+        {
+          "values": [
+            {
+              "id": null,
+              "name": "Filamento",
+              "struct": null,
+              "source": 3376461333454861
+            }
+          ],
+          "attribute_group_id": "OTHERS",
+          "source": 3376461333454861,
+          "value_id": null,
+          "value_struct": null,
+          "value_name": "Filamento",
+          "attribute_group_name": "Otros",
+          "id": "MODEL",
+          "name": "Modelo"
+        }
+      ],
+      "differential_pricing": {
+        "id": 33678187
+      },
+      "original_price": null,
+      "category_id": "MLA4627",
+      "official_store_id": null,
+      "catalog_product_id": null,
+      "tags": [
+        "good_quality_picture",
+        "good_quality_thumbnail",
+        "brand_verified",
+        "dragged_bids_and_visits",
+        "immediate_payment"
+      ]
+    },
+    {
+      "id": "MLA632523590",
+      "site_id": "MLA",
+      "title": "Ley General De Sociedades - Sas Ley 27.349  Balbín  3ed 2019",
+      "seller": {
+        "id": 117313418,
+        "permalink": null,
+        "power_seller_status": null,
+        "car_dealer": false,
+        "real_estate_agency": false,
+        "tags": []
+      },
+      "price": 2160,
+      "currency_id": "ARS",
+      "available_quantity": 1,
+      "sold_quantity": 5,
+      "buying_mode": "buy_it_now",
+      "listing_type_id": "gold_special",
+      "stop_time": "2036-08-20T16:47:24.000Z",
+      "condition": "new",
+      "permalink": "https://articulo.mercadolibre.com.ar/MLA-632523590-ley-general-de-sociedades-sas-ley-27349-balbin-3ed-2019-_JM",
+      "thumbnail": "http://mla-s1-p.mlstatic.com/960976-MLA27168565748_042018-I.jpg",
+      "accepts_mercadopago": true,
+      "installments": {
+        "quantity": 12,
+        "amount": 294.79,
+        "rate": 63.77,
+        "currency_id": "ARS"
+      },
+      "address": {
+        "state_id": "AR-C",
+        "state_name": "Capital Federal",
+        "city_id": null,
+        "city_name": "capital federal"
+      },
+      "shipping": {
+        "free_shipping": false,
+        "mode": "me2",
+        "tags": [
+          "self_service_out"
+        ],
+        "logistic_type": "xd_drop_off",
+        "store_pick_up": false
+      },
+      "seller_address": {
+        "id": "",
+        "comment": "",
+        "address_line": "",
+        "zip_code": "",
+        "country": {
+          "id": "AR",
+          "name": "Argentina"
+        },
+        "state": {
+          "id": "AR-C",
+          "name": "Capital Federal"
+        },
+        "city": {
+          "id": null,
+          "name": "capital federal"
+        },
+        "latitude": "",
+        "longitude": ""
+      },
+      "attributes": [
+        {
+          "value_struct": null,
+          "name": "Condición del ítem",
+          "value_id": "2230284",
+          "value_name": "Nuevo",
+          "values": [
+            {
+              "source": 1,
+              "id": "2230284",
+              "name": "Nuevo",
+              "struct": null
+            }
+          ],
+          "attribute_group_id": "OTHERS",
+          "attribute_group_name": "Otros",
+          "source": 1,
+          "id": "ITEM_CONDITION"
+        }
+      ],
+      "original_price": null,
+      "category_id": "MLA412445",
+      "official_store_id": null,
+      "catalog_product_id": null,
+      "tags": [
+        "good_quality_picture",
+        "immediate_payment",
+        "cart_eligible"
+      ]
+    },
+    {
+      "id": "MLA787310574",
+      "site_id": "MLA",
+      "title": "Dell 600gb Sas 15k 3,5 Hot Plug J762n St3600057ss Poweredge",
+      "seller": {
+        "id": 29601781,
+        "permalink": null,
+        "power_seller_status": null,
+        "car_dealer": false,
+        "real_estate_agency": false,
+        "tags": []
+      },
+      "price": 20580,
+      "currency_id": "ARS",
+      "available_quantity": 1,
+      "sold_quantity": 3,
+      "buying_mode": "buy_it_now",
+      "listing_type_id": "gold_special",
+      "stop_time": "2039-05-14T04:00:00.000Z",
+      "condition": "new",
+      "permalink": "https://articulo.mercadolibre.com.ar/MLA-787310574-dell-600gb-sas-15k-35-hot-plug-j762n-st3600057ss-poweredge-_JM",
+      "thumbnail": "http://mla-s1-p.mlstatic.com/790384-MLA30639617504_052019-I.jpg",
+      "accepts_mercadopago": true,
+      "installments": {
+        "quantity": 12,
+        "amount": 2808.66,
+        "rate": 63.77,
+        "currency_id": "ARS"
+      },
+      "address": {
+        "state_id": "AR-B",
+        "state_name": "Buenos Aires",
+        "city_id": null,
+        "city_name": "Victoria"
+      },
+      "shipping": {
+        "free_shipping": true,
+        "mode": "me2",
+        "tags": [
+          "mandatory_free_shipping"
+        ],
+        "logistic_type": "drop_off",
+        "store_pick_up": false
+      },
+      "seller_address": {
+        "id": "",
+        "comment": "",
+        "address_line": "",
+        "zip_code": "",
+        "country": {
+          "id": "AR",
+          "name": "Argentina"
+        },
+        "state": {
+          "id": "AR-B",
+          "name": "Buenos Aires"
+        },
+        "city": {
+          "id": null,
+          "name": "Victoria"
+        },
+        "latitude": "",
+        "longitude": ""
+      },
+      "attributes": [
+        {
+          "name": "Marca",
+          "value_id": "8216",
+          "value_name": "Dell",
+          "attribute_group_id": "OTHERS",
+          "attribute_group_name": "Otros",
+          "id": "BRAND",
+          "values": [
+            {
+              "source": 1572,
+              "id": "8216",
+              "name": "Dell",
+              "struct": null
+            }
+          ],
+          "source": 1572,
+          "value_struct": null
+        },
+        {
+          "value_struct": null,
+          "values": [
+            {
+              "id": "2230284",
+              "name": "Nuevo",
+              "struct": null,
+              "source": 1572
+            }
+          ],
+          "attribute_group_id": "OTHERS",
+          "source": 1572,
+          "id": "ITEM_CONDITION",
+          "name": "Condición del ítem",
+          "value_id": "2230284",
+          "value_name": "Nuevo",
+          "attribute_group_name": "Otros"
+        },
+        {
+          "source": 1572,
+          "name": "Modelo",
+          "value_name": "600GB SAS 15k 3,5 Hot Plug",
+          "value_struct": null,
+          "attribute_group_id": "OTHERS",
+          "attribute_group_name": "Otros",
+          "id": "MODEL",
+          "value_id": null,
+          "values": [
+            {
+              "source": 1572,
+              "id": null,
+              "name": "600GB SAS 15k 3,5 Hot Plug",
+              "struct": null
+            }
+          ]
+        }
+      ],
+      "original_price": null,
+      "category_id": "MLA1675",
+      "official_store_id": null,
+      "catalog_product_id": null,
+      "tags": [
+        "brand_verified",
+        "good_quality_picture",
+        "good_quality_thumbnail",
+        "immediate_payment",
+        "cart_eligible"
+      ]
+    },
+    {
+      "id": "MLA785943987",
+      "site_id": "MLA",
+      "title": "Cucharas De Silicona - Tienda Oficial Sophie La Girafe®",
+      "seller": {
+        "id": 231796999,
+        "permalink": null,
+        "power_seller_status": null,
+        "car_dealer": false,
+        "real_estate_agency": false,
+        "tags": []
+      },
+      "price": 1890,
+      "currency_id": "ARS",
+      "available_quantity": 1,
+      "sold_quantity": 5,
+      "buying_mode": "buy_it_now",
+      "listing_type_id": "gold_special",
+      "stop_time": "2039-08-06T01:15:48.000Z",
+      "condition": "new",
+      "permalink": "https://articulo.mercadolibre.com.ar/MLA-785943987-cucharas-de-silicona-tienda-oficial-sophie-la-girafe-_JM",
+      "thumbnail": "http://mla-s2-p.mlstatic.com/963112-MLA31632629067_072019-I.jpg",
+      "accepts_mercadopago": true,
+      "installments": {
+        "quantity": 12,
+        "amount": 257.94,
+        "rate": 63.77,
+        "currency_id": "ARS"
+      },
+      "address": {
+        "state_id": "AR-B",
+        "state_name": "Buenos Aires",
+        "city_id": null,
+        "city_name": "Martinez"
+      },
+      "shipping": {
+        "free_shipping": false,
+        "mode": "me2",
+        "tags": [
+          "fulfillment",
+          "self_service_out"
+        ],
+        "logistic_type": "fulfillment",
+        "store_pick_up": false
+      },
+      "seller_address": {
+        "id": "",
+        "comment": "",
+        "address_line": "",
+        "zip_code": "",
+        "country": {
+          "id": "AR",
+          "name": "Argentina"
+        },
+        "state": {
+          "id": "AR-B",
+          "name": "Buenos Aires"
+        },
+        "city": {
+          "id": null,
+          "name": "Martinez"
+        },
+        "latitude": "",
+        "longitude": ""
+      },
+      "attributes": [
+        {
+          "name": "Marca",
+          "value_id": null,
+          "value_struct": null,
+          "attribute_group_id": "OTHERS",
+          "id": "BRAND",
+          "value_name": "Sophie la girafe®",
+          "values": [
+            {
+              "id": null,
+              "name": "Sophie la girafe®",
+              "struct": null,
+              "source": 1572
+            }
+          ],
+          "attribute_group_name": "Otros",
+          "source": 1572
+        },
+        {
+          "name": "Condición del ítem",
+          "value_id": "2230284",
+          "values": [
+            {
+              "id": "2230284",
+              "name": "Nuevo",
+              "struct": null,
+              "source": 1572
+            }
+          ],
+          "attribute_group_id": "OTHERS",
+          "source": 1572,
+          "id": "ITEM_CONDITION",
+          "value_struct": null,
+          "attribute_group_name": "Otros",
+          "value_name": "Nuevo"
+        },
+        {
+          "value_id": null,
+          "value_name": "450408",
+          "value_struct": null,
+          "attribute_group_id": "OTHERS",
+          "attribute_group_name": "Otros",
+          "name": "Modelo",
+          "values": [
+            {
+              "name": "450408",
+              "struct": null,
+              "source": 1572,
+              "id": null
+            }
+          ],
+          "source": 1572,
+          "id": "MODEL"
+        }
+      ],
+      "original_price": null,
+      "category_id": "MLA417880",
+      "official_store_id": null,
+      "catalog_product_id": null,
+      "tags": [
+        "brand_verified",
+        "good_quality_picture",
+        "good_quality_thumbnail",
+        "immediate_payment",
+        "cart_eligible"
+      ]
+    },
+    {
+      "id": "MLA743201085",
+      "site_id": "MLA",
+      "title": "Sirena . Sociedades Por Acciones Simplificadas -sas. Dilalla",
+      "seller": {
+        "id": 24120468,
+        "permalink": null,
+        "power_seller_status": null,
+        "car_dealer": false,
+        "real_estate_agency": false,
+        "tags": []
+      },
+      "price": 1590,
+      "currency_id": "ARS",
+      "available_quantity": 1,
+      "sold_quantity": 0,
+      "buying_mode": "buy_it_now",
+      "listing_type_id": "gold_special",
+      "stop_time": "2038-08-11T14:15:23.000Z",
+      "condition": "new",
+      "permalink": "https://articulo.mercadolibre.com.ar/MLA-743201085-sirena-sociedades-por-acciones-simplificadas-sas-dilalla-_JM",
+      "thumbnail": "http://mla-s2-p.mlstatic.com/901113-MLA27971003955_082018-I.jpg",
+      "accepts_mercadopago": true,
+      "installments": {
+        "quantity": 12,
+        "amount": 217,
+        "rate": 63.77,
+        "currency_id": "ARS"
+      },
+      "address": {
+        "state_id": "AR-C",
+        "state_name": "Capital Federal",
+        "city_id": null,
+        "city_name": "Buenos Aires"
+      },
+      "shipping": {
+        "free_shipping": false,
+        "mode": "me2",
+        "tags": [
+          "self_service_out"
+        ],
+        "logistic_type": "xd_drop_off",
+        "store_pick_up": false
+      },
+      "seller_address": {
+        "id": "",
+        "comment": "",
+        "address_line": "",
+        "zip_code": "",
+        "country": {
+          "id": "AR",
+          "name": "Argentina"
+        },
+        "state": {
+          "id": "AR-C",
+          "name": "Capital Federal"
+        },
+        "city": {
+          "id": null,
+          "name": "Buenos Aires"
+        },
+        "latitude": "",
+        "longitude": ""
+      },
+      "attributes": [
+        {
+          "value_struct": null,
+          "values": [
+            {
+              "name": "Nuevo",
+              "struct": null,
+              "source": 1572,
+              "id": "2230284"
+            }
+          ],
+          "id": "ITEM_CONDITION",
+          "name": "Condición del ítem",
+          "value_id": "2230284",
+          "source": 1572,
+          "value_name": "Nuevo",
+          "attribute_group_id": "OTHERS",
+          "attribute_group_name": "Otros"
+        }
+      ],
+      "original_price": null,
+      "category_id": "MLA412445",
+      "official_store_id": null,
+      "catalog_product_id": "MLA7729361",
+      "tags": [
+        "loyalty_discount_eligible",
+        "poor_quality_picture",
+        "immediate_payment",
+        "cart_eligible"
+      ]
+    }
+  ],
+  "secondary_results": [],
+  "related_results": [],
+  "sort": {
+    "id": "relevance",
+    "name": "Más relevantes"
+  },
+  "available_sorts": [
+    {
+      "id": "price_asc",
+      "name": "Menor precio"
+    },
+    {
+      "id": "price_desc",
+      "name": "Mayor precio"
+    }
+  ],
+  "filters": [],
+  "available_filters": [
+    {
+      "id": "category",
+      "name": "Categorías",
+      "type": "text",
+      "values": [
+        {
+          "id": "MLA1540",
+          "name": "Servicios",
+          "results": 24
+        },
+        {
+          "id": "MLA430598",
+          "name": "Almacenamiento",
+          "results": 1075
+        },
+        {
+          "id": "MLA412445",
+          "name": "Libros",
+          "results": 630
+        },
+        {
+          "id": "MLA3794",
+          "name": "Componentes de PC",
+          "results": 932
+        },
+        {
+          "id": "MLA5725",
+          "name": "Accesorios para Vehículos",
+          "results": 258
+        },
+        {
+          "id": "MLA1000",
+          "name": "Electrónica, Audio y Video",
+          "results": 251
+        },
+        {
+          "id": "MLA1574",
+          "name": "Hogar, Muebles y Jardín",
+          "results": 196
+        },
+        {
+          "id": "MLA1168",
+          "name": "Música, Películas y Series",
+          "results": 97
+        },
+        {
+          "id": "MLA2141",
+          "name": "Impresión",
+          "results": 84
+        },
+        {
+          "id": "MLA1700",
+          "name": "Conectividad y Redes",
+          "results": 72
+        },
+        {
+          "id": "MLA1430",
+          "name": "Ropa y Accesorios",
+          "results": 49
+        },
+        {
+          "id": "MLA430918",
+          "name": "Cables y Hubs USB",
+          "results": 48
+        },
+        {
+          "id": "MLA1499",
+          "name": "Industrias y Oficinas",
+          "results": 44
+        },
+        {
+          "id": "MLA1132",
+          "name": "Juegos y Juguetes",
+          "results": 37
+        },
+        {
+          "id": "MLA1039",
+          "name": "Cámaras y Accesorios",
+          "results": 31
+        },
+        {
+          "id": "MLA1367",
+          "name": "Antigüedades y Colecciones",
+          "results": 29
+        },
+        {
+          "id": "MLA1276",
+          "name": "Deportes y Fitness",
+          "results": 29
+        },
+        {
+          "id": "MLA430687",
+          "name": "Laptops y Accesorios",
+          "results": 26
+        },
+        {
+          "id": "MLA5726",
+          "name": "Electrodomésticos y Aires Ac.",
+          "results": 19
+        },
+        {
+          "id": "MLA407134",
+          "name": "Herramientas y Construcción",
+          "results": 18
+        },
+        {
+          "id": "MLA409431",
+          "name": "Salud y Equipamiento Médico",
+          "results": 16
+        },
+        {
+          "id": "MLA1368",
+          "name": "Arte, Librería y Mercería",
+          "results": 14
+        },
+        {
+          "id": "MLA430637",
+          "name": "PC de Escritorio",
+          "results": 14
+        },
+        {
+          "id": "MLA1403",
+          "name": "Alimentos y Bebidas",
+          "results": 13
+        },
+        {
+          "id": "MLA1246",
+          "name": "Belleza y Cuidado Personal",
+          "results": 13
+        },
+        {
+          "id": "MLA1182",
+          "name": "Instrumentos Musicales",
+          "results": 10
+        },
+        {
+          "id": "MLA1384",
+          "name": "Bebés",
+          "results": 9
+        },
+        {
+          "id": "MLA1955",
+          "name": "Revistas",
+          "results": 8
+        },
+        {
+          "id": "MLA9304",
+          "name": "Souvenirs, Cotillón y Fiestas",
+          "results": 8
+        },
+        {
+          "id": "MLA1051",
+          "name": "Celulares y Teléfonos",
+          "results": 5
+        },
+        {
+          "id": "MLA3937",
+          "name": "Joyas y Relojes",
+          "results": 4
+        },
+        {
+          "id": "MLA1512",
+          "name": "Agro",
+          "results": 3
+        },
+        {
+          "id": "MLA1071",
+          "name": "Animales y Mascotas",
+          "results": 3
+        },
+        {
+          "id": "MLA1656",
+          "name": "Monitores y Accesorios",
+          "results": 3
+        },
+        {
+          "id": "MLA3043",
+          "name": "Comics e Historietas",
+          "results": 1
+        },
+        {
+          "id": "MLA1144",
+          "name": "Consolas y Videojuegos",
+          "results": 1
+        },
+        {
+          "id": "MLA400950",
+          "name": "Tablets y Accesorios",
+          "results": 1
+        },
+        {
+          "id": "MLA1227",
+          "name": "Otros",
+          "results": 320
+        },
+        {
+          "id": "MLA1953",
+          "name": "Otras categorías",
+          "results": 8
+        }
+      ]
+    },
+    {
+      "id": "official_store",
+      "name": "Tiendas oficiales",
+      "type": "text",
+      "values": [
+        {
+          "id": "all",
+          "name": "Todas las tiendas oficiales",
+          "results": 24
+        },
+        {
+          "id": "1254",
+          "name": "Libreria Hernandez",
+          "results": 3
+        },
+        {
+          "id": "857",
+          "name": "Electrolux",
+          "results": 1
+        }
+      ]
+    },
+    {
+      "id": "discount",
+      "name": "Descuentos",
+      "type": "range",
+      "values": [
+        {
+          "id": "10-100",
+          "name": "Desde 10% off",
+          "results": 7
+        },
+        {
+          "id": "20-100",
+          "name": "Desde 20% off",
+          "results": 3
+        },
+        {
+          "id": "30-100",
+          "name": "Desde 30% off",
+          "results": 2
+        },
+        {
+          "id": "40-100",
+          "name": "Desde 40% off",
+          "results": 1
+        }
+      ]
+    },
+    {
+      "id": "state",
+      "name": "Ubicación",
+      "type": "text",
+      "values": [
+        {
+          "id": "TUxBUENBUGw3M2E1",
+          "name": "Capital Federal",
+          "results": 2196
+        },
+        {
+          "id": "TUxBUEdSQWU4ZDkz",
+          "name": "Bs.As. G.B.A. Norte",
+          "results": 815
+        },
+        {
+          "id": "TUxBUEdSQWVmNTVm",
+          "name": "Bs.As. G.B.A. Oeste",
+          "results": 223
+        },
+        {
+          "id": "TUxBUEdSQXJlMDNm",
+          "name": "Bs.As. G.B.A. Sur",
+          "results": 144
+        },
+        {
+          "id": "TUxBUENPUmFkZGIw",
+          "name": "Córdoba",
+          "results": 110
+        },
+        {
+          "id": "TUxBUFNBTmU5Nzk2",
+          "name": "Santa Fe",
+          "results": 79
+        },
+        {
+          "id": "TUxBUENPU2ExMmFkMw",
+          "name": "Bs.As. Costa Atlántica",
+          "results": 28
+        },
+        {
+          "id": "TUxBUFpPTmFpbnRl",
+          "name": "Buenos Aires Interior",
+          "results": 23
+        },
+        {
+          "id": "TUxBUEVOVHMzNTdm",
+          "name": "Entre Ríos",
+          "results": 18
+        },
+        {
+          "id": "TUxBUE1FTmE5OWQ4",
+          "name": "Mendoza",
+          "results": 12
+        },
+        {
+          "id": "TUxBUENIVXQxNDM1MQ",
+          "name": "Chubut",
+          "results": 8
+        },
+        {
+          "id": "TUxBUFNBTm5lYjU4",
+          "name": "San Juan",
+          "results": 4
+        },
+        {
+          "id": "TUxBUE5FVW4xMzMzNQ",
+          "name": "Neuquén",
+          "results": 2
+        },
+        {
+          "id": "TUxBUENIQW8xMTNhOA",
+          "name": "Chaco",
+          "results": 2
+        },
+        {
+          "id": "TUxBUENPUnM5MjI0",
+          "name": "Corrientes",
+          "results": 2
+        },
+        {
+          "id": "TUxBUEZPUmE1OTk5",
+          "name": "Formosa",
+          "results": 2
+        },
+        {
+          "id": "TUxBUFNBTnM0ZTcz",
+          "name": "San Luis",
+          "results": 2
+        },
+        {
+          "id": "TUxBUFRVQ244NmM3",
+          "name": "Tucumán",
+          "results": 2
+        },
+        {
+          "id": "TUxBUE1JU3MzNjIx",
+          "name": "Misiones",
+          "results": 1
+        },
+        {
+          "id": "TUxBUENBVGFiY2Fm",
+          "name": "Catamarca",
+          "results": 1
+        },
+        {
+          "id": "TUxBUEpVSnk3YmUz",
+          "name": "Jujuy",
+          "results": 1
+        },
+        {
+          "id": "TUxBUExBWmEyNzY0",
+          "name": "La Rioja",
+          "results": 1
+        },
+        {
+          "id": "TUxBUFLNT29iZmZm",
+          "name": "Río Negro",
+          "results": 1
+        },
+        {
+          "id": "TUxBUFNBTGFjMTJi",
+          "name": "Salta",
+          "results": 1
+        },
+        {
+          "id": "TUxBUFNBTno3ZmY5",
+          "name": "Santa Cruz",
+          "results": 1
+        }
+      ]
+    },
+    {
+      "id": "price",
+      "name": "Precio",
+      "type": "range",
+      "values": [
+        {
+          "id": "*-1500.0",
+          "name": "Hasta $ 1.500",
+          "results": 1141
+        },
+        {
+          "id": "1500.0-10000.0",
+          "name": "$1.500 a $10.000",
+          "results": 1238
+        },
+        {
+          "id": "10000.0-*",
+          "name": "Más de $10.000",
+          "results": 1260
+        }
+      ]
+    },
+    {
+      "id": "accepts_mercadopago",
+      "name": "Filtro por MercadoPago",
+      "type": "boolean",
+      "values": [
+        {
+          "id": "yes",
+          "name": "Con MercadoPago",
+          "results": 3639
+        }
+      ]
+    },
+    {
+      "id": "installments",
+      "name": "Pago",
+      "type": "text",
+      "values": [
+        {
+          "id": "yes",
+          "name": "En cuotas",
+          "results": 3522
+        },
+        {
+          "id": "no_interest",
+          "name": "Sin interés",
+          "results": 202
+        }
+      ]
+    },
+    {
+      "id": "shipping",
+      "name": "Tipo de entrega",
+      "type": "text",
+      "values": [
+        {
+          "id": "mercadoenvios",
+          "name": "Con envío",
+          "results": 2900
+        },
+        {
+          "id": "fulfillment",
+          "name": "Full",
+          "results": 9
+        }
+      ]
+    },
+    {
+      "id": "power_seller",
+      "name": "Filtro por calidad de vendedores",
+      "type": "boolean",
+      "values": [
+        {
+          "id": "yes",
+          "name": "Mejores vendedores",
+          "results": 1585
+        }
+      ]
+    },
+    {
+      "id": "since",
+      "name": "Filtro por fecha de comienzo",
+      "type": "text",
+      "values": [
+        {
+          "id": "today",
+          "name": "Publicados hoy",
+          "results": 6
+        }
+      ]
+    },
+    {
+      "id": "has_video",
+      "name": "Filtro por publicaciones con video",
+      "type": "boolean",
+      "values": [
+        {
+          "id": "yes",
+          "name": "Publicaciones con video",
+          "results": 81
+        }
+      ]
+    },
+    {
+      "id": "has_pictures",
+      "name": "Filtro por publicaciones con imágenes",
+      "type": "boolean",
+      "values": [
+        {
+          "id": "yes",
+          "name": "Con fotos",
+          "results": 3621
+        }
+      ]
+    },
+    {
+      "id": "adult_content",
+      "name": "Filtro de contenido adulto",
+      "type": "boolean",
+      "values": [
+        {
+          "id": "yes",
+          "name": "Contenido adulto",
+          "results": 2
+        }
+      ]
+    },
+    {
+      "id": "shipping_cost",
+      "name": "Costo de envío",
+      "type": "text",
+      "values": [
+        {
+          "id": "free",
+          "name": "Gratis",
+          "results": 1563
+        }
+      ]
+    },
+    {
+      "id": "ITEM_CONDITION",
+      "name": "Condición",
+      "type": "STRING",
+      "values": [
+        {
+          "id": "2230284",
+          "name": "Nuevo",
+          "results": 3037
+        },
+        {
+          "id": "2230581",
+          "name": "Usado",
+          "results": 543
+        },
+        {
+          "id": "2230582",
+          "name": "Reacondicionado",
+          "results": 30
+        }
+      ]
+    }
+  ]
+}

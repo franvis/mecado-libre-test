@@ -18,8 +18,12 @@ Test project that helps you to search and visualize Mercado Libre products.
 - [Jacoco](https://github.com/jacoco/jacoco)
 
 ## Extras:
-This project provides a pre commit hook that runs both detekt and spotlessCheck to
-avoid code smells, format the code and run ktlint for code styling
 
-To enable it run in the root of your project:
+1. This project provides a pre commit hook that runs both detekt and spotlessCheck to
+avoid code smells, format the code and run ktlint for code styling. To enable it run in the root of your project:
 `git config core.hooksPath .githooks`
+
+2. Ways of running Jacoco for test coverage reports:
+   - Run the `testDebugUnitTestCoverage` from android studio
+   - Navigate to the root of the project and run from the terminal `./gradlew {module}:testDebugUnitTestCoverage`
+
